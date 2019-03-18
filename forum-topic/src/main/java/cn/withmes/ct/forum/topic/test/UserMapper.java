@@ -9,10 +9,11 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
  * ClassName: UserMapper
- * @Description:
+ *
  * @author leegoo
+ * @Description:
  * @date 2019年03月14日
  */
 public interface UserMapper extends BaseMapper<UserTest> {
-    Integer demo ();
+    Integer demo();
 }

@@ -1,0 +1,146 @@
+#set(String title = "新用户注册")
+#tag layout_block("bodyContent")
+<div class="columns">
+    <div class="column is-3"></div>
+    <div class="column is-6">
+        <div class="message is-light">
+            <div class="message-header">注册新用户</div>
+            <div class="message-body">
+                <form id="signup-form" method="post">
+                    <div class="field">
+                        <div class="control has-icons-left has-icons-right">
+                            <input id="username" name="username" class="input" type="text" placeholder="用户名"/>
+                            <span class="icon is-small is-left">
+                              <i class="fa fa-user"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <div class="control has-icons-left has-icons-right">
+                            <input id="email" name="email" class="input" type="text" placeholder="请输入邮箱"/>
+                            <span class="icon is-small is-left">
+                              <i class="fa fa-envelope"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <p class="control has-icons-left">
+                             <span class="icon is-small is-left">
+                          <i class="fa fa-lock"></i>
+                        </span>
+                        </p>
+                    </div>
+
+                    <div class="field">
+                        <p class="control has-icons-left">
+                            <input id="password" name="password" class="input" type="password" placeholder="请输入密码"/>
+                            <span class="icon is-small is-left">
+                          <i class="fa fa-lock"></i>
+                        </span>
+                        </p>
+                    </div>
+
+                    <div class="field">
+                        <p class="control has-icons-left">
+                            <input id="repassword" name="repassword" class="input" type="password" placeholder="确认密码"/>
+                            <span class="icon is-small is-left">
+                          <i class="fa fa-lock"></i>
+                        </span>
+                        </p>
+                    </div>
+
+                    <div class="field">
+                        <p class="control has-icons-left">
+                            <input id="vcode" name="vcode" class="input" type="text" placeholder="验证码"/>
+                        </p>
+                    </div>
+
+                    <div class="field">
+                        <p class="control">
+                            <button id="signup-btn" class="button is-success" type="submit">注册</button>
+                            <a class="button" href="${siteUrl('/signin')}">登录</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="column is-3"></div>
+</div>
+#end
+#tag layout_block("footScript")
+<script type="text/javascript" src="/static/plugins/jquery.validation/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/static/plugins/jquery.validation/additional-methods.min.js"></script>
+<script type="text/javascript" src="/static/plugins/jquery.validation/localization/messages_zh.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $.validator.addMethod("checkUserName", function (value, element, params) {
+            var checkName = /^\w{4,20}$/g;
+            return this.optional(element) || (checkName.test(value));
+        }, "只允许4-20位英文字母、数字或者下画线！");
+
+        $("#signupForm").validate({
+            rules: {
+                username: {
+                    required: true,
+                    rangelength: [4, 20],
+                    checkUserName: true
+                },
+                password: {
+                    required: true,
+                    minlength: 6
+                },
+                repassword: {
+                    required: true,
+                    minlength: 6,
+                    equalTo: "#password"
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
+                vcode: {
+                    required: true
+                }
+            },
+            messages: {
+                username: {
+                    required: "请输入用户名",
+                    rangelength: "请输入4-20位用户名"
+                },
+                password: {
+                    required: "请输入密码",
+                    minlength: "密码长度不能小于6位"
+                },
+                repassword: {
+                    required: "请输入密码",
+                    minlength: "密码长度不能小于6位",
+                    equalTo: "两次密码输入不一致"
+                },
+                vcode: {
+                    required: "请输入验证码"
+                },
+                email: {
+                    required: "请输入邮箱",
+                    email: "请输入一个正确的邮箱"
+                }
+            },
+            submitHandler: function () {
+                $('#signup-form #signup-btn').addClass('is-loading');
+                Roo.post("/signup", $('#signup-form').serialize(),
+                    function (data, textStatus, jqXHR) {
+                        $('#signup-form #signup-btn').addClass('is-loading');
+                        if (data && data.success) {
+                            Roo.alertOk('注册成功');
+                        } else {
+                            Roo.alertError(data.msg || '注册失败');
+                        }
+                    });
+            }
+        });
+    });
+</script>
+#end
+#include('../layouts/default.html')

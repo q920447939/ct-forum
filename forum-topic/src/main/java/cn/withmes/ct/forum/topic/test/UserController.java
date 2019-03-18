@@ -27,7 +27,7 @@ public class UserController {
 
     @GetMapping("/say")
     @ResponseBody
-    public  String say (Integer id) {
+    public String say(Integer id) {
         UserTest userTest = userMapper.selectById(id);
         String s = "hello:" + userTest.getName();
         return s;

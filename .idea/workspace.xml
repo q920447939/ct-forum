@@ -2,11 +2,85 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1b80e98-4fb8-493f-b79c-26d7f3123411" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum-common/forum-mysql/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/forum-common/forum-mysql/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum-topic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/forum-topic/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/ForumTopicApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/ForumTopicApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/css/bulma.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/css/bulma.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/css/roo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/images/alipay.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/images/icon-blade.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/js/instantclick.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/js/roo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/js/topic.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/jquery.validation/additional-methods.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/jquery.validation/additional-methods.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/jquery.validation/jquery.validate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/jquery.validation/jquery.validate.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/jquery.validation/localization/messages_zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/jquery.validation/localization/messages_zh.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/jquery.validation/localization/messages_zh_TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/jquery.validation/localization/messages_zh_TW.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/mditor/css/mditor.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/mditor/css/mditor.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/mditor/css/mditor.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/mditor/css/mditor.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/mditor/font/674f50d287a8c48dc19ba404d20fe713.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/mditor/font/912ec66d7572ff821749319396470bde.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/mditor/font/a48ac41620cd818c5020d0f4302489ff.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/mditor/font/af7ae505a9eed503f8b8e6982036873e.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/mditor/font/b06871f281fee6b241d60582ae9369b9.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/mditor/font/fee66e712a8a08eef5805a46892932ad.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/mditor/js/mditor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/mditor/js/mditor.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/mditor/js/mditor.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/mditor/js/mditor.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/noty/noty.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/noty/noty.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/noty/noty.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/noty/noty.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/noty/noty.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/noty/noty.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/admin/settings/edit_template.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/admin/settings/platforms.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/admin/settings/site_setting.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/admin/topics/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/admin/users/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/auth/active.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/auth/forget.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/auth/signin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/auth/signup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/auth/signup_success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/contact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/emails/forget.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/emails/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/errors/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/errors/500.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/faq.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/install/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/layouts/default.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/news.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/partials/errors.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/partials/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/partials/header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/partials/nav.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/partials/share.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/partials/sidebar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/partials/top.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/popular.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/sites.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/topic/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/topic/new.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/topic/node.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/topics.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/users/profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/wiki.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/test/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/test/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/test/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/test/UserMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/test/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/test/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forum-topic/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forum-topic/target/classes/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/forum-topic/target/classes/bootstrap.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/forum-parent/target/" />
     <ignored path="$PROJECT_DIR$/forum-common/target/" />
@@ -59,8 +133,8 @@
       <file leaf-file-name="ForumTopicApplication.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/ForumTopicApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="408">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -68,11 +142,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="schema.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sql/schema.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+            <state relative-caret-position="289">
+              <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="roo.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/forum-topic/src/main/resources/static/js/roo.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="instantclick.min.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/forum-topic/src/main/resources/static/js/instantclick.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="56" selection-start-line="1" selection-start-column="56" selection-end-line="1" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="topic.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/forum-topic/src/main/resources/static/js/topic.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="messages_zh.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/jquery.validation/localization/messages_zh.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="additional-methods.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/jquery.validation/additional-methods.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -142,7 +256,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/forum-common/src/main/java/cn/withme/ct/forum/common/utils/DateUtil.java" />
         <option value="$PROJECT_DIR$/forum-common/src/main/java/cn/withme/ct/forum/common/utils/DesUtil.java" />
         <option value="$PROJECT_DIR$/forum-common/src/main/java/cn/withme/ct/forum/common/utils/Md5Utils.java" />
         <option value="$PROJECT_DIR$/forum-common/src/main/java/cn/withme/ct/forum/common/utils/RandomCharUtil.java" />
@@ -193,6 +306,7 @@
         <option value="$PROJECT_DIR$/forum-topic/pom.xml" />
         <option value="$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/ForumTopicApplication.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/forum-topic/src/main/resources/static/js/instantclick.min.js" />
       </list>
     </option>
   </component>
@@ -242,6 +356,79 @@
               <item name="ct-forum" type="b2602c69:ProjectViewProjectNode" />
               <item name="ct-forum" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ct-forum" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ct-forum" type="462c0819:PsiDirectoryNode" />
+              <item name="forum-topic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ct-forum" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ct-forum" type="462c0819:PsiDirectoryNode" />
+              <item name="forum-topic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ct-forum" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ct-forum" type="462c0819:PsiDirectoryNode" />
+              <item name="forum-topic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ct-forum" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ct-forum" type="462c0819:PsiDirectoryNode" />
+              <item name="forum-topic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ct-forum" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ct-forum" type="462c0819:PsiDirectoryNode" />
+              <item name="forum-topic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ct-forum" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ct-forum" type="462c0819:PsiDirectoryNode" />
+              <item name="forum-topic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ct-forum" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ct-forum" type="462c0819:PsiDirectoryNode" />
+              <item name="forum-topic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="jquery.validation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ct-forum" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ct-forum" type="462c0819:PsiDirectoryNode" />
+              <item name="forum-topic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="jquery.validation" type="462c0819:PsiDirectoryNode" />
+              <item name="localization" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ct-forum" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ct-forum" type="462c0819:PsiDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -273,6 +460,7 @@
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\my-project\ct-forum\forum-topic\src\main\resources" />
+      <recent name="E:\my-project\ct-forum" />
       <recent name="E:\my-project\ct-forum\forum-common\forum-utils\src\main\java" />
       <recent name="E:\my-project\ct-forum\forum-common\src\main\java\cn\withme\ct\forum\common" />
     </key>
@@ -426,12 +614,12 @@
       <workItem from="1552556110163" duration="8311000" />
       <workItem from="1552620872577" duration="7416000" />
       <workItem from="1552876349948" duration="8518000" />
-      <workItem from="1552893610878" duration="4671000" />
+      <workItem from="1552893610878" duration="4912000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41965000" />
+    <option name="totallyTimeSpent" value="42206000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -449,7 +637,7 @@
       <window_info anchor="right" id="Palette" order="7" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.2546246" />
       <window_info anchor="bottom" id="JRebel Console" order="5" sideWeight="0.50053304" side_tool="true" weight="0.2546246" />
-      <window_info anchor="right" id="Maven Projects" order="0" visible="true" weight="0.3327957" />
+      <window_info anchor="right" id="Maven Projects" order="0" weight="0.3327957" />
       <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="JRebel Executor" order="7" />
       <window_info id="Capture Tool" order="8" />
@@ -473,6 +661,7 @@
       <window_info anchor="right" id="Bean Validation" order="6" />
       <window_info id="Web" order="5" side_tool="true" />
       <window_info id="JRebel" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="9" weight="0.32934782" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info id="Favorites" order="4" side_tool="true" />
@@ -481,7 +670,6 @@
       <window_info anchor="bottom" id="Cvs" order="13" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="8" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="10" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="9" weight="0.32934782" />
     </layout>
     <layout-to-restore>
       <window_info id="Designer" order="0" />
@@ -550,30 +738,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.5.RELEASE/spring-core-5.1.5.RELEASE.jar!/org/springframework/util/Assert.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="71" column="14" selection-start-line="71" selection-start-column="14" selection-end-line="71" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/1.3.2/mybatis-spring-1.3.2-sources.jar!/org/mybatis/spring/support/SqlSessionDaoSupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="40" column="58" lean-forward="true" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/5.1.5.RELEASE/spring-tx-5.1.5.RELEASE.jar!/org/springframework/dao/support/DaoSupport.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/test/CommonDao.java" />
-    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/test/Config.java" />
-    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/resources/bootstrap.yml" />
     <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/nacos/nacos-api/0.6.2/nacos-api-0.6.2.jar!/com/alibaba/nacos/api/config/ConfigFactory.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -873,20 +1037,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/ForumTopicApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="408">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/sql/schema.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+        <state relative-caret-position="289">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/resources/static/js/roo.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/resources/static/js/instantclick.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="56" selection-start-line="1" selection-start-column="56" selection-end-line="1" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/resources/static/js/topic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/jquery.validation/localization/messages_zh.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/jquery.validation/additional-methods.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
