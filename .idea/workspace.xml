@@ -1,0 +1,962 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c1b80e98-4fb8-493f-b79c-26d7f3123411" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/forum-parent/target/" />
+    <ignored path="$PROJECT_DIR$/forum-common/target/" />
+    <ignored path="$PROJECT_DIR$/forum-common/forum-utils/target/" />
+    <ignored path="$PROJECT_DIR$/forum-common/forum-mysql/target/" />
+    <ignored path="$PROJECT_DIR$/forum-topic/target/" />
+    <ignored path="$PROJECT_DIR$/nacos-examples-master/nacos-spring-example/nacos-spring-config-listener-example/target/" />
+    <ignored path="$PROJECT_DIR$/nacos-examples-master/nacos-spring-example/nacos-spring-config-example/target/" />
+    <ignored path="$PROJECT_DIR$/nacos-examples-master/nacos-spring-example/nacos-spring-config-datasource-example/target/" />
+    <ignored path="$PROJECT_DIR$/nacos-examples-master/nacos-spring-cloud-example/nacos-spring-cloud-discovery-example/nacos-spring-cloud-consumer-example/target/" />
+    <ignored path="$PROJECT_DIR$/nacos-examples-master/nacos-spring-cloud-example/nacos-spring-cloud-config-example/target/" />
+    <ignored path="$PROJECT_DIR$/nacos-examples-master/nacos-spring-example/nacos-spring-config-multi-data-ids-example/target/" />
+    <ignored path="$PROJECT_DIR$/nacos-examples-master/nacos-spring-boot-example/target/" />
+    <ignored path="$PROJECT_DIR$/nacos-examples-master/nacos-spring-boot-example/nacos-spring-boot-discovery-example/target/" />
+    <ignored path="$PROJECT_DIR$/nacos-examples-master/nacos-spring-example/nacos-spring-config-pojo-example/target/" />
+    <ignored path="$PROJECT_DIR$/nacos-examples-master/nacos-cmdb-plugin-example/target/" />
+    <ignored path="$PROJECT_DIR$/nacos-examples-master/nacos-spring-boot-example/nacos-spring-boot-config-example/target/" />
+    <ignored path="$PROJECT_DIR$/nacos-examples-master/nacos-spring-cloud-example/nacos-spring-cloud-config-multi-data-ids-example/target/" />
+    <ignored path="$PROJECT_DIR$/nacos-examples-master/nacos-spring-cloud-example/target/" />
+    <ignored path="$PROJECT_DIR$/nacos-examples-master/nacos-spring-example/nacos-spring-discovery-example/target/" />
+    <ignored path="$PROJECT_DIR$/nacos-examples-master/target/" />
+    <ignored path="$PROJECT_DIR$/nacos-examples-master/nacos-sentinel-example/target/" />
+    <ignored path="$PROJECT_DIR$/nacos-examples-master/nacos-spring-cloud-example/nacos-spring-cloud-discovery-example/nacos-spring-cloud-provider-example/target/" />
+    <ignored path="$PROJECT_DIR$/nacos-examples-master/nacos-spring-boot-example/nacos-spring-boot-config-mysql-example/target/" />
+    <ignored path="$PROJECT_DIR$/nacos-examples-master/nacos-spring-example/target/" />
+    <ignored path="$PROJECT_DIR$/nacos-examples-master/nacos-spring-cloud-example/nacos-spring-cloud-discovery-example/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="26" column="23" lean-forward="true" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>commons-lang3</find>
+      <find>lombok</find>
+      <find>commons-text</find>
+      <find>text</find>
+      <find>main</find>
+      <find>lom</find>
+      <find>mybatisplus-spring-boot-starter</find>
+      <find>mybatis</find>
+      <find>mybatis-plus</find>
+      <find>mybatis-plus-boot-starter</find>
+      <find>mybatis-spring-boot-starter</find>
+      <find>plus</find>
+      <find>nacos</find>
+      <find>sqlSessionFactory</find>
+      <find />
+      <find>spring.cloud.nacos.config</find>
+      <find>netflix</find>
+      <find>spring-cloud-starter-alibaba-nacos-discovery</find>
+      <find>service-consumer</find>
+      <find>coupon/addrule</find>
+      <find>spring.cloud.nacos.config.server-addr</find>
+      <find>config</find>
+      <find>spring-cloud-starter-alibaba-nacos-config</find>
+      <find>spring-boot-dependencies</find>
+      <find>properties</find>
+      <find>mybatisplus.version</find>
+      <find>spring-cloud-dependencies</find>
+      <find>say</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>E:\my-project\ct-forum\forum-topic</dir>
+      <dir>E:\my-project\ct-forum</dir>
+    </dirStrings>
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="D:/code/spring-framework" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../xfxb-small sore/puff" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/forum-common/src/main/java/cn/withme/ct/forum/common/utils/DateUtil.java" />
+        <option value="$PROJECT_DIR$/forum-common/src/main/java/cn/withme/ct/forum/common/utils/DesUtil.java" />
+        <option value="$PROJECT_DIR$/forum-common/src/main/java/cn/withme/ct/forum/common/utils/Md5Utils.java" />
+        <option value="$PROJECT_DIR$/forum-common/src/main/java/cn/withme/ct/forum/common/utils/RandomCharUtil.java" />
+        <option value="$PROJECT_DIR$/forum-common/src/main/java/cn/withme/ct/forum/common/utils/StringUtil.java" />
+        <option value="$PROJECT_DIR$/forum-common/src/main/java/cn/withme/ct/forum/common/Application.java" />
+        <option value="$PROJECT_DIR$/forum-common/forum-utils/src/main/java/common/enumresource/StateEnum.java" />
+        <option value="$PROJECT_DIR$/forum-common/forum-utils/src/main/java/common/enumresource/LevelEnum.java" />
+        <option value="$PROJECT_DIR$/forum-common/forum-utils/src/main/java/common/enumresource/DefaultEnum.java" />
+        <option value="$PROJECT_DIR$/forum-common/forum-utils/src/main/java/common/enumresource/SexEnum.java" />
+        <option value="$PROJECT_DIR$/forum-common/forum-utils/src/main/java/common/enumresource/IsInitEnum.java" />
+        <option value="$PROJECT_DIR$/forum-common/forum-utils/src/main/java/common/enumresource/ProvinceEnum.java" />
+        <option value="$PROJECT_DIR$/forum-common/forum-utils/src/main/java/common/enumresource/IsSupportEnum.java" />
+        <option value="$PROJECT_DIR$/forum-topic/src/main/java/test/UserTest.java" />
+        <option value="$PROJECT_DIR$/forum-topic/src/main/java/test/UserMapper.java" />
+        <option value="$PROJECT_DIR$/forum-topic/src/main/java/test/UserController.java" />
+        <option value="$PROJECT_DIR$/forum-topic/src/main/resources/application-dev.yaml" />
+        <option value="$PROJECT_DIR$/forum-topic/src/main/resources/mybatis/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/test/UserMapper.java" />
+        <option value="$PROJECT_DIR$/forum-common/forum-mysql/pom.xml" />
+        <option value="$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/Config.java" />
+        <option value="$PROJECT_DIR$/forum-topic/src/main/java/ForumTopicApplication.java" />
+        <option value="$PROJECT_DIR$/forum-topic/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/test/CommonDao.java" />
+        <option value="$PROJECT_DIR$/forum-topic/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/nacos-examples-master/nacos-spring-cloud-example/nacos-spring-cloud-discovery-example/nacos-spring-cloud-provider-example/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/forum-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/forum-common/pom.xml" />
+        <option value="$PROJECT_DIR$/forum-common/forum-utils/pom.xml" />
+        <option value="$PROJECT_DIR$/forum-common/forum-utils/src/main/java/cn/withmes/ct/utils/enumresource/ProvinceEnum.java" />
+        <option value="$PROJECT_DIR$/forum-common/forum-utils/src/main/java/cn/withmes/ct/utils/enumresource/StateEnum.java" />
+        <option value="$PROJECT_DIR$/forum-common/forum-utils/src/main/java/cn/withmes/ct/utils/enumresource/LevelEnum.java" />
+        <option value="$PROJECT_DIR$/forum-common/forum-utils/src/main/java/cn/withmes/ct/utils/enumresource/IsInitEnum.java" />
+        <option value="$PROJECT_DIR$/forum-common/forum-utils/src/main/java/cn/withmes/ct/utils/enumresource/DefaultEnum.java" />
+        <option value="$PROJECT_DIR$/forum-common/forum-utils/src/main/java/cn/withmes/ct/utils/enumresource/SexEnum.java" />
+        <option value="$PROJECT_DIR$/forum-common/forum-utils/src/main/java/cn/withmes/ct/utils/enumresource/IsSupportEnum.java" />
+        <option value="$PROJECT_DIR$/forum-common/forum-utils/src/main/java/cn/withmes/ct/utils/utils/Base64.java" />
+        <option value="$PROJECT_DIR$/forum-common/forum-utils/src/main/java/cn/withmes/ct/utils/utils/Md5Utils.java" />
+        <option value="$PROJECT_DIR$/forum-topic/src/test/java/cn/withmes/ct/forum/topic/Test.java" />
+        <option value="$PROJECT_DIR$/nacos-examples-master/nacos-spring-cloud-example/nacos-spring-cloud-discovery-example/nacos-spring-cloud-consumer-example/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/nacos-examples-master/nacos-spring-cloud-example/nacos-spring-cloud-config-example/src/main/resources/bootstrap.properties" />
+        <option value="$PROJECT_DIR$/forum-topic/src/main/resources/bootstrap.properties" />
+        <option value="$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/ForumTopicApplication.java" />
+        <option value="$PROJECT_DIR$/forum-topic/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/nacos-examples-master/nacos-spring-cloud-example/nacos-spring-cloud-config-example/pom.xml" />
+        <option value="$PROJECT_DIR$/nacos-examples-master/nacos-spring-cloud-example/nacos-spring-cloud-config-example/src/main/java/com/alibaba/nacos/example/spring/cloud/NacosConfigApplication.java" />
+        <option value="$PROJECT_DIR$/forum-topic/pom.xml" />
+        <option value="$PROJECT_DIR$/forum-topic/src/test/java/cn/withmes/ct/forum/topic/ForumTopicApplicationTests.java" />
+        <option value="$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/test/UserController.java" />
+        <option value="$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/test/UserTest.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:/Program Files/apache-maven-3.5.3" />
+        <option name="userSettingsFile" value="C:/Program Files/apache-maven-3.5.3/conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
+    <option name="vmOptions" value="-Dfile.encoding=GB2312" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="width" value="1920" />
+    <option name="height" value="1040" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ct-forum" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ct-forum" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/nacos-examples-master/pom.xml" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15176849" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+      <recent name="cn.withmes.ct.forum.topic" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\my-project\ct-forum\forum-topic\src\main\resources" />
+      <recent name="E:\my-project\ct-forum\forum-common\forum-utils\src\main\java" />
+      <recent name="E:\my-project\ct-forum\forum-common\src\main\java\cn\withme\ct\forum\common" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\my-project\ct-forum\forum-common\forum-utils\src\main\java\cn\withmes\ct\utils" />
+      <recent name="E:\my-project\ct-forum\forum-parent" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ForumTopicApplication">
+    <configuration name="ForumTopicApplicationTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.withmes.ct.forum.topic.ForumTopicApplicationTests" />
+      <module name="forum-topic" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.withmes.ct.forum.topic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="NacosConfigApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.alibaba.nacos.example.spring.cloud.NacosConfigApplication" />
+      <module name="nacos-spring-cloud-config-example" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.alibaba.nacos.example.spring.cloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="NacosConsumerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.alibaba.nacos.example.spring.cloud.NacosConsumerApplication" />
+      <module name="nacos-spring-cloud-consumer-example" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.alibaba.nacos.example.spring.cloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="NacosProviderApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.alibaba.nacos.example.spring.cloud.NacosProviderApplication" />
+      <module name="nacos-spring-cloud-provider-example" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.alibaba.nacos.example.spring.cloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.withmes.ct.forum.topic.Test" />
+      <module name="forum-topic" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.withmes.ct.forum.topic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="ForumTopicApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="forum-topic" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.withmes.ct.forum.topic.ForumTopicApplication" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.ForumTopicApplication" />
+      <item itemvalue="Application.NacosConsumerApplication" />
+      <item itemvalue="Application.ForumTopicApplicationTests" />
+      <item itemvalue="Application.Test" />
+      <item itemvalue="Application.NacosConfigApplication" />
+      <item itemvalue="Application.NacosProviderApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.NacosConfigApplication" />
+        <item itemvalue="Application.NacosConsumerApplication" />
+        <item itemvalue="Application.NacosProviderApplication" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.ForumTopicApplicationTests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c1b80e98-4fb8-493f-b79c-26d7f3123411" name="Default" comment="" />
+      <created>1552534317544</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1552534317544</updated>
+      <workItem from="1552534321334" duration="13049000" />
+      <workItem from="1552556110163" duration="8311000" />
+      <workItem from="1552620872577" duration="7416000" />
+      <workItem from="1552876349948" duration="8518000" />
+      <workItem from="1552893610878" duration="3365000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="40659000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1920" height="1040" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.2546246" />
+      <window_info anchor="bottom" id="JRebel Console" order="5" sideWeight="0.50053304" side_tool="true" weight="0.2546246" />
+      <window_info anchor="right" id="Maven Projects" order="0" weight="0.33315393" />
+      <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="JRebel Executor" order="7" />
+      <window_info id="Capture Tool" order="8" />
+      <window_info id="Designer" order="0" />
+      <window_info anchor="right" id="Database" order="2" weight="0.32992464" />
+      <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="9" weight="0.25" />
+      <window_info id="UI Designer" order="3" />
+      <window_info anchor="bottom" id="Debug" order="12" weight="0.39934713" />
+      <window_info anchor="bottom" id="TODO" order="15" weight="0.3297062" />
+      <window_info anchor="bottom" id="Messages" order="2" weight="0.32752994" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="bottom" id="Java Enterprise" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="bottom" id="Version Control" order="6" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="11" sideWeight="0.49946696" visible="true" weight="0.2591362" />
+      <window_info anchor="bottom" id="Spring" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.2629032" />
+      <window_info anchor="right" id="Bean Validation" order="6" />
+      <window_info id="Web" order="5" side_tool="true" />
+      <window_info id="JRebel" order="1" side_tool="true" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="14" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="8" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="13" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="8" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="9" weight="0.32934782" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Designer" order="0" />
+      <window_info anchor="right" id="Palette" order="7" />
+      <window_info id="JRebel" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Spring" order="0" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="bottom" id="Run" order="11" visible="true" weight="0.46947837" />
+      <window_info anchor="bottom" id="Cvs" order="13" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="9" weight="0.25" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info id="Capture Tool" order="8" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="8" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="2" weight="0.32852387" />
+      <window_info anchor="bottom" id="TODO" order="15" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Java Enterprise" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="6" show_stripe_button="false" />
+      <window_info anchor="right" id="Maven Projects" order="0" weight="0.33315393" />
+      <window_info anchor="bottom" id="JRebel Executor" order="7" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.25511304" />
+      <window_info anchor="bottom" id="JRebel Console" order="5" side_tool="true" />
+      <window_info anchor="right" id="Database" order="2" weight="0.32992464" />
+      <window_info anchor="bottom" id="Message" order="8" />
+      <window_info id="Web" order="5" side_tool="true" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="14" weight="0.4" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="bottom" id="Find" order="9" weight="0.32934782" />
+      <window_info anchor="right" id="Bean Validation" order="6" />
+      <window_info anchor="bottom" id="Debug" order="12" weight="0.39955604" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/alibaba/nacos/nacos-api/0.6.2/nacos-api-0.6.2.jar!/com/alibaba/nacos/api/config/ConfigFactory.class</url>
+          <line>16</line>
+          <properties />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/test/UserController.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="8" />
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="setValue">
+      <expression>
+        <expression-string>1</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/forum-common/forum-utils/src/main/java/common/utils/Base64.java" />
+    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-dependencies/2.1.3.RELEASE/spring-boot-dependencies-2.1.3.RELEASE.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="646" column="12" selection-start-line="646" selection-start-column="12" selection-end-line="646" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.0/mybatis-3.5.0.jar!/org/apache/ibatis/annotations/Mapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-annotation/3.1.0/mybatis-plus-annotation-3.1.0.jar!/com/baomidou/mybatisplus/annotation/TableField.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/resources/application-dev.yaml" />
+    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/resources/mybatis/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.5.RELEASE/spring-core-5.1.5.RELEASE.jar!/org/springframework/util/Assert.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="71" column="14" selection-start-line="71" selection-start-column="14" selection-end-line="71" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/1.3.2/mybatis-spring-1.3.2-sources.jar!/org/mybatis/spring/support/SqlSessionDaoSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="40" column="58" lean-forward="true" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/5.1.5.RELEASE/spring-tx-5.1.5.RELEASE.jar!/org/springframework/dao/support/DaoSupport.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/test/CommonDao.java" />
+    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/test/Config.java" />
+    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/resources/bootstrap.yml" />
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/nacos/nacos-api/0.6.2/nacos-api-0.6.2.jar!/com/alibaba/nacos/api/config/ConfigFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/nacos/nacos-api/0.6.2/nacos-api-0.6.2.jar!/com/alibaba/nacos/api/NacosFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nacos-examples-master/nacos-spring-cloud-example/nacos-spring-cloud-discovery-example/nacos-spring-cloud-provider-example/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="55" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-common/forum-utils/hs_err_pid11652.log" />
+    <entry file="file://$PROJECT_DIR$/forum-common/forumutils/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/forum-common/forum-utils/src/main/java/cn/withmes/ct/utils/api/annotation/IgnoreAuth.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-common/forum-utils/src/main/java/cn/withmes/ct/utils/api/annotation/LoginUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-common/forum-utils/hs_err_pid5540.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="192" selection-start-line="192" selection-end-line="192" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-common/forum-utils/src/main/java/cn/withmes/ct/utils/enumresource/ProvinceEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-common/forum-utils/src/main/java/cn/withmes/ct/utils/enumresource/StateEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-common/forum-utils/src/main/java/cn/withmes/ct/utils/enumresource/LevelEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-common/forum-utils/src/main/java/cn/withmes/ct/utils/enumresource/IsInitEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-common/forum-utils/src/main/java/cn/withmes/ct/utils/enumresource/DefaultEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-common/forum-utils/src/main/java/cn/withmes/ct/utils/enumresource/SexEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-common/forum-utils/src/main/java/cn/withmes/ct/utils/enumresource/IsSupportEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-common/forum-utils/src/main/java/cn/withmes/ct/utils/utils/Base64.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="44" column="35" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-common/forum-utils/src/main/java/cn/withmes/ct/utils/utils/Md5Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="38" column="68" lean-forward="true" selection-start-line="38" selection-start-column="68" selection-end-line="38" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="211" column="6" selection-start-line="211" selection-start-column="6" selection-end-line="211" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-common/forum-utils/src/main/java/cn/withmes/ct/utils/xss/HTMLFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="169" column="99" lean-forward="true" selection-start-line="169" selection-start-column="79" selection-end-line="169" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-topic/src/test/java/cn/withmes/ct/forum/topic/Test.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-alibaba-nacos-config/0.2.1.RELEASE/spring-cloud-alibaba-nacos-config-0.2.1.RELEASE.jar!/org/springframework/cloud/alibaba/nacos/NacosConfigProperties.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="73" column="16" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/test/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nacos-examples-master/nacos-spring-cloud-example/nacos-spring-cloud-discovery-example/nacos-spring-cloud-consumer-example/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="55" selection-start-line="1" selection-start-column="55" selection-end-line="1" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nacos-examples-master/nacos-spring-cloud-example/nacos-spring-cloud-discovery-example/nacos-spring-cloud-provider-example/src/main/java/com/alibaba/nacos/example/spring/cloud/NacosProviderApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nacos-examples-master/nacos-spring-cloud-example/nacos-spring-cloud-discovery-example/nacos-spring-cloud-consumer-example/src/main/java/com/alibaba/nacos/example/spring/cloud/NacosConsumerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="34" column="48" lean-forward="true" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#995#996#0" expanded="true" />
+            <element signature="e#1070#1071#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nacos-examples-master/nacos-spring-cloud-example/nacos-spring-cloud-config-example/src/main/resources/bootstrap.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="51" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nacos-examples-master/nacos-spring-cloud-example/nacos-spring-cloud-config-example/src/main/java/com/alibaba/nacos/example/spring/cloud/controller/ConfigController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+          <folding>
+            <element signature="e#591#592#0" expanded="true" />
+            <element signature="e#627#628#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.0.8.RELEASE/spring-context-5.0.8.RELEASE-sources.jar!/org/springframework/context/event/GenericApplicationListenerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nacos-examples-master/nacos-spring-cloud-example/nacos-spring-cloud-config-example/src/main/java/com/alibaba/nacos/example/spring/cloud/NacosConfigApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="10" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#450#451#0" expanded="true" />
+            <element signature="e#523#524#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nacos-examples-master/nacos-spring-cloud-example/nacos-spring-cloud-config-example/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-topic/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="18" lean-forward="true" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nacos-examples-master/nacos-spring-cloud-example/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="44" column="37" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/resources/bootstrap.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="46" lean-forward="true" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-topic/src/test/java/cn/withmes/ct/forum/topic/ForumTopicApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/ForumTopicApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="27" column="77" lean-forward="true" selection-start-line="27" selection-start-column="77" selection-end-line="27" selection-end-column="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/test/UserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+          <folding>
+            <element signature="e#605#606#0" expanded="true" />
+            <element signature="e#632#633#0" expanded="true" />
+            <element signature="e#672#673#0" expanded="true" />
+            <element signature="e#704#705#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/test/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="23" lean-forward="true" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>nacos-spring-discovery-example:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Python 3.7 interpreter library</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>forum-utils</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

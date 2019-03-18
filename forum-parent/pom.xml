@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.3.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+
+    <groupId>cn.withmes.ct</groupId>
+    <artifactId>forum-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <description>Jar包管理工程</description>
+    <packaging>pom</packaging>
+
+    <!-- 统一包版本管理 -->
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <argLine>-Dfile.encoding=UTF-8</argLine>
+
+        <org.freemarker.version>2.3.28</org.freemarker.version>
+        <org.apache.commons.commons-codec.version>1.11</org.apache.commons.commons-codec.version>
+        <org.apache.commons.commons-validator.version>1.6</org.apache.commons.commons-validator.version>
+        <org.apache.commons.commons-lang3.version>3.8.1</org.apache.commons.commons-lang3.version>
+        <org.apache.commons.commons-io.version>1.3.2</org.apache.commons.commons-io.version>
+        <org.apache.commons.commons-collections4.version>4.1</org.apache.commons.commons-collections4.version>
+        <commons-fileupload.commons-fileupload.version>1.3.3</commons-fileupload.commons-fileupload.version>
+        <commons-beanutils.commons-beanutils.version>1.9.3</commons-beanutils.commons-beanutils.version>
+        <ma.glasnost.orika.version>1.5.2</ma.glasnost.orika.version>
+        <net.coobird.thumbnailator.version>0.4.8</net.coobird.thumbnailator.version>
+        <io.jsonwebtoken.jjwt.version>0.10.5</io.jsonwebtoken.jjwt.version>
+        <org.apache.poi.version>4.0.1</org.apache.poi.version>
+        <commons-xerces.xercesImpl-xerces.version>2.12.0</commons-xerces.xercesImpl-xerces.version>
+        <org.bouncycastle.bcprov-jdk15on.version>1.60</org.bouncycastle.bcprov-jdk15on.version>
+        <com.google.guava.version>27.0.1-jre</com.google.guava.version>
+        <com.google.code.gson.gson.version>2.8.5</com.google.code.gson.gson.version>
+
+        <!-- alibaba lib -->
+        <com.alibaba.boot.dubbo-spring-boot-starter.version>0.2.0</com.alibaba.boot.dubbo-spring-boot-starter.version>
+        <com.alibaba.druid-spring-boot-starter.version>1.1.10</com.alibaba.druid-spring-boot-starter.version>
+
+        <!-- 新版jdbc需要带上时区 6.0.6 url?serverTimezone=UTC& -->
+        <mysql-connector-java.version>5.1.47</mysql-connector-java.version>
+
+        <com.alibaba.fastjson.version>1.2.54</com.alibaba.fastjson.version>
+        <org.apache.rocketmq.version>4.3.2</org.apache.rocketmq.version>
+
+        <com.thoughtworks.xstream.xstream.version>1.4.10</com.thoughtworks.xstream.xstream.version>
+        <org.dom4j.dom4j.version>2.1.0</org.dom4j.dom4j.version>
+        <com.rometools.rome.version>1.9.0</com.rometools.rome.version>
+
+        <junit.version>4.12</junit.version>
+        <org.slf4j.version>1.7.25</org.slf4j.version>
+        <ch.qos.logback.version>1.2.3</ch.qos.logback.version>
+
+        <org.springframework.boot.spring-boot-starter.version>2.1.1.RELEASE
+        </org.springframework.boot.spring-boot-starter.version>
+        <org.springframework.cloud.version>2.0.2.RELEASE</org.springframework.cloud.version>
+        <org.springframework.batch.spring-batch-core.version>4.1.0.RELEASE
+        </org.springframework.batch.spring-batch-core.version>
+        <org.mybatis.spring.boot.mybatis-spring-boot-starter.version>1.3.2
+        </org.mybatis.spring.boot.mybatis-spring-boot-starter.version>
+        <org.mybatis.mybatis.version>3.4.6</org.mybatis.mybatis.version>
+        <org.mybatis.generator.mybatis-generator-maven-plugin.version>1.3.7
+        </org.mybatis.generator.mybatis-generator-maven-plugin.version>
+        <com.baomidou.mybatis-plus-boot-starter.version>3.0.7</com.baomidou.mybatis-plus-boot-starter.version>
+        <com.baomidou.dynamic-datasource-spring-boot-starter.version>2.4.2
+        </com.baomidou.dynamic-datasource-spring-boot-starter.version>
+
+        <com.google.zxing.version>3.3.3</com.google.zxing.version>
+        <com.github.abel533.ECharts.version>3.0.0.6</com.github.abel533.ECharts.version>
+        <com.squareup.okhttp3.okhttp.version>3.12.1</com.squareup.okhttp3.okhttp.version>
+        <com.qiniu.qiniu-java-sdk.version>7.2.18</com.qiniu.qiniu-java-sdk.version>
+        <com.github.stuxuhai.jpinyin.version>1.1.8</com.github.stuxuhai.jpinyin.version>
+        <cglib.cglib.version>3.2.9</cglib.cglib.version>
+        <org.projectlombok.lombok.version>1.18.4</org.projectlombok.lombok.version>
+
+
+        <org.springframework.boot.spring-boot-starter-data-redis.version>2.1.3.RELEASE
+        </org.springframework.boot.spring-boot-starter-data-redis.version>
+        <org.springframework.boot.spring-boot-starter-validation.version>2.1.3.RELEASE
+        </org.springframework.boot.spring-boot-starter-validation.version>
+        <org.mybatis.spring.boot.mybatis-spring-boot-starter.version>2.0.0
+        </org.mybatis.spring.boot.mybatis-spring-boot-starter.version>
+
+        <nacos-config-spring-boot.version>0.2.1</nacos-config-spring-boot.version>
+    </properties>
+
+
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <properties>
+                <!-- 环境标识，需要与配置文件的名称相对应 -->
+                <activatedProperties>dev</activatedProperties>
+            </properties>
+            <activation>
+                <!-- 默认环境 -->
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+    </profiles>
+
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- spring relation jar start -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-redis</artifactId>
+                <version>${org.springframework.boot.spring-boot-starter-data-redis.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-validation</artifactId>
+                <version>${org.springframework.boot.spring-boot-starter-validation.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>${org.mybatis.spring.boot.mybatis-spring-boot-starter.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-devtools</artifactId>
+                <scope>runtime</scope>
+            </dependency>
+
+
+            <!-- apache commons lib -->
+
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>2.6</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-text</artifactId>
+                <version>1.6</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${org.apache.commons.commons-lang3.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-collections4</artifactId>
+                <version>${org.apache.commons.commons-collections4.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-codec</groupId>
+                <artifactId>commons-codec</artifactId>
+                <version>${org.apache.commons.commons-codec.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.freemarker</groupId>
+                <artifactId>freemarker</artifactId>
+                <version>${org.freemarker.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-validator</groupId>
+                <artifactId>commons-validator</artifactId>
+                <version>${org.apache.commons.commons-validator.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>${org.apache.commons.commons-io.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-fileupload</groupId>
+                <artifactId>commons-fileupload</artifactId>
+                <version>${commons-fileupload.commons-fileupload.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-beanutils</groupId>
+                <artifactId>commons-beanutils</artifactId>
+                <version>${commons-beanutils.commons-beanutils.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>commons-logging</groupId>
+                        <artifactId>commons-logging</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+
+            <!-- mysql connector drivers -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql-connector-java.version}</version>
+            </dependency>
+
+            <!-- qrcode lib -->
+            <dependency>
+                <groupId>com.google.zxing</groupId>
+                <artifactId>core</artifactId>
+                <version>${com.google.zxing.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.zxing</groupId>
+                <artifactId>javase</artifactId>
+                <version>${com.google.zxing.version}</version>
+            </dependency>
+
+            <!-- jwt -->
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt-api</artifactId>
+                <version>${io.jsonwebtoken.jjwt.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt-impl</artifactId>
+                <version>${io.jsonwebtoken.jjwt.version}</version>
+                <scope>runtime</scope>
+            </dependency>
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt-jackson</artifactId>
+                <version>${io.jsonwebtoken.jjwt.version}</version>
+                <scope>runtime</scope>
+            </dependency>
+
+            <!-- xml lib -->
+            <dependency>
+                <groupId>org.dom4j</groupId>
+                <artifactId>dom4j</artifactId>
+                <version>${org.dom4j.dom4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.thoughtworks.xstream</groupId>
+                <artifactId>xstream</artifactId>
+                <version>${com.thoughtworks.xstream.xstream.version}</version>
+            </dependency>
+            <!-- rss lib -->
+            <dependency>
+                <groupId>com.rometools</groupId>
+                <artifactId>rome</artifactId>
+                <version>${com.rometools.rome.version}</version>
+            </dependency>
+
+            <!-- alibaba lib -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${com.alibaba.fastjson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${com.alibaba.druid-spring-boot-starter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.rocketmq</groupId>
+                <artifactId>rocketmq-common</artifactId>
+                <version>${org.apache.rocketmq.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>io.netty</groupId>
+                        <artifactId>netty-tcnative</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.rocketmq</groupId>
+                <artifactId>rocketmq-client</artifactId>
+                <version>${org.apache.rocketmq.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>io.netty</groupId>
+                        <artifactId>netty-tcnative</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <!-- google lib -->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${com.google.guava.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.code.gson</groupId>
+                <artifactId>gson</artifactId>
+                <version>${com.google.code.gson.gson.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>xerces</groupId>
+                <artifactId>xercesImpl</artifactId>
+                <version>${commons-xerces.xercesImpl-xerces.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>ma.glasnost.orika</groupId>
+                <artifactId>orika-core</artifactId>
+                <version>${ma.glasnost.orika.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.bouncycastle</groupId>
+                <artifactId>bcprov-jdk15on</artifactId>
+                <version>${org.bouncycastle.bcprov-jdk15on.version}</version>
+            </dependency>
+
+            <!-- qiniu sdk -->
+            <dependency>
+                <groupId>com.qiniu</groupId>
+                <artifactId>qiniu-java-sdk</artifactId>
+                <version>${com.qiniu.qiniu-java-sdk.version}</version>
+            </dependency>
+            <!-- okhttp3 -->
+            <dependency>
+                <groupId>com.squareup.okhttp3</groupId>
+                <artifactId>okhttp</artifactId>
+                <version>${com.squareup.okhttp3.okhttp.version}</version>
+            </dependency>
+
+            <!-- poi excel -->
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi</artifactId>
+                <version>${org.apache.poi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi-ooxml</artifactId>
+                <version>${org.apache.poi.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.stuxuhai</groupId>
+                <artifactId>jpinyin</artifactId>
+                <version>${com.github.stuxuhai.jpinyin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cglib</groupId>
+                <artifactId>cglib</artifactId>
+                <version>${cglib.cglib.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${org.projectlombok.lombok.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${org.slf4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>jcl-over-slf4j</artifactId>
+                <version>${org.slf4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-core</artifactId>
+                <version>${ch.qos.logback.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-classic</artifactId>
+                <version>${ch.qos.logback.version}</version>
+            </dependency>
+
+            <!-- cn.withmes.ct.forum.topic.test lib -->
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+                <scope>cn.withmes.ct.forum.topic.test</scope>
+            </dependency>
+
+
+            <!-- nacos -->
+            <dependency>
+                <groupId>com.alibaba.boot</groupId>
+                <artifactId>nacos-config-spring-boot-starter</artifactId>
+                <version>${nacos-config-spring-boot.version}</version>
+            </dependency>
+        </dependencies>
+
+    </dependencyManagement>
+
+
+    <!-- TODO distributionManagement  repositories-->
+
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.8.0</version>
+                    <configuration>
+                        <source>1.8</source>
+                        <target>1.8</target>
+                        <encoding>UTF-8</encoding>
+                        <compilerArgument>-Xlint:all</compilerArgument>
+                        <fork>true</fork>
+                        <showWarnings>true</showWarnings>
+                        <showDeprecation>true</showDeprecation>
+                        <meminitial>1024m</meminitial>
+                        <maxmem>2048m</maxmem>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>3.1.0</version>
+                    <configuration>
+                        <archive>
+                            <addMavenDescriptor>false</addMavenDescriptor>
+                            <index>false</index>
+                            <manifest>
+                                <addClasspath>true</addClasspath>
+                                <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+                            </manifest>
+                        </archive>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-source-plugin</artifactId>
+                    <version>3.0.1</version>
+                    <executions>
+                        <execution>
+                            <id>attach-sources</id>
+                            <goals>
+                                <goal>jar</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-javadoc-plugin</artifactId>
+                    <version>3.0.1</version>
+                    <configuration>
+                        <encoding>UTF-8</encoding>
+                        <charset>UTF-8</charset>
+                        <minmemory>1024m</minmemory>
+                        <maxmemory>2048m</maxmemory>
+                    </configuration>
+                </plugin>
+                <!-- 解决maven test命令时console出现中文乱码乱码 -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>2.22.0</version>
+                    <configuration>
+                        <!-- <skip>true</skip> -->
+                        <forkMode>once</forkMode>
+                        <argLine>-Dfile.encoding=UTF-8</argLine>
+                        <!-- <systemProperties> -->
+                        <!-- <property> -->
+                        <!-- <name>net.sourceforge.cobertura.datafile</name> -->
+                        <!-- <value>target/cobertura/cobertura.ser</value> -->
+                        <!-- </property> -->
+                        <!-- </systemProperties> -->
+                    </configuration>
+                </plugin>
+                <!--如果是通过parent方式继承spring-boot-starter-parent则不用此插件 -->
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                    <version>${org.springframework.boot.spring-boot-starter.version}</version>
+                    <configuration>
+                        <executable>true</executable>
+                        <fork>true</fork>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>repackage</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+                <plugin>
+                    <groupId>org.mybatis.generator</groupId>
+                    <artifactId>mybatis-generator-maven-plugin</artifactId>
+                    <version>${org.mybatis.generator.mybatis-generator-maven-plugin.version}</version>
+                    <configuration>
+                        <verbose>true</verbose>
+                        <overwrite>true</overwrite>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-deploy-plugin</artifactId>
+                    <version>2.8.2</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

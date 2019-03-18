@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="forum-mysql" />
+        <module name="forum-topic" />
+        <module name="forum-utils" />
+        <module name="forumutils" />
+        <module name="nacos-cmdb-plugin-example" />
+        <module name="nacos-sentinel-example" />
+        <module name="nacos-spring-boot-config-example" />
+        <module name="nacos-spring-boot-config-mysql-example" />
+        <module name="nacos-spring-boot-discovery-example" />
+        <module name="nacos-spring-cloud-config-example" />
+        <module name="nacos-spring-cloud-config-multi-data-ids-example" />
+        <module name="nacos-spring-cloud-consumer-example" />
+        <module name="nacos-spring-cloud-provider-example" />
+        <module name="nacos-spring-discovery-example" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="forum-common" target="1.8" />
+      <module name="forum-mysql" target="1.8" />
+      <module name="forum-parent" target="1.8" />
+      <module name="forum-topic" target="1.8" />
+      <module name="forum-utils" target="1.8" />
+      <module name="forumutils" target="1.8" />
+      <module name="nacos-cmdb-plugin-example" target="1.8" />
+      <module name="nacos-examples" target="1.8" />
+      <module name="nacos-sentinel-example" target="1.8" />
+      <module name="nacos-spring-boot-config-example" target="1.8" />
+      <module name="nacos-spring-boot-config-mysql-example" target="1.8" />
+      <module name="nacos-spring-boot-discovery-example" target="1.8" />
+      <module name="nacos-spring-boot-example" target="1.8" />
+      <module name="nacos-spring-cloud-config-example" target="1.8" />
+      <module name="nacos-spring-cloud-config-multi-data-ids-example" target="1.8" />
+      <module name="nacos-spring-cloud-consumer-example" target="1.8" />
+      <module name="nacos-spring-cloud-discovery-example" target="1.8" />
+      <module name="nacos-spring-cloud-example" target="1.8" />
+      <module name="nacos-spring-cloud-provider-example" target="1.8" />
+      <module name="nacos-spring-config-datasource-example" target="1.8" />
+      <module name="nacos-spring-config-example" target="1.8" />
+      <module name="nacos-spring-config-listener-example" target="1.8" />
+      <module name="nacos-spring-config-multi-data-ids-example" target="1.8" />
+      <module name="nacos-spring-config-pojo-example" target="1.8" />
+      <module name="nacos-spring-discovery-example" target="1.8" />
+      <module name="nacos-spring-example" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
