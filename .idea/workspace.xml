@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1b80e98-4fb8-493f-b79c-26d7f3123411" name="Default" comment="" />
+    <list default="true" id="c1b80e98-4fb8-493f-b79c-26d7f3123411" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forum-common/forum-mysql/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/forum-common/forum-mysql/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forum-topic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/forum-topic/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/ForumTopicApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/ForumTopicApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/test/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/test/UserTest.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/forum-parent/target/" />
     <ignored path="$PROJECT_DIR$/forum-common/target/" />
     <ignored path="$PROJECT_DIR$/forum-common/forum-utils/target/" />
@@ -50,11 +56,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ForumTopicApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/ForumTopicApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="23" lean-forward="true" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+            <state relative-caret-position="293">
+              <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -71,8 +89,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>commons-lang3</find>
-      <find>lombok</find>
       <find>commons-text</find>
       <find>text</find>
       <find>main</find>
@@ -99,6 +115,10 @@
       <find>mybatisplus.version</find>
       <find>spring-cloud-dependencies</find>
       <find>say</find>
+      <find>lo</find>
+      <find>baomidou</find>
+      <find>mysql</find>
+      <find>starter</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -107,6 +127,9 @@
       <dir>E:\my-project\ct-forum\forum-topic</dir>
       <dir>E:\my-project\ct-forum</dir>
     </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="projectSyncType">
@@ -138,7 +161,6 @@
         <option value="$PROJECT_DIR$/forum-topic/src/main/resources/application-dev.yaml" />
         <option value="$PROJECT_DIR$/forum-topic/src/main/resources/mybatis/UserMapper.xml" />
         <option value="$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/test/UserMapper.java" />
-        <option value="$PROJECT_DIR$/forum-common/forum-mysql/pom.xml" />
         <option value="$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/Config.java" />
         <option value="$PROJECT_DIR$/forum-topic/src/main/java/ForumTopicApplication.java" />
         <option value="$PROJECT_DIR$/forum-topic/src/main/resources/application.yml" />
@@ -161,14 +183,15 @@
         <option value="$PROJECT_DIR$/nacos-examples-master/nacos-spring-cloud-example/nacos-spring-cloud-discovery-example/nacos-spring-cloud-consumer-example/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/nacos-examples-master/nacos-spring-cloud-example/nacos-spring-cloud-config-example/src/main/resources/bootstrap.properties" />
         <option value="$PROJECT_DIR$/forum-topic/src/main/resources/bootstrap.properties" />
-        <option value="$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/ForumTopicApplication.java" />
         <option value="$PROJECT_DIR$/forum-topic/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/nacos-examples-master/nacos-spring-cloud-example/nacos-spring-cloud-config-example/pom.xml" />
         <option value="$PROJECT_DIR$/nacos-examples-master/nacos-spring-cloud-example/nacos-spring-cloud-config-example/src/main/java/com/alibaba/nacos/example/spring/cloud/NacosConfigApplication.java" />
-        <option value="$PROJECT_DIR$/forum-topic/pom.xml" />
         <option value="$PROJECT_DIR$/forum-topic/src/test/java/cn/withmes/ct/forum/topic/ForumTopicApplicationTests.java" />
         <option value="$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/test/UserController.java" />
         <option value="$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/test/UserTest.java" />
+        <option value="$PROJECT_DIR$/forum-common/forum-mysql/pom.xml" />
+        <option value="$PROJECT_DIR$/forum-topic/pom.xml" />
+        <option value="$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/ForumTopicApplication.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
@@ -204,6 +227,7 @@
     <option name="width" value="1920" />
     <option name="height" value="1040" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -402,12 +426,12 @@
       <workItem from="1552556110163" duration="8311000" />
       <workItem from="1552620872577" duration="7416000" />
       <workItem from="1552876349948" duration="8518000" />
-      <workItem from="1552893610878" duration="3365000" />
+      <workItem from="1552893610878" duration="4671000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40659000" />
+    <option name="totallyTimeSpent" value="41965000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -425,7 +449,7 @@
       <window_info anchor="right" id="Palette" order="7" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.2546246" />
       <window_info anchor="bottom" id="JRebel Console" order="5" sideWeight="0.50053304" side_tool="true" weight="0.2546246" />
-      <window_info anchor="right" id="Maven Projects" order="0" weight="0.33315393" />
+      <window_info anchor="right" id="Maven Projects" order="0" visible="true" weight="0.3327957" />
       <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="JRebel Executor" order="7" />
       <window_info id="Capture Tool" order="8" />
@@ -434,15 +458,15 @@
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="9" weight="0.25" />
       <window_info id="UI Designer" order="3" />
-      <window_info anchor="bottom" id="Debug" order="12" weight="0.39934713" />
+      <window_info anchor="bottom" id="Debug" order="12" weight="0.3991131" />
       <window_info anchor="bottom" id="TODO" order="15" weight="0.3297062" />
       <window_info anchor="bottom" id="Messages" order="2" weight="0.32752994" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="bottom" id="Version Control" order="6" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="11" sideWeight="0.49946696" visible="true" weight="0.2591362" />
+      <window_info anchor="bottom" id="Version Control" order="6" />
+      <window_info anchor="bottom" id="Run" order="11" sideWeight="0.49946696" visible="true" weight="0.25831485" />
       <window_info anchor="bottom" id="Spring" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.2629032" />
@@ -512,12 +536,6 @@
           <line>16</line>
           <properties />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/test/UserController.java</url>
-          <line>30</line>
-          <properties />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
       </breakpoints>
       <option name="time" value="8" />
     </breakpoint-manager>
@@ -532,36 +550,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/forum-common/forum-utils/src/main/java/common/utils/Base64.java" />
-    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-dependencies/2.1.3.RELEASE/spring-boot-dependencies-2.1.3.RELEASE.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="646" column="12" selection-start-line="646" selection-start-column="12" selection-end-line="646" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.0/mybatis-3.5.0.jar!/org/apache/ibatis/annotations/Mapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-annotation/3.1.0/mybatis-plus-annotation-3.1.0.jar!/com/baomidou/mybatisplus/annotation/TableField.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/resources/application-dev.yaml" />
-    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/resources/mybatis/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.5.RELEASE/spring-core-5.1.5.RELEASE.jar!/org/springframework/util/Assert.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -715,13 +703,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/test/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nacos-examples-master/nacos-spring-cloud-example/nacos-spring-cloud-discovery-example/nacos-spring-cloud-consumer-example/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -800,14 +781,6 @@
       </provider>
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/forum-topic/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="18" lean-forward="true" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/nacos-examples-master/nacos-spring-cloud-example/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -816,13 +789,6 @@
       </provider>
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/resources/bootstrap.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="46" lean-forward="true" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/forum-topic/src/test/java/cn/withmes/ct/forum/topic/ForumTopicApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -830,40 +796,97 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/ForumTopicApplication.java">
+    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/resources/bootstrap.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/resources/mybatis/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-common/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-core/3.0.5/mybatis-plus-core-3.0.5.jar!/com/baomidou/mybatisplus/core/mapper/BaseMapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-common/forum-utils/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="23" column="50" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-common/forum-mysql/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/test/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/test/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-common/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
-          <caret line="27" column="77" lean-forward="true" selection-start-line="27" selection-start-column="77" selection-end-line="27" selection-end-column="77" />
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-topic/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/test/UserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/ForumTopicApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/test/UserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
-          <folding>
-            <element signature="e#605#606#0" expanded="true" />
-            <element signature="e#632#633#0" expanded="true" />
-            <element signature="e#672#673#0" expanded="true" />
-            <element signature="e#704#705#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/test/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="23" lean-forward="true" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+        <state relative-caret-position="293">
+          <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
         </state>
       </provider>
     </entry>

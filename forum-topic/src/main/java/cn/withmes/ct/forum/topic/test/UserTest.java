@@ -7,6 +7,7 @@ package cn.withmes.ct.forum.topic.test;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
 
 /**
  * ClassName: UserTest
@@ -15,6 +16,7 @@ import com.baomidou.mybatisplus.annotation.TableName;
  * @date 2019年03月14日
  */
 @TableName("user")
+@Data
 public class UserTest {
     @TableField(value = "id")
     private Integer id;
@@ -22,20 +24,4 @@ public class UserTest {
     @TableField(value = "name")
     private String name;
 
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 }
