@@ -22,10 +22,13 @@ cn\withmes\ct\utils\utils\EnumMessage.class
 cn\withmes\ct\utils\utils\WorkflowBean.class
 cn\withmes\ct\utils\api\annotation\IgnoreAuth.class
 cn\withmes\ct\utils\enumresource\DefaultEnum.class
+cn\withmes\ct\utils\constant\SessionConstant.class
+cn\withmes\ct\utils\constant\Enabled.class
 cn\withmes\ct\utils\enumresource\IsInitEnum.class
 cn\withmes\ct\utils\api\annotation\LoginUser.class
 cn\withmes\ct\utils\utils\UploadUtil.class
 cn\withmes\ct\utils\utils\RandomCharUtil.class
+cn\withmes\ct\utils\constant\Whether.class
 cn\withmes\ct\utils\utils\AmountUtil.class
 cn\withmes\ct\utils\utils\Constant$CloudService.class
 cn\withmes\ct\utils\enumresource\LevelEnum.class
@@ -36,5 +39,7 @@ cn\withmes\ct\utils\utils\SelectBean.class
 cn\withmes\ct\utils\enumresource\TopCatEnum.class
 cn\withmes\ct\utils\exception\MyException.class
 cn\withmes\ct\utils\utils\Constant$ScheduleStatus.class
+cn\withmes\ct\utils\constant\HeaderConstant.class
 cn\withmes\ct\utils\utils\StringUtil.class
+cn\withmes\ct\utils\constant\DelConstant.class
 cn\withmes\ct\utils\enumresource\SexEnum.class
