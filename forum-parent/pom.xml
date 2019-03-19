@@ -45,7 +45,7 @@
         <com.alibaba.druid-spring-boot-starter.version>1.1.10</com.alibaba.druid-spring-boot-starter.version>
 
         <!-- 新版jdbc需要带上时区 6.0.6 url?serverTimezone=UTC& -->
-        <mysql-connector-java.version>5.1.47</mysql-connector-java.version>
+        <mysql-connector-java.version>6.0.6</mysql-connector-java.version>
 
         <com.alibaba.fastjson.version>1.2.54</com.alibaba.fastjson.version>
         <org.apache.rocketmq.version>4.3.2</org.apache.rocketmq.version>
@@ -377,13 +377,6 @@
                 <version>${ch.qos.logback.version}</version>
             </dependency>
 
-            <!-- cn.withmes.ct.forum.topic.test lib -->
-            <dependency>
-                <groupId>junit</groupId>
-                <artifactId>junit</artifactId>
-                <version>${junit.version}</version>
-                <scope>cn.withmes.ct.forum.topic.test</scope>
-            </dependency>
 
 
             <!-- nacos -->
@@ -398,142 +391,5 @@
 
 
     <!-- TODO distributionManagement  repositories-->
-
-
-    <build>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.8.0</version>
-                    <configuration>
-                        <source>1.8</source>
-                        <target>1.8</target>
-                        <encoding>UTF-8</encoding>
-                        <compilerArgument>-Xlint:all</compilerArgument>
-                        <fork>true</fork>
-                        <showWarnings>true</showWarnings>
-                        <showDeprecation>true</showDeprecation>
-                        <meminitial>1024m</meminitial>
-                        <maxmem>2048m</maxmem>
-                    </configuration>
-                </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-jar-plugin</artifactId>
-                    <version>3.1.0</version>
-                    <configuration>
-                        <archive>
-                            <addMavenDescriptor>false</addMavenDescriptor>
-                            <index>false</index>
-                            <manifest>
-                                <addClasspath>true</addClasspath>
-                                <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-                            </manifest>
-                        </archive>
-                    </configuration>
-                </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-source-plugin</artifactId>
-                    <version>3.0.1</version>
-                    <executions>
-                        <execution>
-                            <id>attach-sources</id>
-                            <goals>
-                                <goal>jar</goal>
-                            </goals>
-                        </execution>
-                    </executions>
-                </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-javadoc-plugin</artifactId>
-                    <version>3.0.1</version>
-                    <configuration>
-                        <encoding>UTF-8</encoding>
-                        <charset>UTF-8</charset>
-                        <minmemory>1024m</minmemory>
-                        <maxmemory>2048m</maxmemory>
-                    </configuration>
-                </plugin>
-                <!-- 解决maven test命令时console出现中文乱码乱码 -->
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-surefire-plugin</artifactId>
-                    <version>2.22.0</version>
-                    <configuration>
-                        <!-- <skip>true</skip> -->
-                        <forkMode>once</forkMode>
-                        <argLine>-Dfile.encoding=UTF-8</argLine>
-                        <!-- <systemProperties> -->
-                        <!-- <property> -->
-                        <!-- <name>net.sourceforge.cobertura.datafile</name> -->
-                        <!-- <value>target/cobertura/cobertura.ser</value> -->
-                        <!-- </property> -->
-                        <!-- </systemProperties> -->
-                    </configuration>
-                </plugin>
-                <!--如果是通过parent方式继承spring-boot-starter-parent则不用此插件 -->
-                <plugin>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-maven-plugin</artifactId>
-                    <version>${org.springframework.boot.spring-boot-starter.version}</version>
-                    <configuration>
-                        <executable>true</executable>
-                        <fork>true</fork>
-                    </configuration>
-                    <executions>
-                        <execution>
-                            <goals>
-                                <goal>repackage</goal>
-                            </goals>
-                        </execution>
-                    </executions>
-                </plugin>
-                <plugin>
-                    <groupId>org.mybatis.generator</groupId>
-                    <artifactId>mybatis-generator-maven-plugin</artifactId>
-                    <version>${org.mybatis.generator.mybatis-generator-maven-plugin.version}</version>
-                    <configuration>
-                        <verbose>true</verbose>
-                        <overwrite>true</overwrite>
-                    </configuration>
-                </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-deploy-plugin</artifactId>
-                    <version>2.8.2</version>
-                </plugin>
-            </plugins>
-        </pluginManagement>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-source-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-deploy-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>

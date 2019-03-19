@@ -1,6 +1,7 @@
 package cn.withmes.ct.forum.base.common.config.base.service;
 
-import com.baomidou.mybatisplus.mapper.Wrapper;
+
+import com.baomidou.mybatisplus.core.conditions.Wrapper;
 
 import java.io.Serializable;
 import java.util.Collection;

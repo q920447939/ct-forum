@@ -5,7 +5,8 @@
  */
 package cn.withmes.ct.forum.topic.test;
 
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+
+import cn.withmes.ct.forum.base.common.config.base.dal.BaseMapper;
 
 /**
  * ClassName: UserMapper
