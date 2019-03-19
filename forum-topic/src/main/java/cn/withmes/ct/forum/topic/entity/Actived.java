@@ -12,6 +12,7 @@ import lombok.Data;
 import lombok.experimental.Accessors;
 
 import java.io.Serializable;
+import java.time.LocalDateTime;
 
 /**
  * @Description: 激活码表
@@ -51,13 +52,13 @@ public class Actived implements Serializable {
      * 创建时间
      */
 	@TableField("created")
-	private Date created;
+	private LocalDateTime created;
 
     /**
      * 过期时间
      */
 	@TableField("expired")
-	private Date expired;
+	private LocalDateTime expired;
 
 
 
