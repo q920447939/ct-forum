@@ -8,7 +8,8 @@ import com.baomidou.mybatisplus.generator.config.StrategyConfig;
 import com.baomidou.mybatisplus.generator.config.TemplateConfig;
 import com.baomidou.mybatisplus.generator.config.rules.DbType;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
+
 
 /**
  * @Description:测试生成代码
@@ -20,13 +21,13 @@ import org.junit.jupiter.api.Test;
 public class GeneratorServiceEntity {
 
     //包名
-    private  String packageName = "net.blissmalll.report";
+    private  String packageName = "cn.withmes.ct";
 
     //需要生成的表
-    private String[] tableNames = {"actived"};
+    private String[] tableNames = {"topic"};
 
     //数据库连接url
-    private String dbUrl = "jdbc:mysql://127.0.0.1:3306/roo";
+    private String dbUrl = "jdbc:mysql://127.0.0.1:3306/roo?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8";
 
     //数据库账号
     private String dbUserName = "root";
@@ -35,6 +36,7 @@ public class GeneratorServiceEntity {
     private String dbPassWord ="123456";
 
     private  String SuperBase = "cn.withmes.common.";
+
 
     @Test
     public void generateCode() {
@@ -112,6 +114,7 @@ public class GeneratorServiceEntity {
                 ).setTemplate(tc).execute();
     }
 
+    @Deprecated
     private void generateByTables(String packageName, String... tableNames) {
         generateByTables(true, packageName, tableNames);
     }
