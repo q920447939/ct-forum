@@ -1,3 +1,4 @@
+/*
 package cn.withmes.ct.forum.topic.controller;
 
 
@@ -27,6 +28,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 
 
+*/
 /**
  *code is far away from bug with the animal protecting
  *  ┏┓　　　┏┓
@@ -51,7 +53,8 @@ import org.springframework.web.bind.annotation.RequestBody;
  *   ---------------------------------
  *      @author leegoo
  *   @since 2019-03-19
- */
+ *//*
+
 @RestController
 @RequestMapping("/topic")
 public class TopicController extends BaseRestfulController {
@@ -59,12 +62,14 @@ public class TopicController extends BaseRestfulController {
     @Autowired
     public TopicService topicService;
 
-    /**
+    */
+/**
      * @description : 获取分页列表
      * ---------------------------------
      * @author : leegoo
      * @since : Create in 2019-03-19
-     */
+     *//*
+
     @PostMapping(value = "/page")
     public ResponseData<IPage<TopicListVO>> getTopicList(
                 @RequestBody TopicListVO param ,
@@ -78,36 +83,42 @@ public class TopicController extends BaseRestfulController {
             return successData(iPage);
     }
 
-    /**
+    */
+/**
      * @description : 通过id获取Topic
      * ---------------------------------
      * @author : leegoo
      * @since : Create in 2019-03-19
-     */
+     *//*
+
     @GetMapping(value = "/get/{id}")
     public ResponseData<TopicVO> getTopicById(@PathVariable(name = "id") String id) {
         Topic dto = topicService.findById(id);
         return successData(CopyAttributesUtils.copyAtoB(dto,TopicVO.class));
     }
 
-    /**
+    */
+/**
      * @description : 通过id删除Topic
      * ---------------------------------
      * @author : leegoo
      * @since : Create in 2019-03-19
-     */
+     *//*
+
     @GetMapping(value = "/delete/{id}")
     public ResponseData<Integer> deleteTopicById(@PathVariable(name = "id") String id) {
         log.info("deleteTopicById.id:{}",id);
         return successData( topicService.delete(id));
     }
 
-    /**
+    */
+/**
      * @description : 通过id更新Topic
      * ---------------------------------
      * @author : leegoo
      * @since : Create in 2019-03-19
-     */
+     *//*
+
     @PostMapping(value = "/update")
     public ResponseData<Integer> updateTopicById(@RequestBody  @Validated(value = UpdateValid.class) TopicUpdateVO param) {
         log.info("updateTopicById.param:{}",param);
@@ -115,16 +126,18 @@ public class TopicController extends BaseRestfulController {
         return successData(topicService.update(e));
     }
 
-    /**
+    */
+/**
      * @description : 添加Topic
      * ---------------------------------
      * @author : leegoo
      * @since : Create in 2019-03-19
-     */
+     *//*
+
     @PostMapping(value = "/add")
     public ResponseData<Integer> addTopic(@RequestBody @Validated(value = AddValid.class) TopicAddVO param) {
         log.info("addTopic.param:{}",param);
          Topic e = CopyAttributesUtils.copyAtoB(param, Topic.class);
         return successData(topicService.add(e));
     }
-}
+}*/

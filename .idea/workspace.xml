@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1b80e98-4fb8-493f-b79c-26d7f3123411" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/forum-common/forum-utils/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/forum-common/forum-utils/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum-common/forum-utils/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/forum-common/forum-utils/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum-common/forum-utils/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/forum-common/forum-utils/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/entity/Actived.java" beforeDir="false" afterPath="$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/entity/Actived.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generator/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/generator/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generator/src/main/java/cn/withmes/generator/GeneratorApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/java/cn/withmes/generator/GeneratorApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generator/src/main/java/cn/withmes/generator/GeneratorServiceEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/generator/src/main/java/cn/withmes/generator/GeneratorServiceEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forum-base/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/forum-base/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forum-topic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/forum-topic/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/controller/TopicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/controller/TopicController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/forum-parent/target/" />
     <ignored path="$PROJECT_DIR$/forum-common/target/" />
@@ -60,78 +56,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/forum-base/src/main/java/cn/withmes/ct/forum/base/common/Application.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#412#413#0" expanded="true" />
-                <element signature="e#450#451#0" expanded="true" />
-              </folding>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor>
+                <caret column="4" selection-start-column="4" selection-end-column="4" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/forum-topic/pom.xml">
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="9" column="13" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="9" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TopicController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/controller/TopicController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="49">
+              <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/forum-base/pom.xml">
           <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="XssHttpServletRequestWrapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/forum-base/src/main/java/cn/withmes/ct/forum/base/common/xss/XssHttpServletRequestWrapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginUserHandlerMethodArgumentResolver.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/forum-base/src/main/java/cn/withmes/ct/forum/base/common/api/resolver/LoginUserHandlerMethodArgumentResolver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
-              <folding>
-                <element signature="e#1008#1009#0" expanded="true" />
-                <element signature="e#1036#1037#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RedisCacheAspect.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/forum-base/src/main/java/cn/withmes/ct/forum/base/common/redis/RedisCacheAspect.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="28" column="48" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IPUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/forum-base/src/main/java/cn/withmes/ct/forum/base/common/utils/IPUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="41" column="45" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ForumBaseApplicationTests.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/forum-base/src/test/java/cn/withmes/ct/forum/base/ForumBaseApplicationTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" selection-end-line="18" />
+            <state relative-caret-position="272">
+              <caret line="16" column="56" lean-forward="true" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -148,7 +109,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>say</find>
       <find>baomidou</find>
       <find>mysql</find>
       <find>starter</find>
@@ -178,6 +138,7 @@
       <find>main</find>
       <find>aspectjrt-1.8.5.jar</find>
       <find>spring</find>
+      <find>HeaderConstant.java</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -189,6 +150,7 @@
       <dir>E:\my-project\ct-forum\forum-topic\src\main\java\cn\withmes\ct\forum\topicannotations</dir>
       <dir>E:\my-project\ct-forum</dir>
       <dir>E:\my-project\ct-forum\forum-base</dir>
+      <dir>E:\my-project\ct-forum\forum-common</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -205,9 +167,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/forum-base/src/main/java/cn/withmes/ct/forum/base/controller/BaseGeneralController.java" />
-        <option value="$PROJECT_DIR$/forum-common/forum-utils/pom.xml" />
-        <option value="$PROJECT_DIR$/forum-base/src/main/java/cn/withmes/ct/forum/base/model/PageView.java" />
         <option value="$PROJECT_DIR$/forum-base/src/main/java/cn/withmes/ct/forum/base/model/ResponseData.java" />
         <option value="$PROJECT_DIR$/forum-base/src/main/java/cn/withmes/ct/forum/base/utils/http/HttpHandler.java" />
         <option value="$PROJECT_DIR$/forum-base/src/main/java/cn/withmes/ct/forum/base/utils/http/HttpMethodFactory.java" />
@@ -253,9 +212,12 @@
         <option value="$PROJECT_DIR$/forum-base/src/main/java/cn/withmes/ct/forum/base/common/utils/RandomCharUtil.java" />
         <option value="$PROJECT_DIR$/forum-base/src/main/java/cn/withmes/ct/forum/base/common/utils/StringUtil.java" />
         <option value="$PROJECT_DIR$/forum-base/src/main/java/cn/withmes/ct/forum/base/common/Application.java" />
-        <option value="$PROJECT_DIR$/forum-base/pom.xml" />
         <option value="$PROJECT_DIR$/forum-base/src/main/java/cn/withmes/ct/forum/base/common/utils/IPUtils.java" />
         <option value="$PROJECT_DIR$/forum-base/src/test/java/cn/withmes/ct/forum/base/ForumBaseApplicationTests.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/forum-topic/pom.xml" />
+        <option value="$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/controller/TopicController.java" />
+        <option value="$PROJECT_DIR$/forum-base/pom.xml" />
       </list>
     </option>
   </component>
@@ -326,20 +288,25 @@
             <path>
               <item name="ct-forum" type="b2602c69:ProjectViewProjectNode" />
               <item name="ct-forum" type="462c0819:PsiDirectoryNode" />
-              <item name="forum-base" type="462c0819:PsiDirectoryNode" />
+              <item name="forum-topic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ct-forum" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ct-forum" type="462c0819:PsiDirectoryNode" />
+              <item name="forum-topic" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ct-forum" type="b2602c69:ProjectViewProjectNode" />
               <item name="ct-forum" type="462c0819:PsiDirectoryNode" />
-              <item name="forum-base" type="462c0819:PsiDirectoryNode" />
+              <item name="forum-topic" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ct-forum" type="b2602c69:ProjectViewProjectNode" />
               <item name="ct-forum" type="462c0819:PsiDirectoryNode" />
-              <item name="forum-base" type="462c0819:PsiDirectoryNode" />
+              <item name="forum-topic" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -347,45 +314,21 @@
             <path>
               <item name="ct-forum" type="b2602c69:ProjectViewProjectNode" />
               <item name="ct-forum" type="462c0819:PsiDirectoryNode" />
-              <item name="forum-base" type="462c0819:PsiDirectoryNode" />
+              <item name="forum-topic" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="topic" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ct-forum" type="b2602c69:ProjectViewProjectNode" />
               <item name="ct-forum" type="462c0819:PsiDirectoryNode" />
-              <item name="forum-base" type="462c0819:PsiDirectoryNode" />
+              <item name="forum-topic" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="redis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ct-forum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ct-forum" type="462c0819:PsiDirectoryNode" />
-              <item name="forum-base" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ct-forum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ct-forum" type="462c0819:PsiDirectoryNode" />
-              <item name="forum-base" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ct-forum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ct-forum" type="462c0819:PsiDirectoryNode" />
-              <item name="forum-base" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="topic" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ct-forum" type="b2602c69:ProjectViewProjectNode" />
@@ -610,7 +553,7 @@
       <workItem from="1552620872577" duration="7416000" />
       <workItem from="1552876349948" duration="8518000" />
       <workItem from="1552893610878" duration="9509000" />
-      <workItem from="1552965797005" duration="10528000" />
+      <workItem from="1552965797005" duration="11042000" />
     </task>
     <servers />
   </component>
@@ -629,7 +572,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57331000" />
+    <option name="totallyTimeSpent" value="57845000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -647,7 +590,7 @@
       <window_info anchor="right" id="Palette" order="7" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50107527" side_tool="true" weight="0.25831485" />
       <window_info anchor="bottom" id="JRebel Console" order="5" sideWeight="0.50053304" side_tool="true" weight="0.2546246" />
-      <window_info anchor="right" id="Maven Projects" order="0" visible="true" weight="0.32995737" />
+      <window_info anchor="right" id="Maven Projects" order="0" weight="0.32995737" />
       <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="JRebel Executor" order="7" />
       <window_info id="Capture Tool" order="8" />
@@ -664,10 +607,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="bottom" id="Version Control" order="6" />
-      <window_info active="true" anchor="bottom" id="Run" order="11" sideWeight="0.49892473" visible="true" weight="0.25381264" />
+      <window_info anchor="bottom" id="Run" order="11" sideWeight="0.49892473" visible="true" weight="0.25381264" />
       <window_info anchor="bottom" id="Spring" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" />
-      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.26332623" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.26332623" />
       <window_info anchor="right" id="Bean Validation" order="6" />
       <window_info id="Web" order="5" side_tool="true" />
       <window_info id="JRebel" order="1" side_tool="true" />
@@ -748,65 +691,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/forum-common/forum-utils/src/main/java/cn/withmes/ct/utils/constant/SessionConstant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forum-common/forum-utils/src/main/java/cn/withmes/ct/utils/constant/Whether.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forum-common/forum-utils/src/main/java/cn/withmes/ct/utils/enumresource/DefaultEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forum-common/forum-utils/src/main/java/cn/withmes/ct/utils/enumresource/IsInitEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forum-common/forum-utils/src/main/java/cn/withmes/ct/utils/exception/MyException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forum-base/src/main/java/cn/withmes/ct/forum/base/controller/HealthCheckController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forum-base/src/main/java/cn/withmes/ct/forum/base/exception/GlobalDefaultExceptionHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="54" column="14" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forum-base/src/main/java/cn/withmes/ct/forum/base/feign/LocalRequestToken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forum-base/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/forum-base/src/main/java/cn/withmes/ct/forum/base/utils/EncryptionUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
@@ -928,23 +812,6 @@
     <entry file="file://$PROJECT_DIR$/forum-parent/pom.xml">
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forum-base/src/main/java/cn/withmes/ct/forum/base/common/api/interceptor/AuthorizationInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forum-base/src/main/java/cn/withmes/ct/forum/base/common/enumresource/DefaultEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/forum-base/src/main/java/cn/withmes/ct/forum/base/common/enumresource/IsInitEnum.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1121,14 +988,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/forum-base/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/forum-base/src/main/java/cn/withmes/ct/forum/base/common/redis/RedisCacheAspect.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -1148,8 +1007,100 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/forum-base/src/test/java/cn/withmes/ct/forum/base/ForumBaseApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-end-line="18" />
+        <state relative-caret-position="136">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-base/src/main/java/cn/withmes/ct/forum/base/common/redis/RedisCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-base/src/main/java/cn/withmes/ct/forum/base/common/enumresource/DefaultEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-base/src/main/java/cn/withmes/ct/forum/base/common/api/interceptor/AuthorizationInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-common/forum-utils/src/main/java/cn/withmes/ct/utils/constant/HeaderConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-common/forum-utils/src/main/java/cn/withmes/ct/utils/constant/DelConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-common/forum-utils/src/main/java/cn/withmes/ct/utils/constant/Enabled.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-common/forum-utils/src/main/java/cn/withmes/ct/utils/constant/SessionConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-common/forum-utils/src/main/java/cn/withmes/ct/utils/constant/Whether.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="4" selection-start-column="4" selection-end-column="4" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/controller/TopicController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49">
+          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-topic/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="13" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-base/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="56" lean-forward="true" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -1184,7 +1135,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited />
+          <last-edited>Python 3.7 interpreter library</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1233,7 +1184,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited />
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
