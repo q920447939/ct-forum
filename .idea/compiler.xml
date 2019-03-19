@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="forum-base" />
         <module name="forum-mysql" />
         <module name="forum-topic" />
         <module name="forum-utils" />
@@ -24,6 +25,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="forum-base" target="1.8" />
       <module name="forum-common" target="1.8" />
       <module name="forum-mysql" target="1.8" />
       <module name="forum-parent" target="1.8" />
