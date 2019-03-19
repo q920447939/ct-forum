@@ -10,6 +10,7 @@
         <module name="forum-topic" />
         <module name="forum-utils" />
         <module name="forumutils" />
+        <module name="generator" />
         <module name="nacos-cmdb-plugin-example" />
         <module name="nacos-sentinel-example" />
         <module name="nacos-spring-boot-config-example" />
@@ -29,6 +30,7 @@
       <module name="forum-topic" target="1.8" />
       <module name="forum-utils" target="1.8" />
       <module name="forumutils" target="1.8" />
+      <module name="generator" target="1.8" />
       <module name="nacos-cmdb-plugin-example" target="1.8" />
       <module name="nacos-examples" target="1.8" />
       <module name="nacos-sentinel-example" target="1.8" />

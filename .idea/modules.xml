@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/forum-topic/forum-topic.iml" filepath="$PROJECT_DIR$/forum-topic/forum-topic.iml" />
       <module fileurl="file://$PROJECT_DIR$/forum-common/forum-utils/forum-utils.iml" filepath="$PROJECT_DIR$/forum-common/forum-utils/forum-utils.iml" />
       <module fileurl="file://$PROJECT_DIR$/forum-common/forum-utils/forumutils.iml" filepath="$PROJECT_DIR$/forum-common/forum-utils/forumutils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/generator/generator.iml" filepath="$PROJECT_DIR$/generator/generator.iml" />
       <module fileurl="file://$PROJECT_DIR$/nacos-examples-master/nacos-cmdb-plugin-example/nacos-cmdb-plugin-example.iml" filepath="$PROJECT_DIR$/nacos-examples-master/nacos-cmdb-plugin-example/nacos-cmdb-plugin-example.iml" />
       <module fileurl="file://$PROJECT_DIR$/nacos-examples-master/nacos-examples.iml" filepath="$PROJECT_DIR$/nacos-examples-master/nacos-examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/nacos-examples-master/nacos-sentinel-example/nacos-sentinel-example.iml" filepath="$PROJECT_DIR$/nacos-examples-master/nacos-sentinel-example/nacos-sentinel-example.iml" />

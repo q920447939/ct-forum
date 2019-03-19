@@ -1,0 +1,143 @@
+package ${package.Controller};
+
+
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+#if(${restControllerStyle})
+#*import org.springframework.web.bind.annotation.RequestMethod;*#
+import org.springframework.web.bind.annotation.RestController;
+#else
+import org.springframework.stereotype.Controller;
+#end
+#if(${superControllerClassPackage})
+import ${superControllerClassPackage};
+#end
+import org.springframework.beans.factory.annotation.Autowired;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+
+import ${package.Service}.${table.serviceName};
+#*import ${package.Entity}.common.DatatablesJSON;
+import ${package.Entity}.common.JSONResult;*#
+import ${package.Entity}.${entity};
+import ${package.Entity}.dto.${entity}DTO;
+import ${package.Entity}.vo.${entity}AddVO;
+import ${package.Entity}.vo.${entity}VO;
+
+
+import org.springframework.web.bind.annotation.RequestBody;
+
+
+
+
+/**
+ *code is far away from bug with the animal protecting
+ *  ┏┓　　　┏┓
+ *┏┛┻━━━┛┻┓
+ *┃　　　　　　　┃ 　
+ *┃　　　━　　　┃
+ *┃　┳┛　┗┳　┃
+ *┃　　　　　　　┃
+ *┃　　　┻　　　┃
+ *┃　　　　　　　┃
+ *┗━┓　　　┏━┛
+ *　　┃　　　┃神兽保佑
+ *　　┃　　　┃代码无BUG！
+ *　　┃　　　┗━━━┓
+ *　　┃　　　　　　　┣┓
+ *　　┃　　　　　　　┏┛
+ *　　┗┓┓┏━┳┓┏┛
+ *　　　┃┫┫　┃┫┫
+ *　　　┗┻┛　┗┻┛
+ *
+ *   @description : ${entity} 控制器
+ *   ---------------------------------
+ *      @author ${author}
+ *   @since ${date}
+ */
+#if(${restControllerStyle})
+@RestController
+#else
+@Controller
+#end
+@RequestMapping("#if(${package.ModuleName})/${package.ModuleName}#end/#if(${controllerMappingHyphenStyle})${controllerMappingHyphen}#else${table.entityPath}#end")
+#if(${superControllerClass})
+public class ${table.controllerName} extends ${superControllerClass} {
+#else
+public class ${table.controllerName} {
+#end
+
+    @Autowired
+    public ${table.serviceName} ${table.entityPath}Service;
+
+    /**
+     * @description : 获取分页列表
+     * ---------------------------------
+     * @author : ${author}
+     * @since : Create in ${date}
+     */
+    @PostMapping(value = "/page")
+    public ResponseData<IPage<${entity}ListVO>> get${entity}List(
+                @RequestBody ${entity}ListVO param ,
+                @RequestParam(value = "draw",defaultValue = "0") Integer draw,
+                @RequestParam(value = "length") Integer length,
+                @RequestParam(value = "start") Integer start) {
+            log.info("getTbLabelList.draw:{}.length:{}.start:{}",draw,length,start);
+            Page<${entity}DTO> page = new Page<>(draw, length);
+            IPage<${entity}> pageList = ${table.entityPath}Service.page(page, param);
+            IPage<${entity}ListVO> iPage = CopyAttributesUtils.copyAtoB(pageList, IPage.class);
+            return successData(iPage);
+    }
+
+    /**
+     * @description : 通过id获取${entity}
+     * ---------------------------------
+     * @author : ${author}
+     * @since : Create in ${date}
+     */
+    @GetMapping(value = "/get/{id}")
+    public ResponseData<${entity}VO> get${entity}ById(@PathVariable(name = "id") String id) {
+        ${entity} dto = ${table.entityPath}Service.findById(id);
+        return successData(CopyAttributesUtils.copyAtoB(dto,${entity}VO.class));
+    }
+
+    /**
+     * @description : 通过id删除${entity}
+     * ---------------------------------
+     * @author : ${author}
+     * @since : Create in ${date}
+     */
+    @GetMapping(value = "/delete/{id}")
+    public ResponseData<Integer> delete${entity}ById(@PathVariable(name = "id") String id) {
+        log.info("delete${entity}ById.id:{}",id);
+        return successData( ${table.entityPath}Service.delete(id));
+    }
+
+    /**
+     * @description : 通过id更新${entity}
+     * ---------------------------------
+     * @author : ${author}
+     * @since : Create in ${date}
+     */
+    @PostMapping(value = "/update")
+    public ResponseData<Integer> update${entity}ById(@RequestBody  @Validated(value = UpdateValid.class) ${entity}UpdateVO param) {
+        log.info("update${entity}ById.param:{}",param);
+        ${entity} e = CopyAttributesUtils.copyAtoB(param, ${entity}.class);
+        return successData(${table.entityPath}Service.update(e));
+    }
+
+    /**
+     * @description : 添加${entity}
+     * ---------------------------------
+     * @author : ${author}
+     * @since : Create in ${date}
+     */
+    @PostMapping(value = "/add")
+    public ResponseData<Integer> add${entity}(@RequestBody @Validated(value = AddValid.class) ${entity}AddVO param) {
+        log.info("add${entity}.param:{}",param);
+         ${entity} e = CopyAttributesUtils.copyAtoB(param, ${entity}.class);
+        return successData(${table.entityPath}Service.add(e));
+    }
+}

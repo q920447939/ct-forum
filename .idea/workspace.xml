@@ -2,85 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1b80e98-4fb8-493f-b79c-26d7f3123411" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/css/bulma.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/css/bulma.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/css/roo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/images/alipay.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/images/icon-blade.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/js/instantclick.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/js/roo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/js/topic.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/jquery.validation/additional-methods.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/jquery.validation/additional-methods.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/jquery.validation/jquery.validate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/jquery.validation/jquery.validate.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/jquery.validation/localization/messages_zh.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/jquery.validation/localization/messages_zh.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/jquery.validation/localization/messages_zh_TW.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/jquery.validation/localization/messages_zh_TW.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/mditor/css/mditor.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/mditor/css/mditor.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/mditor/css/mditor.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/mditor/css/mditor.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/mditor/font/674f50d287a8c48dc19ba404d20fe713.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/mditor/font/912ec66d7572ff821749319396470bde.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/mditor/font/a48ac41620cd818c5020d0f4302489ff.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/mditor/font/af7ae505a9eed503f8b8e6982036873e.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/mditor/font/b06871f281fee6b241d60582ae9369b9.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/mditor/font/fee66e712a8a08eef5805a46892932ad.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/mditor/js/mditor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/mditor/js/mditor.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/mditor/js/mditor.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/mditor/js/mditor.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/noty/noty.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/noty/noty.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/noty/noty.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/noty/noty.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/noty/noty.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/noty/noty.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/admin/settings/edit_template.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/admin/settings/platforms.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/admin/settings/site_setting.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/admin/topics/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/admin/users/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/auth/active.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/auth/forget.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/auth/signin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/auth/signup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/auth/signup_success.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/contact.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/emails/forget.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/emails/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/errors/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/errors/500.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/faq.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/install/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/layouts/default.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/news.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/partials/errors.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/partials/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/partials/header.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/partials/nav.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/partials/share.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/partials/sidebar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/partials/top.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/popular.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/sites.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/topic/detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/topic/new.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/topic/node.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/topics.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/users/profile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/templates/wiki.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/test/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/test/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/test/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/test/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/test/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/test/UserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum-topic/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/forum-topic/src/main/resources/bootstrap.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum-topic/target/classes/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/forum-topic/target/classes/bootstrap.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forum-topic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/forum-topic/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/forum-parent/target/" />
     <ignored path="$PROJECT_DIR$/forum-common/target/" />
@@ -107,6 +29,7 @@
     <ignored path="$PROJECT_DIR$/nacos-examples-master/nacos-spring-boot-example/nacos-spring-boot-config-mysql-example/target/" />
     <ignored path="$PROJECT_DIR$/nacos-examples-master/nacos-spring-example/target/" />
     <ignored path="$PROJECT_DIR$/nacos-examples-master/nacos-spring-cloud-example/nacos-spring-cloud-discovery-example/target/" />
+    <ignored path="$PROJECT_DIR$/generator/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -133,7 +56,7 @@
       <file leaf-file-name="ForumTopicApplication.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/ForumTopicApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
+            <state relative-caret-position="306">
               <caret line="28" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -142,51 +65,73 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="schema.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sql/schema.sql">
+      <file leaf-file-name="Comment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/entity/Comment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="roo.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/forum-topic/src/main/resources/static/js/roo.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="instantclick.min.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/forum-topic/src/main/resources/static/js/instantclick.min.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="56" selection-start-line="1" selection-start-column="56" selection-end-line="1" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="topic.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/forum-topic/src/main/resources/static/js/topic.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="messages_zh.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/jquery.validation/localization/messages_zh.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="additional-methods.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/jquery.validation/additional-methods.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+            <state relative-caret-position="1173">
+              <caret line="76" column="45" selection-start-line="76" selection-start-column="40" selection-end-line="76" selection-end-column="45" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Actived.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/entity/Actived.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="731">
+              <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GeneratorServiceEntity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/generator/src/main/java/cn/withmes/generator/GeneratorServiceEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="58" lean-forward="true" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/generator/pom.xml">
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="102" column="38" selection-start-line="102" selection-start-column="31" selection-end-line="102" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/generator/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="28" column="49" lean-forward="true" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GeneratorApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/generator/src/main/java/cn/withmes/generator/GeneratorApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/forum-topic/pom.xml">
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="26" selection-start-line="26" selection-end-line="31" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -203,16 +148,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>commons-text</find>
-      <find>text</find>
-      <find>main</find>
-      <find>lom</find>
-      <find>mybatisplus-spring-boot-starter</find>
-      <find>mybatis</find>
-      <find>mybatis-plus</find>
-      <find>mybatis-plus-boot-starter</find>
-      <find>mybatis-spring-boot-starter</find>
-      <find>plus</find>
       <find>nacos</find>
       <find>sqlSessionFactory</find>
       <find />
@@ -229,16 +164,28 @@
       <find>mybatisplus.version</find>
       <find>spring-cloud-dependencies</find>
       <find>say</find>
-      <find>lo</find>
       <find>baomidou</find>
       <find>mysql</find>
       <find>starter</find>
+      <find>请输入actived：</find>
+      <find>TemplateConfig</find>
+      <find>actived</find>
+      <find>entity2.java.ftl</find>
+      <find>annotations</find>
+      <find>parent</find>
+      <find>lo</find>
+      <find>junit</find>
+      <find>spring-boot-starter-test</find>
+      <find>jupiter</find>
+      <find>setFileOverride</find>
     </findStrings>
     <replaceStrings>
       <replace />
     </replaceStrings>
     <dirStrings>
       <dir>E:\my-project\ct-forum\forum-topic</dir>
+      <dir>E:\my-project\ct-forum\forum-topic\src\main\java\cn\withmes\ct\forum\topic</dir>
+      <dir>E:\my-project\ct-forum\forum-topic\src\main\java\cn\withmes\ct\forum\topicannotations</dir>
       <dir>E:\my-project\ct-forum</dir>
     </dirStrings>
   </component>
@@ -256,11 +203,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/forum-common/src/main/java/cn/withme/ct/forum/common/utils/DesUtil.java" />
-        <option value="$PROJECT_DIR$/forum-common/src/main/java/cn/withme/ct/forum/common/utils/Md5Utils.java" />
-        <option value="$PROJECT_DIR$/forum-common/src/main/java/cn/withme/ct/forum/common/utils/RandomCharUtil.java" />
-        <option value="$PROJECT_DIR$/forum-common/src/main/java/cn/withme/ct/forum/common/utils/StringUtil.java" />
-        <option value="$PROJECT_DIR$/forum-common/src/main/java/cn/withme/ct/forum/common/Application.java" />
         <option value="$PROJECT_DIR$/forum-common/forum-utils/src/main/java/common/enumresource/StateEnum.java" />
         <option value="$PROJECT_DIR$/forum-common/forum-utils/src/main/java/common/enumresource/LevelEnum.java" />
         <option value="$PROJECT_DIR$/forum-common/forum-utils/src/main/java/common/enumresource/DefaultEnum.java" />
@@ -303,10 +245,15 @@
         <option value="$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/test/UserController.java" />
         <option value="$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/test/UserTest.java" />
         <option value="$PROJECT_DIR$/forum-common/forum-mysql/pom.xml" />
-        <option value="$PROJECT_DIR$/forum-topic/pom.xml" />
         <option value="$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/ForumTopicApplication.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/forum-topic/src/main/resources/static/js/instantclick.min.js" />
+        <option value="$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/test/CodeGenerator.java" />
+        <option value="$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/entity/Comment.java" />
+        <option value="$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/entity/Actived.java" />
+        <option value="$PROJECT_DIR$/generator/pom.xml" />
+        <option value="$PROJECT_DIR$/forum-topic/pom.xml" />
+        <option value="$PROJECT_DIR$/generator/src/main/java/cn/withmes/generator/GeneratorServiceEntity.java" />
       </list>
     </option>
   </component>
@@ -341,14 +288,16 @@
     <option name="width" value="1920" />
     <option name="height" value="1040" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -364,65 +313,45 @@
             <path>
               <item name="ct-forum" type="b2602c69:ProjectViewProjectNode" />
               <item name="ct-forum" type="462c0819:PsiDirectoryNode" />
-              <item name="forum-topic" type="462c0819:PsiDirectoryNode" />
+              <item name="generator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ct-forum" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ct-forum" type="462c0819:PsiDirectoryNode" />
+              <item name="generator" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ct-forum" type="b2602c69:ProjectViewProjectNode" />
               <item name="ct-forum" type="462c0819:PsiDirectoryNode" />
-              <item name="forum-topic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ct-forum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ct-forum" type="462c0819:PsiDirectoryNode" />
-              <item name="forum-topic" type="462c0819:PsiDirectoryNode" />
+              <item name="generator" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ct-forum" type="b2602c69:ProjectViewProjectNode" />
               <item name="ct-forum" type="462c0819:PsiDirectoryNode" />
-              <item name="forum-topic" type="462c0819:PsiDirectoryNode" />
+              <item name="generator" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ct-forum" type="b2602c69:ProjectViewProjectNode" />
               <item name="ct-forum" type="462c0819:PsiDirectoryNode" />
-              <item name="forum-topic" type="462c0819:PsiDirectoryNode" />
+              <item name="generator" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="generator" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ct-forum" type="b2602c69:ProjectViewProjectNode" />
               <item name="ct-forum" type="462c0819:PsiDirectoryNode" />
-              <item name="forum-topic" type="462c0819:PsiDirectoryNode" />
+              <item name="generator" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="jquery.validation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ct-forum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ct-forum" type="462c0819:PsiDirectoryNode" />
-              <item name="forum-topic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="jquery.validation" type="462c0819:PsiDirectoryNode" />
-              <item name="localization" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ct-forum" type="b2602c69:ProjectViewProjectNode" />
@@ -433,7 +362,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -441,6 +370,7 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SearchEverywhereHistoryKey" value="ActivedMapper.xm&#9;FILE&#9;file://E:/my-project/ct-forum/src/main/resources/mapper/13/ActivedMapper.xml" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
@@ -459,10 +389,14 @@
       <recent name="cn.withmes.ct.forum.topic" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\my-project\ct-forum\generator\src\main\resources" />
+      <recent name="E:\my-project\ct-forum\forum-topic\src\main\java\cn\withmes\ct\forum\topic\entity" />
+      <recent name="E:\my-project\ct-forum\forum-topic\src\main\resources\templates" />
+      <recent name="E:\my-project\ct-forum\forum-topic\src\main\java\cn\withmes\ct\forum\topic" />
       <recent name="E:\my-project\ct-forum\forum-topic\src\main\resources" />
-      <recent name="E:\my-project\ct-forum" />
-      <recent name="E:\my-project\ct-forum\forum-common\forum-utils\src\main\java" />
-      <recent name="E:\my-project\ct-forum\forum-common\src\main\java\cn\withme\ct\forum\common" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.withmes.generator" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\my-project\ct-forum\forum-common\forum-utils\src\main\java\cn\withmes\ct\utils" />
@@ -481,14 +415,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ForumTopicApplication">
-    <configuration name="ForumTopicApplicationTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.withmes.ct.forum.topic.ForumTopicApplicationTests" />
+  <component name="RunManager" selected="Application.CodeGenerator">
+    <configuration name="CodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.withmes.ct.forum.topic.test.CodeGenerator" />
       <module name="forum-topic" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.withmes.ct.forum.topic.*" />
+          <option name="PATTERN" value="cn.withmes.ct.forum.topic.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -560,6 +494,10 @@
       <module name="forum-topic" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.withmes.ct.forum.topic.ForumTopicApplication" />
     </configuration>
+    <configuration name="GeneratorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="generator" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.withmes.generator.GeneratorApplication" />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -584,19 +522,20 @@
     </configuration>
     <list>
       <item itemvalue="Spring Boot.ForumTopicApplication" />
+      <item itemvalue="Spring Boot.GeneratorApplication" />
       <item itemvalue="Application.NacosConsumerApplication" />
-      <item itemvalue="Application.ForumTopicApplicationTests" />
       <item itemvalue="Application.Test" />
       <item itemvalue="Application.NacosConfigApplication" />
       <item itemvalue="Application.NacosProviderApplication" />
+      <item itemvalue="Application.CodeGenerator" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CodeGenerator" />
         <item itemvalue="Application.NacosConfigApplication" />
         <item itemvalue="Application.NacosConsumerApplication" />
         <item itemvalue="Application.NacosProviderApplication" />
         <item itemvalue="Application.Test" />
-        <item itemvalue="Application.ForumTopicApplicationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -614,12 +553,13 @@
       <workItem from="1552556110163" duration="8311000" />
       <workItem from="1552620872577" duration="7416000" />
       <workItem from="1552876349948" duration="8518000" />
-      <workItem from="1552893610878" duration="4912000" />
+      <workItem from="1552893610878" duration="9509000" />
+      <workItem from="1552965797005" duration="379000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42206000" />
+    <option name="totallyTimeSpent" value="47182000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -648,28 +588,28 @@
       <window_info id="UI Designer" order="3" />
       <window_info anchor="bottom" id="Debug" order="12" weight="0.3991131" />
       <window_info anchor="bottom" id="TODO" order="15" weight="0.3297062" />
-      <window_info anchor="bottom" id="Messages" order="2" weight="0.32752994" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="bottom" id="Version Control" order="6" />
-      <window_info anchor="bottom" id="Run" order="11" sideWeight="0.49946696" visible="true" weight="0.25831485" />
+      <window_info anchor="bottom" id="Run" order="11" sideWeight="0.49946696" weight="0.25831485" />
       <window_info anchor="bottom" id="Spring" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.2629032" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.26559138" />
       <window_info anchor="right" id="Bean Validation" order="6" />
       <window_info id="Web" order="5" side_tool="true" />
       <window_info id="JRebel" order="1" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="9" weight="0.32934782" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="14" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="8" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="13" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="2" weight="0.32705098" />
       <window_info anchor="bottom" id="Message" order="8" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="9" weight="0.32934782" />
     </layout>
     <layout-to-restore>
       <window_info id="Designer" order="0" />
@@ -738,54 +678,40 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/nacos/nacos-api/0.6.2/nacos-api-0.6.2.jar!/com/alibaba/nacos/api/config/ConfigFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/nacos/nacos-api/0.6.2/nacos-api-0.6.2.jar!/com/alibaba/nacos/api/NacosFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nacos-examples-master/nacos-spring-cloud-example/nacos-spring-cloud-discovery-example/nacos-spring-cloud-provider-example/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="55" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forum-common/forum-utils/hs_err_pid11652.log" />
-    <entry file="file://$PROJECT_DIR$/forum-common/forumutils/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/forum-common/forum-utils/src/main/java/cn/withmes/ct/utils/api/annotation/IgnoreAuth.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forum-common/forum-utils/src/main/java/cn/withmes/ct/utils/api/annotation/LoginUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forum-common/forum-utils/hs_err_pid5540.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="192" selection-start-line="192" selection-end-line="192" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forum-common/forum-utils/src/main/java/cn/withmes/ct/utils/enumresource/ProvinceEnum.java">
+    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/ForumTopicApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/entity/Comment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1173">
+          <caret line="76" column="45" selection-start-line="76" selection-start-column="40" selection-end-line="76" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/entity/Actived.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/src/main/java/cn/withmes/generator/GeneratorServiceEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1751">
+          <caret line="111" lean-forward="true" selection-start-line="111" selection-end-line="111" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -885,11 +811,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="346">
           <caret line="34" column="48" lean-forward="true" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#995#996#0" expanded="true" />
-            <element signature="e#1070#1071#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -904,10 +825,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-          <folding>
-            <element signature="e#591#592#0" expanded="true" />
-            <element signature="e#627#628#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -918,40 +835,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/resources/application.properties" />
     <entry file="file://$PROJECT_DIR$/nacos-examples-master/nacos-spring-cloud-example/nacos-spring-cloud-config-example/src/main/java/com/alibaba/nacos/example/spring/cloud/NacosConfigApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" selection-start-line="9" selection-end-line="10" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#450#451#0" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
-          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nacos-examples-master/nacos-spring-cloud-example/nacos-spring-cloud-config-example/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nacos-examples-master/nacos-spring-cloud-example/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="44" column="37" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/forum-topic/src/test/java/cn/withmes/ct/forum/topic/ForumTopicApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -974,31 +864,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/forum-common/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-core/3.0.5/mybatis-plus-core-3.0.5.jar!/com/baomidou/mybatisplus/core/mapper/BaseMapper.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forum-common/forum-utils/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="23" column="50" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forum-common/forum-mysql/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/test/UserMapper.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1014,22 +885,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/forum-common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forum-topic/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/test/UserTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -1044,30 +899,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/ForumTopicApplication.java">
+    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/jquery.validation/additional-methods.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sql/schema.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/resources/static/js/roo.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/resources/static/js/instantclick.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="56" selection-start-line="1" selection-start-column="56" selection-end-line="1" selection-end-column="56" />
+        <state relative-caret-position="-255">
+          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -1078,15 +913,108 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/jquery.validation/localization/messages_zh.js">
+    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/resources/static/js/instantclick.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="56" selection-start-line="1" selection-start-column="56" selection-end-line="1" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/schema.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baomidou/ant/13/controller/ActivedController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baomidou/ant/13/entity/Actived.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2" />
+      </provider>
+    </entry>
+    <entry file="file://F:/stsworkspace/src/main/java/com/imooc/entity/Actived.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/resources/static/plugins/jquery.validation/additional-methods.js">
+    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/test/CodeGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        <state relative-caret-position="765">
+          <caret line="49" column="18" lean-forward="true" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/ForumTopicApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/entity/Comment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1173">
+          <caret line="76" column="45" selection-start-line="76" selection-start-column="40" selection-end-line="76" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-topic/src/main/java/cn/withmes/ct/forum/topic/entity/Actived.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forum-topic/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" selection-start-line="26" selection-end-line="31" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="102" column="38" selection-start-line="102" selection-start-column="31" selection-end-line="102" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="49" lean-forward="true" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/src/main/java/cn/withmes/generator/GeneratorApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/src/main/java/cn/withmes/generator/GeneratorServiceEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="58" lean-forward="true" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
