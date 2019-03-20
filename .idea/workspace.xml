@@ -3,15 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c1b80e98-4fb8-493f-b79c-26d7f3123411" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum-topic/forum-topic-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/forum-topic/forum-topic-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum-topic/forum-topic-api/src/main/java/cn/withme/forum/topic/api/vo/TopicVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/forum-topic/forum-topic-api/src/main/java/cn/withme/forum/topic/api/vo/TopicVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum-topic/forum-topic-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/forum-topic/forum-topic-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/forum-topic/forum-topic-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum-topic/forum-topic-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/forum-topic/forum-topic-core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum-topic/forum-topic-core/src/main/java/cn/withmes/ct/forum/topic/controller/web/TopicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/forum-topic/forum-topic-core/src/main/java/cn/withmes/ct/forum/topic/controller/web/TopicController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum-topic/forum-topic-core/target/forum-topic-core-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/forum-topic/forum-topic-core/target/forum-topic-core-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum-topic/forum-topic-core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/forum-topic/forum-topic-core/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forum-topic/forum-topic-core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/forum-topic/forum-topic-core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/forum-parent/target/" />
     <ignored path="$PROJECT_DIR$/forum-common/target/" />
@@ -78,16 +70,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="67">
-              <caret line="28" selection-start-line="28" selection-end-line="32" />
+            <state relative-caret-position="127">
+              <caret line="51" column="7" lean-forward="true" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/forum-topic/forum-topic-api/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
@@ -273,8 +265,8 @@
         <option value="$PROJECT_DIR$/forum-topic/forum-topic-core/pom.xml" />
         <option value="$PROJECT_DIR$/forum-topic/forum-topic-api/pom.xml" />
         <option value="$PROJECT_DIR$/forum-topic/forum-topic-api/src/main/java/cn/withme/forum/topic/api/vo/TopicVO.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/forum-topic/forum-topic-api/.gitignore" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -651,7 +643,7 @@
       <workItem from="1552965797005" duration="14340000" />
       <workItem from="1552986951288" duration="3432000" />
       <workItem from="1553045446669" duration="8493000" />
-      <workItem from="1553063054961" duration="10455000" />
+      <workItem from="1553063054961" duration="10544000" />
     </task>
     <servers />
   </component>
@@ -679,7 +671,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83523000" />
+    <option name="totallyTimeSpent" value="83612000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1091,17 +1083,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="28" selection-start-line="28" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/forum-topic/forum-topic-api/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="51" column="7" lean-forward="true" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
         </state>
       </provider>
     </entry>
