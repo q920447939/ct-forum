@@ -46,7 +46,7 @@ public class TopicController extends BaseRestfulController {
     @Autowired
     private TopicService topicService;
 
-    @ApiOperation(value = "分页主题列表", notes = "撒大声地")
+    @ApiOperation(value = "分页主题列表", notes = "")
     @ApiImplicitParams({
             @ApiImplicitParam(name = "param", value = "查询主题参数", required = false, dataType = "TopicVO"),
             @ApiImplicitParam(name = "draw", value = "查询开始(默认为1)", required = false, dataType = "Integer"),

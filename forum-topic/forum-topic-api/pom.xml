@@ -11,5 +11,11 @@
 
     <artifactId>forum-topic-api</artifactId>
 
-
+    <dependencies>
+        <dependency>
+            <groupId>cn.withmes.ct</groupId>
+            <artifactId>forum-utils</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 </project>
