@@ -8,7 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="forum-base" />
         <module name="forum-mysql" />
-        <module name="forum-topic" />
+        <module name="forum-topic-api" />
+        <module name="forum-topic-core" />
         <module name="forum-utils" />
         <module name="forumutils" />
         <module name="generator" />
@@ -30,6 +31,8 @@
       <module name="forum-mysql" target="1.8" />
       <module name="forum-parent" target="1.8" />
       <module name="forum-topic" target="1.8" />
+      <module name="forum-topic-api" target="1.8" />
+      <module name="forum-topic-core" target="1.8" />
       <module name="forum-utils" target="1.8" />
       <module name="forumutils" target="1.8" />
       <module name="generator" target="1.8" />

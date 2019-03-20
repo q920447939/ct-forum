@@ -7,6 +7,9 @@
     <file url="file://$PROJECT_DIR$/forum-common/forum-utils" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/forum-parent" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/forum-topic" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/forum-topic-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/forum-topic/forum-topic-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/forum-topic/forum-topic-core" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/generator" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/nacos-examples-master/nacos-cmdb-plugin-example" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/nacos-examples-master/nacos-spring-cloud-example/nacos-spring-cloud-config-example" charset="UTF-8" />

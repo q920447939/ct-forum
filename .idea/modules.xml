@@ -8,6 +8,8 @@
       <module fileurl="file://$PROJECT_DIR$/forum-common/forum-mysql/forum-mysql.iml" filepath="$PROJECT_DIR$/forum-common/forum-mysql/forum-mysql.iml" />
       <module fileurl="file://$PROJECT_DIR$/forum-parent/forum-parent.iml" filepath="$PROJECT_DIR$/forum-parent/forum-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/forum-topic/forum-topic.iml" filepath="$PROJECT_DIR$/forum-topic/forum-topic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/forum-topic/forum-topic-api/forum-topic-api.iml" filepath="$PROJECT_DIR$/forum-topic/forum-topic-api/forum-topic-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/forum-topic/forum-topic-core/forum-topic-core.iml" filepath="$PROJECT_DIR$/forum-topic/forum-topic-core/forum-topic-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/forum-common/forum-utils/forum-utils.iml" filepath="$PROJECT_DIR$/forum-common/forum-utils/forum-utils.iml" />
       <module fileurl="file://$PROJECT_DIR$/forum-common/forum-utils/forumutils.iml" filepath="$PROJECT_DIR$/forum-common/forum-utils/forumutils.iml" />
       <module fileurl="file://$PROJECT_DIR$/generator/generator.iml" filepath="$PROJECT_DIR$/generator/generator.iml" />

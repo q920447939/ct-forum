@@ -26,5 +26,8 @@ hs_err_pid*
 
 #ignore local temp file
 /nacos-examples-master/*
-.idea/*
+/.idea/*
+/.idea/*.xml
+
+*/test/*
 

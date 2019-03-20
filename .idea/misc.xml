@@ -15,6 +15,7 @@
         <option value="$PROJECT_DIR$/nacos-examples-master/pom.xml" />
         <option value="$PROJECT_DIR$/generator/pom.xml" />
         <option value="$PROJECT_DIR$/forum-base/pom.xml" />
+        <option value="$PROJECT_DIR$/forum-topic/forum-topic-core/pom.xml" />
       </list>
     </option>
   </component>
