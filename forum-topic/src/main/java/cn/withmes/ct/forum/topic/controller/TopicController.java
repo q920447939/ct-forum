@@ -1,4 +1,4 @@
-/*
+
 package cn.withmes.ct.forum.topic.controller;
 
 
@@ -20,7 +20,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 
 
-*/
+
+
+import cn.withmes.ct.forum.base.common.config.base.web.BaseRestfulController;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
 /**
  *code is far away from bug with the animal protecting
  *  ┏┓　　　┏┓
@@ -45,7 +52,13 @@ import org.springframework.beans.factory.annotation.Autowired;
  *   ---------------------------------
  *      @author leegoo
  *   @since 2019-03-19
- *//*
+ */
+
+import cn.withmes.ct.forum.base.common.config.base.web.BaseRestfulController;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/topic")
@@ -55,8 +68,8 @@ public class TopicController extends BaseRestfulController {
     public TopicService topicService;
 
     @GetMapping("/test/del")
-    public  Topic find (Integer id) {
+    public  Topic find (String id) {
         Topic byId = topicService.findById(id);
         return byId;
     }
-}*/
+}

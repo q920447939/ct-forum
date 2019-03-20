@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 //@EnableDiscoveryClient
-@MapperScan("cn.withmes.ct.forum.topic.test")
+@MapperScan("cn.withmes.ct.forum.topic.mapper")
 public class ForumTopicApplication {
     public static void main(String[] args) {
         SpringApplication.run(ForumTopicApplication.class, args);

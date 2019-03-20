@@ -1,4 +1,4 @@
-/*
+
 package cn.withmes.ct.forum.topic.service.impl;
 
 
@@ -17,12 +17,12 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 
 
 
-*/
+
 /**
  * @Description: 帖子表 服务实现类
  * @author leegoo
  * @date 2019-03-19
- *//*
+ */
 
 @Service
 public class TopicServiceImpl extends BaseServiceImpl<Topic> implements TopicService {
@@ -40,4 +40,4 @@ public class TopicServiceImpl extends BaseServiceImpl<Topic> implements TopicSer
 		return 0;
 	}
 }
-*/
+
