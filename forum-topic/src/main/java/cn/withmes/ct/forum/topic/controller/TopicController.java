@@ -67,7 +67,7 @@ public class TopicController extends BaseRestfulController {
     @Autowired
     public TopicService topicService;
 
-    @GetMapping("/test/del")
+    @GetMapping("/find")
     public  Topic find (String id) {
         Topic byId = topicService.findById(id);
         return byId;

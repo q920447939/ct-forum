@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.withmes.ct.forum.topic.mapper.TopicMapper">
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.withmes.ct.forum.topic.entity.Topic">
+        <id column="tid" property="tid" />
+        <result column="node_slug" property="nodeSlug" />
+        <result column="node_title" property="nodeTitle" />
+        <result column="title" property="title" />
+        <result column="content" property="content" />
+        <result column="username" property="username" />
+        <result column="comments" property="comments" />
+        <result column="gains" property="gains" />
+        <result column="popular" property="popular" />
+        <result column="weight" property="weight" />
+        <result column="reply_user" property="replyUser" />
+        <result column="reply_id" property="replyId" />
+        <result column="created" property="created" />
+        <result column="updated" property="updated" />
+        <result column="replyed" property="replyed" />
+        <result column="deleted" property="deleted" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+ 		tid ,node_slug ,node_title ,title ,content ,username ,comments ,gains ,popular ,weight ,reply_user ,reply_id ,created ,updated ,replyed ,deleted		
+    </sql>
+
+
+    <select id="selectById" resultType="cn.withmes.ct.forum.topic.entity.Topic">
+        select  *
+        from topic
+        where tid = #{id}
+    </select>
+
+</mapper>

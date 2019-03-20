@@ -3,7 +3,7 @@ package cn.withmes.ct.forum.topic.service;
 
 import cn.withmes.ct.forum.base.common.config.base.service.BaseService;
 import cn.withmes.ct.forum.topic.entity.Topic;
-
+import org.apache.ibatis.annotations.Param;
 
 
 /**
@@ -13,6 +13,6 @@ import cn.withmes.ct.forum.topic.entity.Topic;
  */
 
 public interface TopicService extends BaseService<Topic> {
-
+    Topic selectById(@Param("id") String id);
 }
 

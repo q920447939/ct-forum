@@ -39,5 +39,10 @@ public class TopicServiceImpl extends BaseServiceImpl<Topic> implements TopicSer
 	public int updateAllColumn(Topic entity) {
 		return 0;
 	}
+
+	@Override
+	public Topic selectById(String id) {
+		return mapper.selectById(id);
+	}
 }
 
