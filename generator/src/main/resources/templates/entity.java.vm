@@ -17,6 +17,8 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 import lombok.experimental.Accessors;
 #end
+import java.time.LocalDateTime;
+
 /**
  * @Description: $!{table.comment}
  * @author ${author}
