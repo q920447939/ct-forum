@@ -1,0 +1,47 @@
+#set(String title = "账户激活")
+#tag layout_block("bodyContent")
+<div class="columns">
+    <div class="column is-3"></div>
+    <div class="column is-6">
+        #if(type == 'success')
+        <article class="message is-success">
+            <div class="message-header">
+                <p>激活成功</p>
+            </div>
+            <div class="message-body">
+                恭喜您，账户激活成功，点击 <a class="button" href="${siteUrl('signin')}">登录</a>
+            </div>
+        </article>
+        #elseif(type == 'invalid')
+        <article class="message is-warning">
+            <div class="message-header">
+                <p>无效的激活码</p>
+            </div>
+            <div class="message-body">
+                这是一个无效的激活码。
+            </div>
+        </article>
+        #elseif(type == 'expires')
+        <article class="message is-warning">
+            <div class="message-header">
+                <p>激活码过期</p>
+            </div>
+            <div class="message-body">
+                该激活码已过期，请重新获取然后进行操作。
+            </div>
+        </article>
+        #elseif(type == 'used')
+        <article class="message is-warning">
+            <div class="message-header">
+                <p>激活码已使用</p>
+            </div>
+            <div class="message-body">
+                该激活码已经使用，请勿重复使用。
+            </div>
+        </article>
+        #end
+    </div>
+    <div class="column is-3"></div>
+</div>
+#end
+#include('../layouts/default.html')
