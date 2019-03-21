@@ -29,7 +29,7 @@ hs_err_pid*
 /.idea/
 
 */test/
-/target/
+#/target/
 
 
 # Created by .ignore support plugin (hsz.mobi)
