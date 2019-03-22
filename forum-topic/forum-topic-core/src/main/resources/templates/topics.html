@@ -1,65 +1,501 @@
-#set(String title = "最新主题")
-#tag layout_block("bodyContent")
-<div class="columns">
-    <div class="column home-topic">
-        <div class="message is-light">
-            <div class="message-header">
-                <span class="has-text-left"><span class="icon is-small"><i class="fa fa-fire"></i></span> 最新主题</span>
-            </div>
-            <div class="message-body has-text-centered">
-                #for(topic : topicPage.rows)
-                <article class="media">
-                    <figure class="media-left">
-                        <p class="image is-48x48">
-                            <a href="${siteUrl('/@' + topic.username)}">
-                                <img class="avatar-48" src="${topic.avatar}">
-                            </a>
-                        </p>
-                    </figure>
-                    <div class="media-content">
-                        <div class="content">
-                            <p class="topic-title">
-                                <a href="${siteUrl('/topic/' + topic.tid)}">${topic.title}</a>
-                            </p>
-                            <p class="topic-meta">
-                                <a class="topic-meta"
-                                   href="${siteUrl('/node/' + topic.nodeSlug)}">${topic.nodeTitle}</a>
-                                <span> • </span>
-                                <a class="topic-meta" href="${siteUrl('/@' + topic.username)}">${topic.username}</a>
-                                <span> • </span>
-                                <small>发布于12分钟前</small>
-                                <span> • </span>
-                                #if(topic.comments > 0)
-                                <small>最后回复来自</small>
-                                <a class="topic-meta" href="${siteUrl('/@' + topic.replyUser)}">${topic.replyUser}</a>
-                                #else
-                                <small>暂无回复</small>
-                                #end
-                            </p>
-                        </div>
-                    </div>
-                    <div class="media-right" style="line-height: 55px;">
-                        <a href="${siteUrl('/topic/' + topic.tid + '#reply-' + topic.replyId)}">
-                            <span class="tag is-rounded" style="background-color: #aab0c6">${topic.comments}</span>
-                        </a>
-                    </div>
-                </article>
-                #end
-            </div>
-            <div class="message-header">
-                <nav class="pagination">
-                    #if(topicPage.hasPrevPage)
-                    <a class="pagination-previous" href="${siteUrl('/topics/' + topicPage.prevPage)}">上一页</a>
-                    #end
-                    #if(topicPage.hasNextPage)
-                    <a class="pagination-next" href="${siteUrl('/topics/' + topicPage.nextPage)}">下一页</a>
-                    #end
-                </nav>
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>最新主题 - Roo 社区</title>
+    <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/bulma.min.css" rel="stylesheet"/>
+    <link href="/plugins/noty/noty.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/css/roo.css?v=0.0.1"/>
+    <script type="text/javascript" src="/webjars/jquery/2.2.4/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/roo.js?v=0.0.1"></script>
+
+</head>
+<body>
+<div class="header">
+    <nav class="navbar container">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+                <img src="/images/logo.png" alt="Roo 简洁的"
+                     width="112" height="28">
+            </a>
+
+            <a class="navbar-item is-hidden-desktop" href="https://github.com/jgthms/bulma" target="_blank">
+              <span class="icon" style="color: #333;">
+                <i class="fa fa-github"></i>
+              </span>
+            </a>
+
+            <a class="navbar-item is-hidden-desktop" href="https://twitter.com/jgthms" target="_blank">
+              <span class="icon" style="color: #55acee;">
+                <i class="fa fa-twitter"></i>
+              </span>
+            </a>
+
+            <div class="navbar-burger burger" data-target="navMenuExample">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
-    </div>
-    #include('partials/sidebar.html')
+
+        <div id="navMenuExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item " href="/topics">
+                    <span class="emoji">🦌&nbsp;</span>
+                    社区
+                </a>
+                <a class="navbar-item " href="/news">
+                    <span class="emoji">🤛&nbsp;</span>
+                    头条
+                </a>
+                <a class="navbar-item " href="/go/jobs">
+                    <span class="emoji">💁&nbsp;</span>
+                    招聘
+                </a>
+                <a class="navbar-item " href="/wiki">
+                    <span class="emoji">🎨&nbsp;</span>
+                    Wiki
+                </a>
+                <a class="navbar-item " href="/sites">
+                    <span class="emoji">❤️&nbsp;</span>
+                    酷站
+                </a>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item search-bar">
+                    <form id="search-form">
+                        <div class="control has-icons-left">
+                            <input class="input" placeholder="搜索本站内容">
+                            <span class="icon is-small is-left">
+                                <i class="fa fa-search"></i>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+                <a class="navbar-item is-hidden-desktop-only" href="/signup">
+                    注册
+                </a>
+                <a class="navbar-item is-hidden-desktop-only" href="/signin">
+                    登录
+                </a>
+            </div>
+        </div>
+    </nav>
 </div>
 
-#end
-#include('layouts/default.html')
+<div class="container">
+    <div class="columns">
+        <div class="column home-topic">
+            <div class="message is-light">
+                <div class="message-header">
+                    <span class="has-text-left"><span class="icon is-small"><i class="fa fa-fire"></i></span> 最新主题</span>
+                </div>
+                <div class="message-body has-text-centered">
+                    <article class="media">
+                        <figure class="media-left">
+                            <p class="image is-48x48">
+                                <a href="/@biezhi">
+                                    <img class="avatar-48" src="">
+                                </a>
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <p class="topic-title">
+                                    <a href="/topic/ebpi45xgo8w5">wordpress 如何增加修改或者新增数据库？</a>
+                                </p>
+                                <p class="topic-meta">
+                                    <a class="topic-meta" href="/node/share">分享发现</a>
+                                    <span> • </span>
+                                    <a class="topic-meta" href="/@biezhi">biezhi</a>
+                                    <span> • </span>
+                                    <small>发布于12分钟前</small>
+                                    <span> • </span>
+                                    <small>暂无回复</small>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="media-right" style="line-height: 55px;">
+                            <a href="/topic/ebpi45xgo8w5#reply-">
+                                <span class="tag is-rounded" style="background-color: #aab0c6">0</span>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="media">
+                        <figure class="media-left">
+                            <p class="image is-48x48">
+                                <a href="/@biezhi">
+                                    <img class="avatar-48" src="">
+                                </a>
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <p class="topic-title">
+                                    <a href="/topic/p0mhzx71jqgj">Windows 下有没有站立提醒的工具</a>
+                                </p>
+                                <p class="topic-meta">
+                                    <a class="topic-meta" href="/node/share">分享发现</a>
+                                    <span> • </span>
+                                    <a class="topic-meta" href="/@biezhi">biezhi</a>
+                                    <span> • </span>
+                                    <small>发布于12分钟前</small>
+                                    <span> • </span>
+                                    <small>暂无回复</small>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="media-right" style="line-height: 55px;">
+                            <a href="/topic/p0mhzx71jqgj#reply-">
+                                <span class="tag is-rounded" style="background-color: #aab0c6">0</span>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="media">
+                        <figure class="media-left">
+                            <p class="image is-48x48">
+                                <a href="/@biezhi">
+                                    <img class="avatar-48" src="">
+                                </a>
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <p class="topic-title">
+                                    <a href="/topic/dndsq4o91vwx">GitHub 开发者向 Adobe 请愿 Flash 开源</a>
+                                </p>
+                                <p class="topic-meta">
+                                    <a class="topic-meta" href="/node/share">分享发现</a>
+                                    <span> • </span>
+                                    <a class="topic-meta" href="/@biezhi">biezhi</a>
+                                    <span> • </span>
+                                    <small>发布于12分钟前</small>
+                                    <span> • </span>
+                                    <small>暂无回复</small>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="media-right" style="line-height: 55px;">
+                            <a href="/topic/dndsq4o91vwx#reply-">
+                                <span class="tag is-rounded" style="background-color: #aab0c6">0</span>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="media">
+                        <figure class="media-left">
+                            <p class="image is-48x48">
+                                <a href="/@biezhi">
+                                    <img class="avatar-48" src="">
+                                </a>
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <p class="topic-title">
+                                    <a href="/topic/kkruw3y15aay">如何克服想要而得不到的情绪？</a>
+                                </p>
+                                <p class="topic-meta">
+                                    <a class="topic-meta" href="/node/share">分享发现</a>
+                                    <span> • </span>
+                                    <a class="topic-meta" href="/@biezhi">biezhi</a>
+                                    <span> • </span>
+                                    <small>发布于12分钟前</small>
+                                    <span> • </span>
+                                    <small>暂无回复</small>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="media-right" style="line-height: 55px;">
+                            <a href="/topic/kkruw3y15aay#reply-">
+                                <span class="tag is-rounded" style="background-color: #aab0c6">0</span>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="media">
+                        <figure class="media-left">
+                            <p class="image is-48x48">
+                                <a href="/@biezhi">
+                                    <img class="avatar-48" src="">
+                                </a>
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <p class="topic-title">
+                                    <a href="/topic/bpdhablq3qlo">老哥是这样的，我在咸鱼上买到假的内存条了</a>
+                                </p>
+                                <p class="topic-meta">
+                                    <a class="topic-meta" href="/node/share">分享发现</a>
+                                    <span> • </span>
+                                    <a class="topic-meta" href="/@biezhi">biezhi</a>
+                                    <span> • </span>
+                                    <small>发布于12分钟前</small>
+                                    <span> • </span>
+                                    <small>暂无回复</small>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="media-right" style="line-height: 55px;">
+                            <a href="/topic/bpdhablq3qlo#reply-">
+                                <span class="tag is-rounded" style="background-color: #aab0c6">0</span>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="media">
+                        <figure class="media-left">
+                            <p class="image is-48x48">
+                                <a href="/@biezhi">
+                                    <img class="avatar-48" src="">
+                                </a>
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <p class="topic-title">
+                                    <a href="/topic/oa4uzwg6pq0w">注册了个有趣的域名，不过被墙了……</a>
+                                </p>
+                                <p class="topic-meta">
+                                    <a class="topic-meta" href="/node/share">分享发现</a>
+                                    <span> • </span>
+                                    <a class="topic-meta" href="/@biezhi">biezhi</a>
+                                    <span> • </span>
+                                    <small>发布于12分钟前</small>
+                                    <span> • </span>
+                                    <small>暂无回复</small>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="media-right" style="line-height: 55px;">
+                            <a href="/topic/oa4uzwg6pq0w#reply-">
+                                <span class="tag is-rounded" style="background-color: #aab0c6">0</span>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="media">
+                        <figure class="media-left">
+                            <p class="image is-48x48">
+                                <a href="/@biezhi">
+                                    <img class="avatar-48" src="">
+                                </a>
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <p class="topic-title">
+                                    <a href="/topic/rngpu2e55elyxw">［深圳/BearyChat］ Android 高级工程师（ 15-35k）</a>
+                                </p>
+                                <p class="topic-meta">
+                                    <a class="topic-meta" href="/node/share">分享发现</a>
+                                    <span> • </span>
+                                    <a class="topic-meta" href="/@biezhi">biezhi</a>
+                                    <span> • </span>
+                                    <small>发布于12分钟前</small>
+                                    <span> • </span>
+                                    <small>暂无回复</small>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="media-right" style="line-height: 55px;">
+                            <a href="/topic/rngpu2e55elyxw#reply-">
+                                <span class="tag is-rounded" style="background-color: #aab0c6">0</span>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="media">
+                        <figure class="media-left">
+                            <p class="image is-48x48">
+                                <a href="/@biezhi">
+                                    <img class="avatar-48" src="">
+                                </a>
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <p class="topic-title">
+                                    <a href="/topic/g72lu52zz2zn5d">［深圳/BearyChat］ Android 高级工程师（ 15-35k）</a>
+                                </p>
+                                <p class="topic-meta">
+                                    <a class="topic-meta" href="/node/share">分享发现</a>
+                                    <span> • </span>
+                                    <a class="topic-meta" href="/@biezhi">biezhi</a>
+                                    <span> • </span>
+                                    <small>发布于12分钟前</small>
+                                    <span> • </span>
+                                    <small>暂无回复</small>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="media-right" style="line-height: 55px;">
+                            <a href="/topic/g72lu52zz2zn5d#reply-">
+                                <span class="tag is-rounded" style="background-color: #aab0c6">0</span>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="media">
+                        <figure class="media-left">
+                            <p class="image is-48x48">
+                                <a href="/@biezhi">
+                                    <img class="avatar-48" src="">
+                                </a>
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <p class="topic-title">
+                                    <a href="/topic/wdatbval6yj3">［深圳/BearyChat］ Android 高级工程师（ 15-35k）</a>
+                                </p>
+                                <p class="topic-meta">
+                                    <a class="topic-meta" href="/node/share">分享发现</a>
+                                    <span> • </span>
+                                    <a class="topic-meta" href="/@biezhi">biezhi</a>
+                                    <span> • </span>
+                                    <small>发布于12分钟前</small>
+                                    <span> • </span>
+                                    <small>暂无回复</small>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="media-right" style="line-height: 55px;">
+                            <a href="/topic/wdatbval6yj3#reply-">
+                                <span class="tag is-rounded" style="background-color: #aab0c6">0</span>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="media">
+                        <figure class="media-left">
+                            <p class="image is-48x48">
+                                <a href="/@biezhi">
+                                    <img class="avatar-48" src="">
+                                </a>
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <p class="topic-title">
+                                    <a href="/topic/jw3cxjg6ygoj">AC 7265 网卡无法跑满 200M 的电信宽带</a>
+                                </p>
+                                <p class="topic-meta">
+                                    <a class="topic-meta" href="/node/share">分享发现</a>
+                                    <span> • </span>
+                                    <a class="topic-meta" href="/@biezhi">biezhi</a>
+                                    <span> • </span>
+                                    <small>发布于12分钟前</small>
+                                    <span> • </span>
+                                    <small>暂无回复</small>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="media-right" style="line-height: 55px;">
+                            <a href="/topic/jw3cxjg6ygoj#reply-">
+                                <span class="tag is-rounded" style="background-color: #aab0c6">0</span>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                <div class="message-header">
+                    <nav class="pagination">
+                        <a class="pagination-next" href="/topics/2">下一页</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="column is-one-quarter">
+            <div class="message is-light">
+                <div class="message-header">Roo - 每日赠言</div>
+                <div class="message-body">
+                    <h6 class="subtitle is-6">
+                        <p>若要人爱，就要爱人</p><p class='tips-foot'>——奥索尼乌斯</p>
+                    </h6>
+                </div>
+            </div>
+            <div class="message is-light">
+                <div class="message-header">Roo - 小而美的极客社区</div>
+                <div class="message-body has-text-centered">
+                    <a class="button is-danger is-outlined" data-no-instant href="signup">马上注册</a>
+                    <a class="button is-info is-outlined" data-no-instant href="signin">登录Roo</a>
+                </div>
+            </div>
+
+            <div class="message is-light">
+                <div class="message-header">推荐编程资源</div>
+                <div class="message-body">
+                    <ul>
+                        <li>
+                            <a href="">开发者头条</a>
+                        </li>
+                        <li>
+                            <a href="">并发编程网</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="message is-light">
+                <div class="message-header">友情链接</div>
+                <div class="message-body has-text-centered">
+                    <a href="https://github.com/biezhi" title="轻量级JavaWeb框架 - Blade" target="_blank">
+                        <img width="180" src="/images/icon-blade.png" />
+                    </a>
+                    <hr/>
+                    <a href="https://www.v2ex.com/" title="创意工作者们的社区" target="_blank">
+                        <img width="180" src="https://v2ex.assets.uxengine.net/site/logo@2x.png?m=1346064962" />
+                    </a>
+                </div>
+            </div>
+
+            <div class="message is-light">
+                <div class="message-header">捐赠 Roo</div>
+                <div class="message-body has-text-centered">
+                    <img src="/images/alipay.jpg" width="320" height="400"/>
+                </div>
+            </div>
+
+            <div class="message is-light">
+                <div class="message-header">站点统计</div>
+                <div class="message-body">
+                    <span>社区会员: 1 人</span><hr/>
+                    <span>主题数: 12 个</span><hr/>
+                    <span>回帖数: 3 条</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <p>
+                    <a href="/about">关于我们</a> |
+                    <a href="/contact">联系我们</a> |
+                    <a href="/faq">常见问题</a>
+                </p>
+                <p>
+                    <strong>Roo</strong> by <a href="https://github.com/biezhi">biezhi</a> | Copyright © 2017 | 当前版本 <span class="tag is-info">0.0.1</span>
+                </p>
+                <p>
+                    <a class="icon" target="_blank" href="https://github.com/junicorn/roo">
+                        <i class="fa fa-github fa-2x"></i>
+                    </a>
+                    &nbsp;&nbsp;
+                    <a class="icon has-text-info" target="_blank" href="https://github.com/junicorn/roo">
+                        <i class="fa fa-twitter fa-2x"></i>
+                    </a>
+                    &nbsp;&nbsp;
+                    <a class="icon has-text-danger" target="_blank" href="https://github.com/junicorn/roo">
+                        <i class="fa fa-rss fa-2x"></i>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</div>
+<script type="text/javascript" src="/plugins/noty/noty.min.js"></script>
+
+</body>
+</html>

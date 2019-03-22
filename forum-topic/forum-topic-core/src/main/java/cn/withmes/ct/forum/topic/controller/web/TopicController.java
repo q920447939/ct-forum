@@ -40,27 +40,7 @@ import javax.servlet.http.HttpServletResponse;
  * @Description:
  * @date 2019年03月20日
  */
-@Controller()
-public class TopicController extends BaseRestfulController {
 
-    @Autowired
-    private TopicService topicService;
+public class TopicController{
 
-    @ApiOperation(value = "分页主题列表", notes = "")
-    @ApiImplicitParams({
-            @ApiImplicitParam(name = "param", value = "查询主题参数", required = false, dataType = "TopicVO"),
-            @ApiImplicitParam(name = "draw", value = "查询开始(默认为1)", required = false, dataType = "Integer"),
-            @ApiImplicitParam(name = "length", value = "每页查询的大小(默认为10)", required = false, dataType = "Integer")
-    })
-    @RequestMapping(value = "/", method = RequestMethod.GET)
-    public String loadIndex(@RequestBody(required = false) TopicVO param,
-                            @RequestParam(value = "draw", defaultValue = "0") Integer draw,
-                            @RequestParam(value = "length", defaultValue = "10") Integer length,
-                            Model model) {
-        log.info("getTbLabelList.draw:{}.length:{}", draw, length);
-        Page<TopicBO> page = new Page<>(draw, length);
-        IPage<Topic> pageList = topicService.page(page, CopyAttributesUtils.copyAtoB(param, TopicBO.class));
-        model.addAttribute("topics", pageList.getRecords());  //设置单个值
-        return "home";
-    }
 }
