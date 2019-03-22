@@ -5,8 +5,8 @@ import cn.withmes.ct.forum.topic.entity.domain.Topic;
 
 
 /**
- * @Description: 帖子表
  * @author leegoo
+ * @Description: 帖子表
  * @date 2019-03-19
  */
 

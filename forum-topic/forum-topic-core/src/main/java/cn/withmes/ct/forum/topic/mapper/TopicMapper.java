@@ -8,8 +8,8 @@ import org.apache.ibatis.annotations.Param;
 
 
 /**
- * @Description: 帖子表 Mapper 接口
  * @author leegoo
+ * @Description: 帖子表 Mapper 接口
  * @date 2019-03-19
  */
 

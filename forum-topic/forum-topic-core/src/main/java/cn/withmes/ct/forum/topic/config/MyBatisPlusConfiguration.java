@@ -16,11 +16,11 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 /**
  * ClassName: MyBatisPlusConfiguration
- * @Description:配置Mybatis-plus
- * @param:
- *  #Configuration
- *  #EnableTransactionManagement 分页插件
+ *
  * @author leegoo
+ * @Description:配置Mybatis-plus
+ * @param: #Configuration
+ * #EnableTransactionManagement 分页插件
  * @date 2019年03月19日
  */
 @Configuration

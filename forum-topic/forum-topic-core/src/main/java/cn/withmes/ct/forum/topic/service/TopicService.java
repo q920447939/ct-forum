@@ -10,14 +10,14 @@ import org.apache.ibatis.annotations.Param;
 
 
 /**
- * @Description: 帖子表 服务类
  * @author leegoo
+ * @Description: 帖子表 服务类
  * @date 2019-03-19
  */
 
 public interface TopicService extends BaseService<Topic> {
 
-    IPage<Topic> page (Page<TopicBO> page, TopicBO bo);
+    IPage<Topic> page(Page<TopicBO> page, TopicBO bo);
 
     Topic selectById(@Param("id") String id);
 }

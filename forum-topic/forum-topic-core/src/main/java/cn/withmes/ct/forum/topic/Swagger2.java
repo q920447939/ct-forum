@@ -17,8 +17,9 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
  * ClassName: Swagger2
- * @Description:
+ *
  * @author leegoo
+ * @Description:
  * @date 2019年03月20日
  */
 @Configuration
@@ -33,6 +34,7 @@ public class Swagger2 {
                 .paths(PathSelectors.any())
                 .build();
     }
+
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title("forum-topic API")
