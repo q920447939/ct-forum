@@ -48,8 +48,8 @@ public class TopicController extends BaseRestfulController {
     })
     @GetMapping(value = "/page")
     public ResponseData<IPage<TopicVO>> loadIndex(@RequestBody(required = false) TopicVO param,
-                            @RequestParam(value = "draw", defaultValue = "0") Integer draw,
-                            @RequestParam(value = "length", defaultValue = "10") Integer length) {
+                                                  @RequestParam(value = "draw", defaultValue = "0") Integer draw,
+                                                  @RequestParam(value = "length", defaultValue = "10") Integer length) {
         log.info("loadIndex.draw:{}.length:{}", draw, length);
         Page<TopicBO> page = new Page<>(draw, length);
         IPage<Topic> pageList = topicService.page(page, CopyAttributesUtils.copyAtoB(param, TopicBO.class));
