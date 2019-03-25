@@ -13,12 +13,56 @@
     <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"/>
     <script type="text/javascript" src="/js/roo.js?v=0.0.1"></script>
     <script type="text/javascript" src="/plugins/noty/noty.min.js"></script>
+
+    <script type="text/javascript">
+        $.get("/topic/page", function (res) {
+            if (null != res && res.code == 0) {
+                var _html = "";
+                $.each(res.data.records, function (idx) {
+                   var item =  res.data.records[idx];
+                    _html += ' <article class="media"> ';
+                    _html += '                         <figure class="media-left"> ';
+                    _html += '                             <p class="image is-48x48"> ';
+                    _html += '                                 <a href="/@biezhi" title="biezhi"> ';
+                    _html += '                                     <img class="avatar-48" src=""> ';
+                    _html += '                                 </a> ';
+                    _html += '                             </p> ';
+                    _html += '                         </figure> ';
+                    _html += '                         <div class="media-content"> ';
+                    _html += '                             <div class="content"> ';
+                    _html += '                                 <p class="topic-title"> ';
+                    _html += '                                     <a href="/topic/get/'+item.tid+'" title="'+item.title+'">';
+                    _html += '                                         '+item.title+'</a> ';
+                    _html += '                                 </p> ';
+                    _html += '                                 <p class="topic-meta"> ';
+                    _html += '                                     <a class="topic-meta" href="/node/share/'+item.tid+'" title="分享发现">分享发现</a> ';
+                    _html += '                                     <span> • </span> ';
+                    _html += '                                     <a class="topic-meta" href="/@biezhi" title="'+item.username+'">'+item.username+'</a> ';
+                    _html += '                                     <span> • </span> ';
+                    _html += '                                     <small>发布于12分钟前</small> ';
+                    _html += '                                     <span> • </span> ';
+                    _html += '                                     <small>暂无回复</small> ';
+                    _html += '                                 </p> ';
+                    _html += '                             </div> ';
+                    _html += '                         </div> ';
+                    _html += '                         <div class="media-right" style="line-height: 55px;"> ';
+                    _html += '                             <a href="/topic/reply/'+item.tid+'" title="查看评论"> ';
+                    _html += '                                 <span class="tag is-rounded" style="background-color: #aab0c6">'+item.comments+'</span> ';
+                    _html += '                             </a> ';
+                    _html += '                         </div> ';
+                    _html += '                     </article> ';
+                });
+                $(".has-text-centered").eq(4).html(_html);
+            }
+        });
+
+    </script>
 </head>
 <body>
 <div class="header">
     <nav class="navbar container">
         <div class="navbar-brand">
-            <a class="navbar-item" href="http://127.0.0.1:9000">
+            <a class="navbar-item" href="/">
                 <img src="/images/logo.png" alt="Roo 简洁的"
                      width="112" height="28">
             </a>
@@ -53,15 +97,15 @@
                     <span class="emoji">🤛&nbsp;</span>
                     头条
                 </a>
-                <a class="navbar-item " href="http://127.0.0.1:9000/go/jobs">
+                <a class="navbar-item " href="/go/jobs">
                     <span class="emoji">💁&nbsp;</span>
                     招聘
                 </a>
-                <a class="navbar-item " href="http://127.0.0.1:9000/wiki">
+                <a class="navbar-item " href="/wiki">
                     <span class="emoji">🎨&nbsp;</span>
                     Wiki
                 </a>
-                <a class="navbar-item " href="http://127.0.0.1:9000/sites">
+                <a class="navbar-item " href="/sites">
                     <span class="emoji">❤️&nbsp;</span>
                     酷站
                 </a>
@@ -78,10 +122,10 @@
                         </div>
                     </form>
                 </div>
-                <a class="navbar-item is-hidden-desktop-only" href="http://127.0.0.1:9000/signup">
+                <a class="navbar-item is-hidden-desktop-only" href="/signup">
                     注册
                 </a>
-                <a class="navbar-item is-hidden-desktop-only" href="http://127.0.0.1:9000/signin">
+                <a class="navbar-item is-hidden-desktop-only" href="/signin">
                     登录
                 </a>
             </div>
@@ -113,40 +157,40 @@
         <div class="column">
             <div class="notification shadow-1 is-link has-text-centered">
                 <div class="item-icon">
-                    <a href="http://127.0.0.1:9000/topics" title="Roo社区"><i class="fa fa-comments-o"></i></a>
+                    <a href="/topics" title="Roo社区"><i class="fa fa-comments-o"></i></a>
                 </div>
                 <div>
-                    <a href="http://127.0.0.1:9000/topics" title="Roo社区">Roo社区</a>
+                    <a href="/topics" title="Roo社区">Roo社区</a>
                 </div>
             </div>
         </div>
         <div class="column">
             <div class="notification shadow-1 is-success has-text-centered">
                 <div class="item-icon">
-                    <a href="http://127.0.0.1:9000/wiki" title="技术文档"><i class="fa fa-support"></i></a>
+                    <a href="/wiki" title="技术文档"><i class="fa fa-support"></i></a>
                 </div>
                 <div>
-                    <a href="http://127.0.0.1:9000/wiki" title="技术文档">技术文档</a>
+                    <a href="/wiki" title="技术文档">技术文档</a>
                 </div>
             </div>
         </div>
         <div class="column">
             <div class="notification shadow-1 is-warning has-text-centered">
                 <div class="item-icon">
-                    <a href="http://127.0.0.1:9000/go/jobs" title="招聘求职"><i class="fa fa-users"></i></a>
+                    <a href="/go/jobs" title="招聘求职"><i class="fa fa-users"></i></a>
                 </div>
                 <div>
-                    <a href="http://127.0.0.1:9000/go/jobs" title="招聘求职">招聘求职</a>
+                    <a href="/go/jobs" title="招聘求职">招聘求职</a>
                 </div>
             </div>
         </div>
         <div class="column">
             <div class="notification shadow-1 is-danger has-text-centered">
                 <div class="item-icon">
-                    <a href="http://127.0.0.1:9000/popular" title="精华主题"><i class="fa fa-diamond"></i></a>
+                    <a href="/popular" title="精华主题"><i class="fa fa-diamond"></i></a>
                 </div>
                 <div>
-                    <a href="http://127.0.0.1:9000/popular" title="精华主题">精华主题</a>
+                    <a href="/popular" title="精华主题">精华主题</a>
                 </div>
             </div>
         </div>
@@ -162,316 +206,7 @@
                     </span>
                 </div>
                 <div class="message-body has-text-centered">
-                    <article class="media">
-                        <figure class="media-left">
-                            <p class="image is-48x48">
-                                <a href="http://127.0.0.1:9000/@biezhi" title="biezhi">
-                                    <img class="avatar-48" src="">
-                                </a>
-                            </p>
-                        </figure>
-                        <div class="media-content">
-                            <div class="content">
-                                <p class="topic-title">
-                                    <a href="http://127.0.0.1:9000/topic/ebpi45xgo8w5" title="wordpress 如何增加修改或者新增数据库？">wordpress
-                                        如何增加修改或者新增数据库？</a>
-                                </p>
-                                <p class="topic-meta">
-                                    <a class="topic-meta" href="http://127.0.0.1:9000/node/share" title="分享发现">分享发现</a>
-                                    <span> • </span>
-                                    <a class="topic-meta" href="http://127.0.0.1:9000/@biezhi" title="biezhi">biezhi</a>
-                                    <span> • </span>
-                                    <small>发布于12分钟前</small>
-                                    <span> • </span>
-                                    <small>暂无回复</small>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="media-right" style="line-height: 55px;">
-                            <a href="http://127.0.0.1:9000/topic/ebpi45xgo8w5#reply-" title="查看评论">
-                                <span class="tag is-rounded" style="background-color: #aab0c6">0</span>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="media">
-                        <figure class="media-left">
-                            <p class="image is-48x48">
-                                <a href="http://127.0.0.1:9000/@biezhi" title="biezhi">
-                                    <img class="avatar-48" src="">
-                                </a>
-                            </p>
-                        </figure>
-                        <div class="media-content">
-                            <div class="content">
-                                <p class="topic-title">
-                                    <a href="http://127.0.0.1:9000/topic/p0mhzx71jqgj" title="Windows 下有没有站立提醒的工具">Windows
-                                        下有没有站立提醒的工具</a>
-                                </p>
-                                <p class="topic-meta">
-                                    <a class="topic-meta" href="http://127.0.0.1:9000/node/share" title="分享发现">分享发现</a>
-                                    <span> • </span>
-                                    <a class="topic-meta" href="http://127.0.0.1:9000/@biezhi" title="biezhi">biezhi</a>
-                                    <span> • </span>
-                                    <small>发布于12分钟前</small>
-                                    <span> • </span>
-                                    <small>暂无回复</small>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="media-right" style="line-height: 55px;">
-                            <a href="http://127.0.0.1:9000/topic/p0mhzx71jqgj#reply-" title="查看评论">
-                                <span class="tag is-rounded" style="background-color: #aab0c6">0</span>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="media">
-                        <figure class="media-left">
-                            <p class="image is-48x48">
-                                <a href="http://127.0.0.1:9000/@biezhi" title="biezhi">
-                                    <img class="avatar-48" src="">
-                                </a>
-                            </p>
-                        </figure>
-                        <div class="media-content">
-                            <div class="content">
-                                <p class="topic-title">
-                                    <a href="http://127.0.0.1:9000/topic/dndsq4o91vwx"
-                                       title="GitHub 开发者向 Adobe 请愿 Flash 开源">GitHub 开发者向 Adobe 请愿 Flash 开源</a>
-                                </p>
-                                <p class="topic-meta">
-                                    <a class="topic-meta" href="http://127.0.0.1:9000/node/share" title="分享发现">分享发现</a>
-                                    <span> • </span>
-                                    <a class="topic-meta" href="http://127.0.0.1:9000/@biezhi" title="biezhi">biezhi</a>
-                                    <span> • </span>
-                                    <small>发布于12分钟前</small>
-                                    <span> • </span>
-                                    <small>暂无回复</small>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="media-right" style="line-height: 55px;">
-                            <a href="http://127.0.0.1:9000/topic/dndsq4o91vwx#reply-" title="查看评论">
-                                <span class="tag is-rounded" style="background-color: #aab0c6">0</span>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="media">
-                        <figure class="media-left">
-                            <p class="image is-48x48">
-                                <a href="http://127.0.0.1:9000/@biezhi" title="biezhi">
-                                    <img class="avatar-48" src="">
-                                </a>
-                            </p>
-                        </figure>
-                        <div class="media-content">
-                            <div class="content">
-                                <p class="topic-title">
-                                    <a href="http://127.0.0.1:9000/topic/kkruw3y15aay" title="如何克服想要而得不到的情绪？">如何克服想要而得不到的情绪？</a>
-                                </p>
-                                <p class="topic-meta">
-                                    <a class="topic-meta" href="http://127.0.0.1:9000/node/share" title="分享发现">分享发现</a>
-                                    <span> • </span>
-                                    <a class="topic-meta" href="http://127.0.0.1:9000/@biezhi" title="biezhi">biezhi</a>
-                                    <span> • </span>
-                                    <small>发布于12分钟前</small>
-                                    <span> • </span>
-                                    <small>暂无回复</small>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="media-right" style="line-height: 55px;">
-                            <a href="http://127.0.0.1:9000/topic/kkruw3y15aay#reply-" title="查看评论">
-                                <span class="tag is-rounded" style="background-color: #aab0c6">0</span>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="media">
-                        <figure class="media-left">
-                            <p class="image is-48x48">
-                                <a href="http://127.0.0.1:9000/@biezhi" title="biezhi">
-                                    <img class="avatar-48" src="">
-                                </a>
-                            </p>
-                        </figure>
-                        <div class="media-content">
-                            <div class="content">
-                                <p class="topic-title">
-                                    <a href="http://127.0.0.1:9000/topic/bpdhablq3qlo" title="老哥是这样的，我在咸鱼上买到假的内存条了">老哥是这样的，我在咸鱼上买到假的内存条了</a>
-                                </p>
-                                <p class="topic-meta">
-                                    <a class="topic-meta" href="http://127.0.0.1:9000/node/share" title="分享发现">分享发现</a>
-                                    <span> • </span>
-                                    <a class="topic-meta" href="http://127.0.0.1:9000/@biezhi" title="biezhi">biezhi</a>
-                                    <span> • </span>
-                                    <small>发布于12分钟前</small>
-                                    <span> • </span>
-                                    <small>暂无回复</small>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="media-right" style="line-height: 55px;">
-                            <a href="http://127.0.0.1:9000/topic/bpdhablq3qlo#reply-" title="查看评论">
-                                <span class="tag is-rounded" style="background-color: #aab0c6">0</span>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="media">
-                        <figure class="media-left">
-                            <p class="image is-48x48">
-                                <a href="http://127.0.0.1:9000/@biezhi" title="biezhi">
-                                    <img class="avatar-48" src="">
-                                </a>
-                            </p>
-                        </figure>
-                        <div class="media-content">
-                            <div class="content">
-                                <p class="topic-title">
-                                    <a href="http://127.0.0.1:9000/topic/oa4uzwg6pq0w" title="注册了个有趣的域名，不过被墙了……">注册了个有趣的域名，不过被墙了……</a>
-                                </p>
-                                <p class="topic-meta">
-                                    <a class="topic-meta" href="http://127.0.0.1:9000/node/share" title="分享发现">分享发现</a>
-                                    <span> • </span>
-                                    <a class="topic-meta" href="http://127.0.0.1:9000/@biezhi" title="biezhi">biezhi</a>
-                                    <span> • </span>
-                                    <small>发布于12分钟前</small>
-                                    <span> • </span>
-                                    <small>暂无回复</small>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="media-right" style="line-height: 55px;">
-                            <a href="http://127.0.0.1:9000/topic/oa4uzwg6pq0w#reply-" title="查看评论">
-                                <span class="tag is-rounded" style="background-color: #aab0c6">0</span>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="media">
-                        <figure class="media-left">
-                            <p class="image is-48x48">
-                                <a href="http://127.0.0.1:9000/@biezhi" title="biezhi">
-                                    <img class="avatar-48" src="">
-                                </a>
-                            </p>
-                        </figure>
-                        <div class="media-content">
-                            <div class="content">
-                                <p class="topic-title">
-                                    <a href="http://127.0.0.1:9000/topic/rngpu2e55elyxw"
-                                       title="［深圳/BearyChat］ Android 高级工程师（ 15-35k）">［深圳/BearyChat］ Android 高级工程师（
-                                        15-35k）</a>
-                                </p>
-                                <p class="topic-meta">
-                                    <a class="topic-meta" href="http://127.0.0.1:9000/node/share" title="分享发现">分享发现</a>
-                                    <span> • </span>
-                                    <a class="topic-meta" href="http://127.0.0.1:9000/@biezhi" title="biezhi">biezhi</a>
-                                    <span> • </span>
-                                    <small>发布于12分钟前</small>
-                                    <span> • </span>
-                                    <small>暂无回复</small>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="media-right" style="line-height: 55px;">
-                            <a href="http://127.0.0.1:9000/topic/rngpu2e55elyxw#reply-" title="查看评论">
-                                <span class="tag is-rounded" style="background-color: #aab0c6">0</span>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="media">
-                        <figure class="media-left">
-                            <p class="image is-48x48">
-                                <a href="http://127.0.0.1:9000/@biezhi" title="biezhi">
-                                    <img class="avatar-48" src="">
-                                </a>
-                            </p>
-                        </figure>
-                        <div class="media-content">
-                            <div class="content">
-                                <p class="topic-title">
-                                    <a href="http://127.0.0.1:9000/topic/g72lu52zz2zn5d"
-                                       title="［深圳/BearyChat］ Android 高级工程师（ 15-35k）">［深圳/BearyChat］ Android 高级工程师（
-                                        15-35k）</a>
-                                </p>
-                                <p class="topic-meta">
-                                    <a class="topic-meta" href="http://127.0.0.1:9000/node/share" title="分享发现">分享发现</a>
-                                    <span> • </span>
-                                    <a class="topic-meta" href="http://127.0.0.1:9000/@biezhi" title="biezhi">biezhi</a>
-                                    <span> • </span>
-                                    <small>发布于12分钟前</small>
-                                    <span> • </span>
-                                    <small>暂无回复</small>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="media-right" style="line-height: 55px;">
-                            <a href="http://127.0.0.1:9000/topic/g72lu52zz2zn5d#reply-" title="查看评论">
-                                <span class="tag is-rounded" style="background-color: #aab0c6">0</span>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="media">
-                        <figure class="media-left">
-                            <p class="image is-48x48">
-                                <a href="http://127.0.0.1:9000/@biezhi" title="biezhi">
-                                    <img class="avatar-48" src="">
-                                </a>
-                            </p>
-                        </figure>
-                        <div class="media-content">
-                            <div class="content">
-                                <p class="topic-title">
-                                    <a href="http://127.0.0.1:9000/topic/wdatbval6yj3"
-                                       title="［深圳/BearyChat］ Android 高级工程师（ 15-35k）">［深圳/BearyChat］ Android 高级工程师（
-                                        15-35k）</a>
-                                </p>
-                                <p class="topic-meta">
-                                    <a class="topic-meta" href="http://127.0.0.1:9000/node/share" title="分享发现">分享发现</a>
-                                    <span> • </span>
-                                    <a class="topic-meta" href="http://127.0.0.1:9000/@biezhi" title="biezhi">biezhi</a>
-                                    <span> • </span>
-                                    <small>发布于12分钟前</small>
-                                    <span> • </span>
-                                    <small>暂无回复</small>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="media-right" style="line-height: 55px;">
-                            <a href="http://127.0.0.1:9000/topic/wdatbval6yj3#reply-" title="查看评论">
-                                <span class="tag is-rounded" style="background-color: #aab0c6">0</span>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="media">
-                        <figure class="media-left">
-                            <p class="image is-48x48">
-                                <a href="http://127.0.0.1:9000/@biezhi" title="biezhi">
-                                    <img class="avatar-48" src="">
-                                </a>
-                            </p>
-                        </figure>
-                        <div class="media-content">
-                            <div class="content">
-                                <p class="topic-title">
-                                    <a href="http://127.0.0.1:9000/topic/jw3cxjg6ygoj"
-                                       title="AC 7265 网卡无法跑满 200M 的电信宽带">AC 7265 网卡无法跑满 200M 的电信宽带</a>
-                                </p>
-                                <p class="topic-meta">
-                                    <a class="topic-meta" href="http://127.0.0.1:9000/node/share" title="分享发现">分享发现</a>
-                                    <span> • </span>
-                                    <a class="topic-meta" href="http://127.0.0.1:9000/@biezhi" title="biezhi">biezhi</a>
-                                    <span> • </span>
-                                    <small>发布于12分钟前</small>
-                                    <span> • </span>
-                                    <small>暂无回复</small>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="media-right" style="line-height: 55px;">
-                            <a href="http://127.0.0.1:9000/topic/jw3cxjg6ygoj#reply-" title="查看评论">
-                                <span class="tag is-rounded" style="background-color: #aab0c6">0</span>
-                            </a>
-                        </div>
-                    </article>
+
                 </div>
                 <div class="message-header">
                     <a class="button is-dark">更多主题...</a>
@@ -492,8 +227,8 @@
             <div class="message is-light">
                 <div class="message-header">Roo - 小而美的极客社区</div>
                 <div class="message-body has-text-centered">
-                    <a class="button is-danger is-outlined" data-no-instant href="http://127.0.0.1:9000signup">马上注册</a>
-                    <a class="button is-info is-outlined" data-no-instant href="http://127.0.0.1:9000signin">登录Roo</a>
+                    <a class="button is-danger is-outlined" data-no-instant href="signup">马上注册</a>
+                    <a class="button is-info is-outlined" data-no-instant href="signin">登录Roo</a>
                 </div>
             </div>
 
@@ -557,7 +292,7 @@
                     <label class="media-left">分享探索</label>
                     <span class="nodes media-body">
                     <span class="name">
-                        <a title="分享发现" href="http://127.0.0.1:9000/go/share">分享发现</a>
+                        <a title="分享发现" href="/go/share">分享发现</a>
                     </span>
                 </span>
                 </div>
@@ -565,40 +300,40 @@
                     <label class="media-left">城市</label>
                     <span class="nodes media-body">
                     <span class="name">
-                        <a title="北京" href="http://127.0.0.1:9000/go/beijing">北京</a>
+                        <a title="北京" href="/go/beijing">北京</a>
                     </span>
                     <span class="name">
-                        <a title="上海" href="http://127.0.0.1:9000/go/shanghai">上海</a>
+                        <a title="上海" href="/go/shanghai">上海</a>
                     </span>
                     <span class="name">
-                        <a title="深圳" href="http://127.0.0.1:9000/go/shenzhen">深圳</a>
+                        <a title="深圳" href="/go/shenzhen">深圳</a>
                     </span>
                     <span class="name">
-                        <a title="杭州" href="http://127.0.0.1:9000/go/hangzhou">杭州</a>
+                        <a title="杭州" href="/go/hangzhou">杭州</a>
                     </span>
                     <span class="name">
-                        <a title="广州" href="http://127.0.0.1:9000/go/guangzhou">广州</a>
+                        <a title="广州" href="/go/guangzhou">广州</a>
                     </span>
                     <span class="name">
-                        <a title="成都" href="http://127.0.0.1:9000/go/chengdu">成都</a>
+                        <a title="成都" href="/go/chengdu">成都</a>
                     </span>
                     <span class="name">
-                        <a title="武汉" href="http://127.0.0.1:9000/go/wuhan">武汉</a>
+                        <a title="武汉" href="/go/wuhan">武汉</a>
                     </span>
                     <span class="name">
-                        <a title="西安" href="http://127.0.0.1:9000/go/xian">西安</a>
+                        <a title="西安" href="/go/xian">西安</a>
                     </span>
                     <span class="name">
-                        <a title="南京" href="http://127.0.0.1:9000/go/nanjing">南京</a>
+                        <a title="南京" href="/go/nanjing">南京</a>
                     </span>
                     <span class="name">
-                        <a title="大连" href="http://127.0.0.1:9000/go/dalian">大连</a>
+                        <a title="大连" href="/go/dalian">大连</a>
                     </span>
                     <span class="name">
-                        <a title="长沙" href="http://127.0.0.1:9000/go/changsha">长沙</a>
+                        <a title="长沙" href="/go/changsha">长沙</a>
                     </span>
                     <span class="name">
-                        <a title="苏州" href="http://127.0.0.1:9000/go/suzhou">苏州</a>
+                        <a title="苏州" href="/go/suzhou">苏州</a>
                     </span>
                 </span>
                 </div>
@@ -606,7 +341,7 @@
                     <label class="media-left">生活</label>
                     <span class="nodes media-body">
                     <span class="name">
-                        <a title="招聘求职" href="http://127.0.0.1:9000/go/jobs">招聘求职</a>
+                        <a title="招聘求职" href="/go/jobs">招聘求职</a>
                     </span>
                 </span>
                 </div>
@@ -621,27 +356,27 @@
         </div>
 
         <div class="message-body has-text-centered">
-            <a class="tag" title="北京" href="http://127.0.0.1:9000/go/beijing">北京</a>
-            <a class="tag" title="上海" href="http://127.0.0.1:9000/go/shanghai">上海</a>
-            <a class="tag" title="深圳" href="http://127.0.0.1:9000/go/shenzhen">深圳</a>
-            <a class="tag" title="杭州" href="http://127.0.0.1:9000/go/hangzhou">杭州</a>
-            <a class="tag" title="广州" href="http://127.0.0.1:9000/go/guangzhou">广州</a>
-            <a class="tag" title="成都" href="http://127.0.0.1:9000/go/chengdu">成都</a>
-            <a class="tag" title="武汉" href="http://127.0.0.1:9000/go/wuhan">武汉</a>
-            <a class="tag" title="西安" href="http://127.0.0.1:9000/go/xian">西安</a>
-            <a class="tag" title="南京" href="http://127.0.0.1:9000/go/nanjing">南京</a>
-            <a class="tag" title="大连" href="http://127.0.0.1:9000/go/dalian">大连</a>
-            <a class="tag" title="长沙" href="http://127.0.0.1:9000/go/changsha">长沙</a>
-            <a class="tag" title="苏州" href="http://127.0.0.1:9000/go/suzhou">苏州</a>
+            <a class="tag" title="北京" href="/go/beijing">北京</a>
+            <a class="tag" title="上海" href="/go/shanghai">上海</a>
+            <a class="tag" title="深圳" href="/go/shenzhen">深圳</a>
+            <a class="tag" title="杭州" href="/go/hangzhou">杭州</a>
+            <a class="tag" title="广州" href="/go/guangzhou">广州</a>
+            <a class="tag" title="成都" href="/go/chengdu">成都</a>
+            <a class="tag" title="武汉" href="/go/wuhan">武汉</a>
+            <a class="tag" title="西安" href="/go/xian">西安</a>
+            <a class="tag" title="南京" href="/go/nanjing">南京</a>
+            <a class="tag" title="大连" href="/go/dalian">大连</a>
+            <a class="tag" title="长沙" href="/go/changsha">长沙</a>
+            <a class="tag" title="苏州" href="/go/suzhou">苏州</a>
         </div>
     </div>
     <footer class="footer">
         <div class="container">
             <div class="content has-text-centered">
                 <p>
-                    <a href="http://127.0.0.1:9000/about">关于我们</a> |
-                    <a href="http://127.0.0.1:9000/contact">联系我们</a> |
-                    <a href="http://127.0.0.1:9000/faq">常见问题</a>
+                    <a href="/about">关于我们</a> |
+                    <a href="/contact">联系我们</a> |
+                    <a href="/faq">常见问题</a>
                 </p>
                 <p>
                     <strong>Roo</strong> by <a href="https://github.com/biezhi">biezhi</a> | Copyright © 2017 | 当前版本
