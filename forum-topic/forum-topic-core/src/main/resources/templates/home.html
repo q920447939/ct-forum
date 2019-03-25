@@ -19,7 +19,9 @@
             if (null != res && res.code == 0) {
                 var _html = "";
                 $.each(res.data.records, function (idx) {
-                   var item =  res.data.records[idx];
+                    var item =  res.data.records[idx];
+                    var FormatDate = getDateTimeStamp(item.created);
+                     var ReleaseTime = getDateDiff(FormatDate);
                     _html += ' <article class="media"> ';
                     _html += '                         <figure class="media-left"> ';
                     _html += '                             <p class="image is-48x48"> ';
@@ -39,9 +41,7 @@
                     _html += '                                     <span> • </span> ';
                     _html += '                                     <a class="topic-meta" href="/@biezhi" title="'+item.username+'">'+item.username+'</a> ';
                     _html += '                                     <span> • </span> ';
-                    _html += '                                     <small>发布于12分钟前</small> ';
-                    _html += '                                     <span> • </span> ';
-                    _html += '                                     <small>暂无回复</small> ';
+                    _html += '                                     <small>'+ReleaseTime+'</small> ';
                     _html += '                                 </p> ';
                     _html += '                             </div> ';
                     _html += '                         </div> ';
@@ -55,6 +55,49 @@
                 $(".has-text-centered").eq(4).html(_html);
             }
         });
+
+
+
+        //js函数代码：字符串转换为时间戳
+        function getDateTimeStamp(dateStr) {
+            return Date.parse(dateStr.replace(/-/gi, "/"));
+        } 
+
+       //计算时差
+        function getDateDiff(dateTimeStamp) {
+            var minute = 1000 * 60;
+            var hour = minute * 60;
+            var day = hour * 24;
+            var halfamonth = day * 15;
+            var month = day * 30;
+            var now = new Date().getTime();
+            var diffValue = now - dateTimeStamp;
+            if (diffValue < 0) {
+                //若日期不符则弹窗口告之,结束日期不能小于开始日期！
+            }
+            var monthC = diffValue / month;
+            var weekC = diffValue / (7 * day);
+            var dayC = diffValue / day;
+            var hourC = diffValue / hour;
+            var minC = diffValue / minute;
+            if (monthC >= 1) {
+                result = "发表于" + parseInt(monthC) + "个月前";
+            }
+            else if (weekC >= 1) {
+                result = "发表于" + parseInt(weekC) + "周前";
+            }
+            else if (dayC >= 1) {
+                result = "发表于" + parseInt(dayC) + "天前";
+            }
+            else if (hourC >= 1) {
+                result = "发表于" + parseInt(hourC) + "个小时前";
+            }
+            else if (minC >= 1) {
+                result = "发表于" + parseInt(minC) + "分钟前";
+            } else
+                result = "刚刚发表";
+            return result;
+        }
 
     </script>
 </head>
@@ -209,7 +252,7 @@
 
                 </div>
                 <div class="message-header">
-                    <a class="button is-dark">更多主题...</a>
+                    <a   href="/topics?draw=1&length=10" class="button is-dark">更多主题...</a>
                 </div>
             </div>
         </div>
