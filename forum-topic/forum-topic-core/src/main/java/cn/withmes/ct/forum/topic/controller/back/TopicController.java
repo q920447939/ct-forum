@@ -14,6 +14,7 @@ import cn.withmes.ct.forum.base.common.config.base.web.BaseRestfulController;
 import cn.withmes.ct.forum.topic.entity.bo.TopicBO;
 import cn.withmes.ct.forum.topic.entity.domain.Topic;
 import cn.withmes.ct.forum.topic.service.TopicService;
+import cn.withmes.ct.utils.utils.DateUtils;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import io.swagger.annotations.ApiImplicitParam;
@@ -57,6 +58,7 @@ public class TopicController extends BaseRestfulController {
         @SuppressWarnings("unchecked")
         IPage<TopicVO> vos = CopyAttributesUtils.copyAtoB(pageList, IPage.class);
         vos.setRecords(CopyAttributesUtils.copyAlistToBlist(pageList.getRecords(), TopicVO.class));
+        vos.getRecords().forEach(e->e.setReplyTime(DateUtils.formatToShow(e.getCreated())));
         return ResponseData.builder(vos, ResultCode.SUCCESS);
     }
 

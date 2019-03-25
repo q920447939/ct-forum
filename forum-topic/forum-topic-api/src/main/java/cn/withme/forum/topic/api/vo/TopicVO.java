@@ -83,4 +83,7 @@ public class TopicVO implements Serializable {
     private LocalDateTime replyed;
 
     private Integer deleted;
+
+    private  String replyTime;
+
 }
