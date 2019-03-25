@@ -2,15 +2,18 @@
  * @Project:
  * @Author: leegoo
  * @Date: 2019年03月22日
- */
+ *//*
+
 package cn.withmes.ct.forum.base.common.error;
 
+*/
 /**
  * ClassName: BasicException
  * @Description:
  * @author leegoo
  * @date 2019年03月22日
- */
+ *//*
+
 public class BasicException  extends RuntimeException {
 
     private static final long serialVersionUID = 1L;
@@ -26,3 +29,4 @@ public class BasicException  extends RuntimeException {
         return this.code;
     }
 }
+*/

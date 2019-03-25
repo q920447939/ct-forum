@@ -40,6 +40,7 @@ public class TopicServiceImpl extends BaseServiceImpl<Topic> implements TopicSer
 
 
     @Override
+    @SuppressWarnings("unchecked")
     public IPage<Topic> page(Page<TopicBO> page, TopicBO bo) {
         Topic topic = CopyAttributesUtils.copyAtoB(bo, Topic.class);
         QueryWrapper wrapper = new QueryWrapper();

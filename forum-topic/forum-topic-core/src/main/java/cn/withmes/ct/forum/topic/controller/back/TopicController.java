@@ -9,6 +9,7 @@ import cn.withme.forum.topic.api.vo.TopicVO;
 import cn.withmes.ct.forum.base.common.config.base.enums.ResultCode;
 import cn.withmes.ct.forum.base.common.config.base.mode.ResponseData;
 import cn.withmes.ct.forum.base.common.config.base.utils.common.CopyAttributesUtils;
+import cn.withmes.ct.forum.base.common.config.base.utils.mapper.BeanMapper;
 import cn.withmes.ct.forum.base.common.config.base.web.BaseRestfulController;
 import cn.withmes.ct.forum.topic.entity.bo.TopicBO;
 import cn.withmes.ct.forum.topic.entity.domain.Topic;
@@ -53,6 +54,7 @@ public class TopicController extends BaseRestfulController {
         log.info("loadIndex.draw:{}.length:{}", draw, length);
         Page<TopicBO> page = new Page<>(draw, length);
         IPage<Topic> pageList = topicService.page(page, CopyAttributesUtils.copyAtoB(param, TopicBO.class));
+        @SuppressWarnings("unchecked")
         IPage<TopicVO> vos = CopyAttributesUtils.copyAtoB(pageList, IPage.class);
         vos.setRecords(CopyAttributesUtils.copyAlistToBlist(pageList.getRecords(), TopicVO.class));
         return ResponseData.builder(vos, ResultCode.SUCCESS);

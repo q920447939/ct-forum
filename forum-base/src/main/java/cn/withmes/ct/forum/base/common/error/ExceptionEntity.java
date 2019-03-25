@@ -2,24 +2,29 @@
  * @Project:
  * @Author: leegoo
  * @Date: 2019年03月22日
- */
+ *//*
+
 package cn.withmes.ct.forum.base.common.error;
 
+*/
 /**
  * ClassName: ExceptionEntity
  * @Description:
  * @author leegoo
  * @date 2019年03月22日
- */
+ *//*
+
 
 import com.alibaba.fastjson.annotation.JSONField;
 
 import java.io.Serializable;
 import java.util.Date;
 
+*/
 /**
  * 信息实体
- */
+ *//*
+
 
 public class ExceptionEntity implements Serializable {
 
@@ -79,4 +84,4 @@ public class ExceptionEntity implements Serializable {
     public void setTimestamp(Date timestamp) {
         this.timestamp = timestamp;
     }
-}
+}*/

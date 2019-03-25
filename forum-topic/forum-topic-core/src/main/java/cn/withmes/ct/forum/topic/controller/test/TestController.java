@@ -3,7 +3,24 @@
  * @Author: leegoo
  * @Date: 2019年03月20日
  */
-package cn.withmes.ct.forum.topic.test;
+package cn.withmes.ct.forum.topic.controller.test;
+
+import cn.withmes.ct.forum.topic.entity.domain.Topic;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
+import io.swagger.annotations.ApiOperation;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * ClassName: TestController
@@ -12,11 +29,17 @@ package cn.withmes.ct.forum.topic.test;
  * @Description:
  * @date 2019年03月20日
  */
-/*
+
 @Deprecated
 @RestController
 @RequestMapping(value = "/users")     // 通过这里配置使下面的映射都在/users下，可去除
 public class TestController {
+
+    @GetMapping("/hello")
+    public String hello () {
+        return "hello";
+    }
+
     static Map<Long, Topic> users = Collections.synchronizedMap(new HashMap<Long, Topic>());
 
     @ApiOperation(value = "获取用户列表", notes = "")
@@ -63,4 +86,4 @@ public class TestController {
         return "success";
     }
 }
-*/
+

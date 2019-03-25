@@ -2,16 +2,19 @@
  * @Project:
  * @Author: leegoo
  * @Date: 2019年03月22日
- */
+ *//*
+
 package cn.withmes.ct.forum.topic.config;
 
+*/
 /**
  * ClassName: GlobalExceptionHandler
  *
  * @Description:
  * @author leegoo
  * @date 2019年03月22日
- */
+ *//*
+
 
 import cn.withmes.ct.forum.base.common.config.base.enums.ResultCode;
 import cn.withmes.ct.forum.base.common.config.base.mode.ResponseData;
@@ -38,15 +41,19 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+*/
 /**
  * 全局异常控制类
- */
+ *//*
+
 @ControllerAdvice
 public class GlobalExceptionHandler {
 
-    /**
+    */
+/**
      * 404异常处理
-     */
+     *//*
+
     @ExceptionHandler(value = NoHandlerFoundException.class)
     @ResponseStatus(HttpStatus.NOT_FOUND)
     public ModelAndView errorHandler(HttpServletRequest request, NoHandlerFoundException exception, HttpServletResponse response) {
@@ -56,9 +63,11 @@ public class GlobalExceptionHandler {
                 exception.getMessage());
     }
 
-    /**
+    */
+/**
      * 405异常处理
-     */
+     *//*
+
     @ExceptionHandler(HttpRequestMethodNotSupportedException.class)
     public ModelAndView errorHandler(HttpServletRequest request, HttpRequestMethodNotSupportedException exception, HttpServletResponse response) {
         return commonHandler(request, response,
@@ -67,9 +76,11 @@ public class GlobalExceptionHandler {
                 exception.getMessage());
     }
 
-    /**
+    */
+/**
      * 415异常处理
-     */
+     *//*
+
     @ExceptionHandler(HttpMediaTypeNotSupportedException.class)
     public ModelAndView errorHandler(HttpServletRequest request, HttpMediaTypeNotSupportedException exception, HttpServletResponse response) {
         return commonHandler(request, response,
@@ -78,9 +89,11 @@ public class GlobalExceptionHandler {
                 exception.getMessage());
     }
 
-    /**
+    */
+/**
      * 500异常处理
-     */
+     *//*
+
     @ExceptionHandler(value = Exception.class)
     public ModelAndView errorHandler(HttpServletRequest request, Exception exception, HttpServletResponse response) {
         return commonHandler(request, response,
@@ -89,9 +102,11 @@ public class GlobalExceptionHandler {
                 exception.getMessage());
     }
 
-    /**
+    */
+/**
      * 业务异常处理
-     */
+     *//*
+
     @ExceptionHandler(value = BasicException.class)
     private ModelAndView errorHandler(HttpServletRequest request, BasicException exception, HttpServletResponse response) {
         return commonHandler(request, response,
@@ -100,9 +115,11 @@ public class GlobalExceptionHandler {
                 exception.getMessage());
     }
 
-    /**
+    */
+/**
      * 表单验证异常处理
-     */
+     *//*
+
     @ExceptionHandler(value = BindException.class)
     @ResponseBody
     public ExceptionEntity validExceptionHandler(BindException exception, HttpServletRequest request, HttpServletResponse response) {
@@ -120,9 +137,11 @@ public class GlobalExceptionHandler {
         return entity;
     }
 
-    /**
+    */
+/**
      * 异常处理数据处理
-     */
+     *//*
+
     private ModelAndView commonHandler(HttpServletRequest request, HttpServletResponse response,
                                        String error, int httpCode, String message) {
         ExceptionEntity entity = new ExceptionEntity();
@@ -133,9 +152,11 @@ public class GlobalExceptionHandler {
         return determineOutput(request, response, entity);
     }
 
-    /**
+    */
+/**
      * 异常输出处理
-     */
+     *//*
+
     private ModelAndView determineOutput(HttpServletRequest request, HttpServletResponse response, ExceptionEntity entity) {
         if (!(
                 request.getHeader("accept").contains("application/json")
@@ -157,4 +178,4 @@ public class GlobalExceptionHandler {
             return null;
         }
     }
-}
+}*/
