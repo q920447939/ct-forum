@@ -24,7 +24,7 @@ public class GeneratorServiceEntity {
     private  String packageName = "cn.withmes.ct";
 
     //需要生成的表
-    private String[] tableNames = {"topic"};
+    private String[] tableNames = {"comment"};
 
     //数据库连接url
     private String dbUrl = "jdbc:mysql://127.0.0.1:3306/roo?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8";

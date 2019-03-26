@@ -1,126 +1,332 @@
-#set(String title = topic.title)
-#tag layout_block("bodyContent")
-<link rel="stylesheet" href="/static/plugins/mditor/css/mditor.min.css"/>
-<div class="columns">
-    <div class="column">
-        <div class="message is-light">
-            <div class="message-header">
-                <div class="has-text-left">
-                    <div style="padding-bottom: 10px;">
-                        <a href="${siteUrl('/go/' + topic.nodeSlug)}" title="${topic.nodeTitle}">${topic.nodeTitle}</a>
-                        /
-                        <span style="color: #222527;">${topic.title}</span>
-                    </div>
-                    <div class="topic-head-meta">
-                        <a href="${siteUrl('/@' + topic.username)}"
-                           title="${topic.username}"><b>${topic.username}</b></a> · 发布于 <abbr>8 天前</abbr>
-                        ·
-                        #if(null != topic.replyUser)
-                        最后由 <a href="${siteUrl('/@' + topic.replyUser)}" title="${topic.replyUser}"><b>${topic.replyUser}</b></a>
-                        回复于 <abbr>1
-                        天前</abbr> ·
-                        #end
-                        <span>${topic.views}</span> 次阅读
-                    </div>
-                </div>
-                <div class="has-text-right">
-                    <p class="image is-48x48">
-                        <a href="${siteUrl('/@' + topic.username)}">
-                            <img class="avatar-48" src="${topic.avatar}">
-                        </a>
-                    </p>
-                </div>
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/bulma.min.css" rel="stylesheet"/>
+    <link href="/plugins/noty/noty.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/css/roo.css?v=0.0.1"/>
+    <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/js/roo.js?v=0.0.1"></script>
+    <script type="text/javascript" src="/plugins/noty/noty.min.js"></script>
+    <script type="text/javascript" src="/plugins/mditor/js/mditor.min.js"></script>
+    <script type="text/javascript" src="/js/topic.js"></script>
+    <script type="text/javascript" src="/js/StringUtils.js"></script>
 
-            </div>
-            <div class="content topic-content">
-                ${topic.content}
-            </div>
-            <div class="message-header topic-footer">
-                <div class="has-text-left">
-                    <span>${topic.likes} 个赞</span>&nbsp;·&nbsp;
-                    <span>收藏</span>&nbsp;·&nbsp;
-                    #include('../partials/share.html')
-                </div>
+    <script type="text/javascript" >
+        $(function () {
+            (function ($) {
+                $.getUrlParam = function (name) {
+                    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+                    var r = window.location.search.substr(1).match(reg);
+                    if (r != null) return unescape(r[2]); return null;
+                }
+            })(jQuery);
+            var tid = $.getUrlParam('tid');
+            if (StringUtils.isEmpty(tid)) {
+                window.location.href = '/';
+            }
+            $.get("/topic/"+tid,function (res) {
+                console.log(res)
+            });
+        })
+    </script>
+</head>
+<body>
+<div class="header">
+    <nav class="navbar container">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+                <img src="/images/logo.png" alt="Roo 简洁的"
+                     width="112" height="28">
+            </a>
+
+            <a class="navbar-item is-hidden-desktop" href="https://github.com/jgthms/bulma" target="_blank">
+              <span class="icon" style="color: #333;">
+                <i class="fa fa-github"></i>
+              </span>
+            </a>
+
+            <a class="navbar-item is-hidden-desktop" href="https://twitter.com/jgthms" target="_blank">
+              <span class="icon" style="color: #55acee;">
+                <i class="fa fa-twitter"></i>
+              </span>
+            </a>
+
+            <div class="navbar-burger burger" data-target="navMenuExample">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
 
-        #if(topic.comments > 0)
-        <div class="message is-light">
-            <div class="message-header">
-                <div class="has-text-left">
-                    <div class="topic-head-meta">
-                        ${topic.comments} 回复 | 最后回复 2017-08-02 16:38:19
+        <div id="navMenuExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item " href="/topics">
+                    <span class="emoji">🦌&nbsp;</span>
+                    社区
+                </a>
+                <a class="navbar-item " href="/news">
+                    <span class="emoji">🤛&nbsp;</span>
+                    头条
+                </a>
+                <a class="navbar-item " href="/go/jobs">
+                    <span class="emoji">💁&nbsp;</span>
+                    招聘
+                </a>
+                <a class="navbar-item " href="/wiki">
+                    <span class="emoji">🎨&nbsp;</span>
+                    Wiki
+                </a>
+                <a class="navbar-item " href="/sites">
+                    <span class="emoji">❤️&nbsp;</span>
+                    酷站
+                </a>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item search-bar">
+                    <form id="search-form">
+                        <div class="control has-icons-left">
+                            <input class="input" placeholder="搜索本站内容">
+                            <span class="icon is-small is-left">
+                                <i class="fa fa-search"></i>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+                <a class="navbar-item is-hidden-desktop-only" href="/notice">
+                    <i class="fa fa-bell"></i>
+                </a>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link is-active" href="javascript:void(0);">
+                        @admin
+                    </a>
+                    <div class="navbar-dropdown ">
+                        <a class="navbar-item " href="/@admin">
+                            我的主页
+                        </a>
+                        <hr class="navbar-divider"/>
+                        <a class="navbar-item" href="/setting">
+                            个人设置
+                        </a>
+                        <a class="navbar-item " href="/favorites">
+                            我的收藏
+                        </a>
+                        <hr class="navbar-divider"/>
+                        <a data-no-instant class="navbar-item is-hidden-desktop-only" href="/logout">
+                            注销
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="content">
-                #for(comment : topic.commentList)
-                <article id="reply-${comment.coid}" class="media" style="padding: 8px 10px; margin-top:0;">
-                    <figure class="media-left" style="padding: 5px 0;">
+        </div>
+    </nav>
+</div>
+
+<div class="container">
+    <link rel="stylesheet" href="/plugins/mditor/css/mditor.min.css"/>
+    <div class="columns">
+        <div class="column">
+            <div class="message is-light">
+                <div class="message-header">
+                    <div class="has-text-left">
+                        <div style="padding-bottom: 10px;">
+                            <a href="/go/share" title="分享发现">分享发现</a>
+                            /
+                            <span style="color: #222527;">wordpress 如何增加修改或者新增数据库？</span>
+                        </div>
+                        <div class="topic-head-meta">
+                            <a href="/@biezhi"
+                               title="biezhi"><b>biezhi</b></a> · 发布于 <abbr>8 天前</abbr>
+                            ·
+                            <span>1</span> 次阅读
+                        </div>
+                    </div>
+                    <div class="has-text-right">
                         <p class="image is-48x48">
-                            <a href="${siteUrl('/@' + comment.author)}">
-                                <img class="avatar-48" src="${comment.avatar}">
+                            <a href="/@biezhi">
+                                <img class="avatar-48" src="">
                             </a>
                         </p>
-                    </figure>
-                    <div class="media-content">
-                        <div class="topic-head-meta">
-                            <a href="${siteUrl('/@' + comment.author)}"><b>${comment.author}</b></a> ·
-                            回复于 ${comment.created} · <a href="#reply-${comment.coid}">#${for.index}</a>
-                        </div>
-                        <div style="margin-top: 10px;">
-                            ${comment.content}
-                        </div>
                     </div>
-                    <div class="media-right" style="line-height: 55px;">
-                        <!-- TODO: 回复该评论 -->
+
+                </div>
+                <div class="content topic-content">
+                    我偶然看到这个，觉得还不错，收购价是一折，通过快递，比较方便。
+
+                    我今天下了个卖单，看怎么样。目前支持北京和上海地区，2004年后的书。
+
+                    我们都有很多因为冲动买的书，各种原因不想再看了，现在可以处理了。
+                </div>
+                <div class="message-header topic-footer">
+                    <div class="has-text-left">
+                        <span>0 个赞</span>&nbsp;·&nbsp;
+                        <span>收藏</span>&nbsp;·&nbsp;
+                        <a class="" href="http://service.weibo.com/share/share.php?url=&amp;type=3&amp;pic=&amp;title=" target="_blank" title="分享到微博">
+                            <i class="fa fa-weibo"></i>
+                        </a>
+                        <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fhifone.com%2Fthread%2F10&amp;text=&amp;via=" class="" target="_blank" title="分享到 Twitter">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="http://www.facebook.com/sharer.php?u=" class="" target="_blank" title="分享到 Facebook">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="https://plus.google.com/share?url=" class="" target="_blank" title="分享到 Google Plus">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
                     </div>
-                </article>
-                #end
+                </div>
             </div>
-        </div>
-        #end
 
-        #if(null != login_user)
-        <div class="message is-light">
-            <form id="comment-form">
-                <div class="bd-snippet-preview" style="padding: 10px;">
-                    <input type="hidden" name="owner" value="${login_user.username}"/>
-                    <input type="hidden" name="tid" value="${topic.tid}"/>
-                    <input type="hidden" name="type" value="comment"/>
-                    <input type="hidden" name="csrf_token" value="${csrf_token}"/>
-
-                    <div class="field">
-                        <div class="control">
-                            <textarea id="comment-editor" name="content" class="textarea" placeholder="请输入评论"
-                                      required></textarea>
-                        </div>
-                    </div>
-                    <div class="field is-grouped">
-                        <div class="control">
-                            <button id="comment" type="button" class="button is-link">发布评论</button>
+            <div class="message is-light">
+                <div class="message-header">
+                    <div class="has-text-left">
+                        <div class="topic-head-meta">
+                            1 回复 | 最后回复 2017-08-02 16:38:19
                         </div>
                     </div>
                 </div>
-            </form>
-        </div>
-        #else
-        <div class="message is-light">
-            <div class="message-header">发表评论</div>
-            <div class="message-body has-text-centered" style="line-height: 30px;">
-                需要 <a class="button is-success is-small" data-no-instant href="${siteUrl('signin')}">登录</a> 后方可回复,
-                如果你还没有账号请点击这里 <a class="button is-danger is-small" data-no-instant href="${siteUrl('signup')}">注册</a>
+                <div class="content">
+                    <article id="reply-3" class="media" style="padding: 8px 10px; margin-top:0;">
+                        <figure class="media-left" style="padding: 5px 0;">
+                            <p class="image is-48x48">
+                                <a href="/@admin">
+                                    <img class="avatar-48" src="">
+                                </a>
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="topic-head-meta">
+                                <a href="/@admin"><b>admin</b></a> ·
+                                回复于 2019-03-26 14:51:30.0 · <a href="#reply-3">#1</a>
+                            </div>
+                            <div style="margin-top: 10px;">
+                                <p>222</p>
+
+                            </div>
+                        </div>
+                        <div class="media-right" style="line-height: 55px;">
+                            <!-- TODO: 回复该评论 -->
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="message is-light">
+                <form id="comment-form">
+                    <div class="bd-snippet-preview" style="padding: 10px;">
+                        <input type="hidden" name="owner" value="admin"/>
+                        <input type="hidden" name="tid" value="ebpi45xgo8w5"/>
+                        <input type="hidden" name="type" value="comment"/>
+                        <input type="hidden" name="csrf_token" value="BTtdcJ3DFrmUDJRjTl44w1"/>
+
+                        <div class="field">
+                            <div class="control">
+                                <textarea id="comment-editor" name="content" class="textarea" placeholder="请输入评论" required></textarea>
+                            </div>
+                        </div>
+                        <div class="field is-grouped">
+                            <div class="control">
+                                <button id="comment" type="button" class="button is-link">发布评论</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
-        #end
+        <div class="column is-one-quarter">
+            <div class="message is-light">
+                <div class="message-header">Roo 社区</div>
+                <div class="message-body has-text-centered">
+                    <h6 class="subtitle is-6">
+                        <a class="button is-danger" href="/topic/new">
+                    <span class="icon">
+                      <i class="fa fa-pencil-square-o"></i>
+                    </span>
+                            <span>发布主题</span>
+                        </a>
+                    </h6>
+                </div>
+            </div>
+
+            <div class="message is-light">
+                <div class="message-header">推荐编程资源</div>
+                <div class="message-body">
+                    <ul>
+                        <li>
+                            <a href="">开发者头条</a>
+                        </li>
+                        <li>
+                            <a href="">并发编程网</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="message is-light">
+                <div class="message-header">友情链接</div>
+                <div class="message-body has-text-centered">
+                    <a href="https://github.com/biezhi" title="轻量级JavaWeb框架 - Blade" target="_blank">
+                        <img width="180" src="/images/icon-blade.png" />
+                    </a>
+                    <hr/>
+                    <a href="https://www.v2ex.com/" title="创意工作者们的社区" target="_blank">
+                        <img width="180" src="https://v2ex.assets.uxengine.net/site/logo@2x.png?m=1346064962" />
+                    </a>
+                </div>
+            </div>
+
+            <div class="message is-light">
+                <div class="message-header">捐赠 Roo</div>
+                <div class="message-body has-text-centered">
+                    <img src="/images/alipay.jpg" width="320" height="400"/>
+                </div>
+            </div>
+
+            <div class="message is-light">
+                <div class="message-header">站点统计</div>
+                <div class="message-body">
+                    <span>社区会员: 1 人</span><hr/>
+                    <span>主题数: 12 个</span><hr/>
+                    <span>回帖数: 3 条</span>
+                </div>
+            </div>
+
+        </div>
     </div>
-    #include('../partials/sidebar.html')
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <p>
+                    <a href="/about">关于我们</a> |
+                    <a href="/contact">联系我们</a> |
+                    <a href="/faq">常见问题</a>
+                </p>
+                <p>
+                    <strong>Roo</strong> by <a href="https://github.com/biezhi">biezhi</a> | Copyright © 2017 | 当前版本 <span class="tag is-info">0.0.1</span>
+                </p>
+                <p>
+                    <a class="icon" target="_blank" href="https://github.com/junicorn/roo">
+                        <i class="fa fa-github fa-2x"></i>
+                    </a>
+                    &nbsp;&nbsp;
+                    <a class="icon has-text-info" target="_blank" href="https://github.com/junicorn/roo">
+                        <i class="fa fa-twitter fa-2x"></i>
+                    </a>
+                    &nbsp;&nbsp;
+                    <a class="icon has-text-danger" target="_blank" href="https://github.com/junicorn/roo">
+                        <i class="fa fa-rss fa-2x"></i>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
 </div>
-#end
 
-#tag layout_block("footScript")
-<script type="text/javascript" src="/static/plugins/mditor/js/mditor.min.js"></script>
-<script type="text/javascript" src="/static/js/topic.js"></script>
-#end
-
-#include('../layouts/default.html')
+</body>
+</html>

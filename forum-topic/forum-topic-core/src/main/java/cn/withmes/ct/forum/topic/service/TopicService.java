@@ -19,6 +19,8 @@ public interface TopicService extends BaseService<Topic> {
 
     IPage<Topic> page(Page<TopicBO> page, TopicBO bo);
 
-    Topic selectById(@Param("id") String id);
+    TopicBO selectById(@Param("id") String id);
+
+
 }
 

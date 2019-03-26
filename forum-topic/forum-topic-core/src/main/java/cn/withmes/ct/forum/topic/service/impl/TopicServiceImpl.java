@@ -6,14 +6,20 @@ import cn.withmes.ct.forum.base.common.config.base.dal.BaseMapper;
 import cn.withmes.ct.forum.base.common.config.base.service.BaseServiceImpl;
 import cn.withmes.ct.forum.base.common.config.base.utils.common.CopyAttributesUtils;
 import cn.withmes.ct.forum.topic.entity.bo.TopicBO;
+import cn.withmes.ct.forum.topic.entity.domain.Comment;
 import cn.withmes.ct.forum.topic.entity.domain.Topic;
+import cn.withmes.ct.forum.topic.mapper.CommentMapper;
 import cn.withmes.ct.forum.topic.mapper.TopicMapper;
 import cn.withmes.ct.forum.topic.service.TopicService;
+import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import org.apache.commons.collections.CollectionUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 
 /**
@@ -27,6 +33,9 @@ public class TopicServiceImpl extends BaseServiceImpl<Topic> implements TopicSer
 
     @Autowired
     private TopicMapper mapper;
+
+    @Autowired
+    private CommentMapper commentMapper;
 
     @Override
     public BaseMapper<Topic> getBaseMapper() {
@@ -42,17 +51,24 @@ public class TopicServiceImpl extends BaseServiceImpl<Topic> implements TopicSer
     @Override
     @SuppressWarnings("unchecked")
     public IPage<Topic> page(Page<TopicBO> page, TopicBO bo) {
-        Topic topic = CopyAttributesUtils.copyAtoB(bo, Topic.class);
         QueryWrapper wrapper = new QueryWrapper();
         // todo wrapper select
         Page<Topic> queryPage = CopyAttributesUtils.copyAtoB(page, Page.class);
-        IPage<Topic> pageList = mapper.selectPage(queryPage, wrapper);
-        return pageList;
+        return  mapper.selectPage(queryPage, wrapper);
     }
 
     @Override
-    public Topic selectById(String id) {
-        return mapper.selectById(id);
+    public TopicBO selectById(String id) {
+        TopicBO topicBO = new TopicBO();
+        Topic item = mapper.selectById(id);
+        if (null != item) {
+             topicBO = CopyAttributesUtils.copyAtoB(item, TopicBO.class);
+            QueryWrapper<Comment> wraapper =  new QueryWrapper<>();
+            wraapper.eq("tid", item.getTid());
+            List<Comment> comments = commentMapper.selectList(wraapper);
+            if (!CollectionUtils.isEmpty(comments)) topicBO.setCommentList(comments);
+        }
+        return  topicBO;
     }
 }
 

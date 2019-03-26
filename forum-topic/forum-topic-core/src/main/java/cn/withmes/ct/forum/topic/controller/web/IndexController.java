@@ -24,7 +24,6 @@ public class IndexController {
     @ApiOperation(value = "跳转到首页")
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String index() {
-        System.out.println(222);
         return "home";
     }
 
@@ -32,6 +31,15 @@ public class IndexController {
     @RequestMapping(value = "/topics", method = RequestMethod.GET)
     public String topics() {
         return "topics";
+    }
+
+
+
+
+    @ApiOperation(value = "跳转到登陆")
+    @RequestMapping(value = "/signin", method = RequestMethod.GET)
+    public String signin() {
+        return "auth/signin";
     }
 
 }

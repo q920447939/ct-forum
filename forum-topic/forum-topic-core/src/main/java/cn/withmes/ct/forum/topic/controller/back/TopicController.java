@@ -9,7 +9,6 @@ import cn.withme.forum.topic.api.vo.TopicVO;
 import cn.withmes.ct.forum.base.common.config.base.enums.ResultCode;
 import cn.withmes.ct.forum.base.common.config.base.mode.ResponseData;
 import cn.withmes.ct.forum.base.common.config.base.utils.common.CopyAttributesUtils;
-import cn.withmes.ct.forum.base.common.config.base.utils.mapper.BeanMapper;
 import cn.withmes.ct.forum.base.common.config.base.web.BaseRestfulController;
 import cn.withmes.ct.forum.topic.entity.bo.TopicBO;
 import cn.withmes.ct.forum.topic.entity.domain.Topic;
@@ -22,6 +21,9 @@ import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -60,6 +62,14 @@ public class TopicController extends BaseRestfulController {
         vos.setRecords(CopyAttributesUtils.copyAlistToBlist(pageList.getRecords(), TopicVO.class));
         vos.getRecords().forEach(e->e.setReplyTime(DateUtils.formatToShow(e.getCreated())));
         return ResponseData.builder(vos, ResultCode.SUCCESS);
+    }
+
+    @ApiOperation(value = "帖子详情(Rest风格穿参数  eg : /topic/1)")
+    @PutMapping("/{tid}")
+    public ResponseData<TopicVO> detail (@PathVariable(name = "tid") String tid) {
+        TopicBO bo = topicService.selectById(tid);
+        if (null != bo) return successData(CopyAttributesUtils.copyAtoB(bo, TopicVO.class));
+        return ResponseData.builder(ResultCode.BASE_ERROR);
     }
 
 }
