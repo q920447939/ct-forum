@@ -62,7 +62,8 @@ public class GeneratorServiceEntity {
                 .setEntityLombokModel(false)
                 .setDbColumnUnderline(true)
                 .setNaming(NamingStrategy.underline_to_camel)
-                .setInclude(tableNames).setRestControllerStyle(true);//修改替换成你需要的表名，多个表名传数组
+                //修改替换成你需要的表名，多个表名传数组
+                .setInclude(tableNames).setRestControllerStyle(true);
 
 
         // 自定义实体，公共字段
@@ -75,12 +76,15 @@ public class GeneratorServiceEntity {
          strategyConfig.setSuperServiceImplClass(SuperBase+"service.BaseServiceImpl");
         // 自定义 controller 父类
          strategyConfig.setSuperControllerClass(SuperBase+"web.BaseRestfulController");
-        strategyConfig.setNaming(NamingStrategy.underline_to_camel);// 表名生成策略
+        // 表名生成策略
+        strategyConfig.setNaming(NamingStrategy.underline_to_camel);
         strategyConfig.setEntityLombokModel(true);
         strategyConfig.setControllerMappingHyphenStyle(true);
         strategyConfig.entityTableFieldAnnotationEnable(true);
-
-
+        //逻辑删除
+        strategyConfig.setLogicDeleteFieldName("deleted");
+        //列常量
+        strategyConfig.setEntityColumnConstant(true);
          //setFileOverride(true) 设置文件覆盖
         // setBaseResultMap(true) 此处设置生成xml模板里面的内容
         // setBaseColumnList(true) 此处设置生成xml模板里面的内容(返回列类型)
@@ -112,10 +116,5 @@ public class GeneratorServiceEntity {
                                 .setController("controller")
                                 .setEntity("entity")
                 ).setTemplate(tc).execute();
-    }
-
-    @Deprecated
-    private void generateByTables(String packageName, String... tableNames) {
-        generateByTables(true, packageName, tableNames);
     }
 }
