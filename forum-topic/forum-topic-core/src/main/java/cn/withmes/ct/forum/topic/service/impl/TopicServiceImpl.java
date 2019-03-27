@@ -54,7 +54,7 @@ public class TopicServiceImpl extends BaseServiceImpl<Topic> implements TopicSer
         QueryWrapper wrapper = new QueryWrapper();
         // todo wrapper select
         Page<Topic> queryPage = CopyAttributesUtils.copyAtoB(page, Page.class);
-        return  mapper.selectPage(queryPage, wrapper);
+        return mapper.selectPage(queryPage, wrapper);
     }
 
     @Override
@@ -62,13 +62,13 @@ public class TopicServiceImpl extends BaseServiceImpl<Topic> implements TopicSer
         TopicBO topicBO = new TopicBO();
         Topic item = mapper.selectById(id);
         if (null != item) {
-             topicBO = CopyAttributesUtils.copyAtoB(item, TopicBO.class);
-            QueryWrapper<Comment> wraapper =  new QueryWrapper<>();
-            wraapper.eq("tid", item.getTid());
+            topicBO = CopyAttributesUtils.copyAtoB(item, TopicBO.class);
+            QueryWrapper<Comment> wraapper = new QueryWrapper<>();
+            wraapper.eq(Comment.TID, item.getTid());
             List<Comment> comments = commentMapper.selectList(wraapper);
             if (!CollectionUtils.isEmpty(comments)) topicBO.setCommentList(comments);
         }
-        return  topicBO;
+        return topicBO;
     }
 }
 

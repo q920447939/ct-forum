@@ -76,4 +76,21 @@ public class Comment implements Serializable {
 	@TableLogic
 	private Integer deleted;
 
+	public static final String COID = "coid";
+
+	public static final String TID = "tid";
+
+	public static final String AUTHOR = "author";
+
+	public static final String OWNER = "owner";
+
+	public static final String CONTENT = "content";
+
+	public static final String TYPE = "type";
+
+	public static final String CREATED = "created";
+
+	public static final String STATE = "state";
+
+
 }

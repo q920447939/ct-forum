@@ -42,4 +42,11 @@ public class IndexController {
         return "auth/signin";
     }
 
+
+    @ApiOperation(value = "跳转到注册")
+    @RequestMapping(value = "/signup", method = RequestMethod.GET)
+    public String signup() {
+        return "auth/signup";
+    }
+
 }

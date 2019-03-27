@@ -69,7 +69,10 @@ public class TopicController extends BaseRestfulController {
     public ResponseData<TopicVO> detail (@PathVariable(name = "tid") String tid) {
         TopicBO bo = topicService.selectById(tid);
         TopicVO vo = CopyAttributesUtils.copyAtoB(bo, TopicVO.class);
-        if (null != vo.getReplyTime()) {
+        if (null != vo) {
+            if (null != vo.getReplyTime()) {
+                //TODO
+            }
             return successData(vo);
         }
         return ResponseData.builder(ResultCode.BASE_ERROR);
