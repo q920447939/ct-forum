@@ -15,7 +15,7 @@
     <script type="text/javascript" src="/plugins/noty/noty.min.js"></script>
 
     <script type="text/javascript">
-        $.get("/topic/page", function (res) {
+        $.get("/back/topic/page", function (res) {
             if (null != res && res.code == 0) {
                 var _html = "";
                 $.each(res.data.records, function (idx) {

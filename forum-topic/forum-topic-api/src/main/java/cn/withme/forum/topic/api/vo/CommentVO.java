@@ -1,5 +1,6 @@
 package cn.withme.forum.topic.api.vo;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 import lombok.experimental.Accessors;
 
@@ -51,7 +52,9 @@ public class CommentVO implements Serializable {
     /**
      * 评论生成时的GMT unix时间戳
      */
-	private LocalDateTime created;
+    @JsonFormat(timezone = "GMT+8", pattern = "yyyy-MM-dd HH:mm:ss")
+
+    private LocalDateTime created;
 
 	private Integer state;
 

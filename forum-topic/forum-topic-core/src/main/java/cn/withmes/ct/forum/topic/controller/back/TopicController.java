@@ -37,7 +37,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @date 2019年03月20日
  */
 @RestController
-@RequestMapping("/topic")
+@RequestMapping("/back/topic")
 public class TopicController extends BaseRestfulController {
 
     @Autowired
@@ -65,10 +65,13 @@ public class TopicController extends BaseRestfulController {
     }
 
     @ApiOperation(value = "帖子详情(Rest风格穿参数  eg : /topic/1)")
-    @PutMapping("/{tid}")
+    @GetMapping("/{tid}")
     public ResponseData<TopicVO> detail (@PathVariable(name = "tid") String tid) {
         TopicBO bo = topicService.selectById(tid);
-        if (null != bo) return successData(CopyAttributesUtils.copyAtoB(bo, TopicVO.class));
+        TopicVO vo = CopyAttributesUtils.copyAtoB(bo, TopicVO.class);
+        if (null != vo.getReplyTime()) {
+            return successData(vo);
+        }
         return ResponseData.builder(ResultCode.BASE_ERROR);
     }
 
