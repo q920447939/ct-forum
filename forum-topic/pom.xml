@@ -18,5 +18,11 @@
     <name>forum-topic</name>
     <description>首页社区模块</description>
 
-
+    <dependencies>
+        <dependency>
+            <groupId>cn.withmes.ct</groupId>
+            <artifactId>forum-utils</artifactId>
+            <version>${cn.withmes.ct.forum-utils.version}</version>
+        </dependency>
+    </dependencies>
 </project>
