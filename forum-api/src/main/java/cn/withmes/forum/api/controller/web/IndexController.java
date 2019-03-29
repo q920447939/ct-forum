@@ -3,7 +3,7 @@
  * @Author: leegoo
  * @Date: 2019年03月22日
  */
-package cn.withmes.ct.forum.topic.controller.web;
+package cn.withmes.forum.api.controller.web;
 
 import io.swagger.annotations.ApiOperation;
 import org.springframework.stereotype.Controller;

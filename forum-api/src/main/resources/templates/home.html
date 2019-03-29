@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>草莓社区</title>
+    <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/bulma.min.css" rel="stylesheet"/>
+    <link href="/plugins/noty/noty.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/css/roo.css?v=0.0.1"/>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"/>
+    <script type="text/javascript" src="/js/roo.js?v=0.0.1"></script>
+    <script type="text/javascript" src="/plugins/noty/noty.min.js"></script>
+
+    <script type="text/javascript">
+        $.get("/back/topic/page", function (res) {
+            if (null != res && res.code == 0) {
+                var _html = "";
+                $.each(res.data.records, function (idx) {
+                    var item =  res.data.records[idx];
+                    _html += ' <article class="media"> ';
+                    _html += '                         <figure class="media-left"> ';
+                    _html += '                             <p class="image is-48x48"> ';
+                    _html += '                                 <a href="/@biezhi" title="biezhi"> ';
+                    _html += '                                     <img class="avatar-48" src=""> ';
+                    _html += '                                 </a> ';
+                    _html += '                             </p> ';
+                    _html += '                         </figure> ';
+                    _html += '                         <div class="media-content"> ';
+                    _html += '                             <div class="content"> ';
+                    _html += '                                 <p class="topic-title"> ';
+                    _html += '                                     <a href="/web/topic/detail?tid='+item.tid+'" title="'+item.title+'">';
+                    _html += '                                         '+item.title+'</a> ';
+                    _html += '                                 </p> ';
+                    _html += '                                 <p class="topic-meta"> ';
+                    _html += '                                     <a class="topic-meta" href="/node/share/'+item.tid+'" title="分享发现">分享发现</a> ';
+                    _html += '                                     <span> • </span> ';
+                    _html += '                                     <a class="topic-meta" href="/user/item/'+item.username+'" title="'+item.username+'">'+item.username+'</a> ';
+                    _html += '                                     <span> • </span> ';
+                    _html += '                                     <small>'+item.replyTime+'</small> ';
+                    _html += '                                 </p> ';
+                    _html += '                             </div> ';
+                    _html += '                         </div> ';
+                    _html += '                         <div class="media-right" style="line-height: 55px;"> ';
+                    _html += '                             <a href="/topic/reply/'+item.tid+'" title="查看评论"> ';
+                    _html += '                                 <span class="tag is-rounded" style="background-color: #aab0c6">'+item.comments+'</span> ';
+                    _html += '                             </a> ';
+                    _html += '                         </div> ';
+                    _html += '                     </article> ';
+                });
+                $(".has-text-centered").eq(4).html(_html);
+            }
+        });
+    </script>
+</head>
+<body>
+<div class="header">
+    <nav class="navbar container">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+                <img src="/images/logo.png" alt="Roo 简洁的"
+                     width="112" height="28">
+            </a>
+
+            <a class="navbar-item is-hidden-desktop" href="https://github.com/jgthms/bulma" target="_blank">
+              <span class="icon" style="color: #333;">
+                <i class="fa fa-github"></i>
+              </span>
+            </a>
+
+            <a class="navbar-item is-hidden-desktop" href="https://twitter.com/jgthms" target="_blank">
+              <span class="icon" style="color: #55acee;">
+                <i class="fa fa-twitter"></i>
+              </span>
+            </a>
+
+            <div class="navbar-burger burger" data-target="navMenuExample">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div id="navMenuExample" class="navbar-menu">
+            <!--todo 后续加载菜单 -->
+            <div class="navbar-start">
+                <a class="navbar-item " href="/topics">
+                    <span class="emoji">🦌&nbsp;</span>
+                    社区
+                </a>
+                <a class="navbar-item " href="/news">
+                    <span class="emoji">🤛&nbsp;</span>
+                    头条
+                </a>
+                <a class="navbar-item " href="/go/jobs">
+                    <span class="emoji">💁&nbsp;</span>
+                    招聘
+                </a>
+                <a class="navbar-item " href="/wiki">
+                    <span class="emoji">🎨&nbsp;</span>
+                    Wiki
+                </a>
+                <a class="navbar-item " href="/sites">
+                    <span class="emoji">❤️&nbsp;</span>
+                    酷站
+                </a>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item search-bar">
+                    <form id="search-form">
+                        <div class="control has-icons-left">
+                            <input class="input" placeholder="搜索本站内容">
+                            <span class="icon is-small is-left">
+                                <i class="fa fa-search"></i>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+                <a class="navbar-item is-hidden-desktop-only" href="/signup">
+                    注册
+                </a>
+                <a class="navbar-item is-hidden-desktop-only" href="/signin">
+                    登录
+                </a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="container">
+    <article class="message is-white">
+        <div class="message-body shadow-1 boom">
+            <div class="media">
+                <div class="media-left">
+                    <i class="fa fa-gift media-object" style="font-size: 55px; width: 55px; color: #333;"></i>
+                </div>
+                <div class="media-body" style="line-height: 200%; text-align: center;">
+                    <div style="font-size: 15px">
+                        Roo 官方网站源码 <a href="https://github.com/junicorn/roo" target="_blank">Roo</a> 正式上线！
+                    </div>
+                    <div>
+                        <code style="padding: 4px 10px; background: #e9eaed; border-radius: 2px;">git clone
+                            git@github.com:junicorn/roo.git</code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <div class="columns is-mobile node-icon">
+        <div class="column">
+            <div class="notification shadow-1 is-link has-text-centered">
+                <div class="item-icon">
+                    <a href="/topics" title="Roo社区"><i class="fa fa-comments-o"></i></a>
+                </div>
+                <div>
+                    <a href="/topics" title="Roo社区">Roo社区</a>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="notification shadow-1 is-success has-text-centered">
+                <div class="item-icon">
+                    <a href="/wiki" title="技术文档"><i class="fa fa-support"></i></a>
+                </div>
+                <div>
+                    <a href="/wiki" title="技术文档">技术文档</a>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="notification shadow-1 is-warning has-text-centered">
+                <div class="item-icon">
+                    <a href="/go/jobs" title="招聘求职"><i class="fa fa-users"></i></a>
+                </div>
+                <div>
+                    <a href="/go/jobs" title="招聘求职">招聘求职</a>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="notification shadow-1 is-danger has-text-centered">
+                <div class="item-icon">
+                    <a href="/popular" title="精华主题"><i class="fa fa-diamond"></i></a>
+                </div>
+                <div>
+                    <a href="/popular" title="精华主题">精华主题</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="columns">
+        <div class="column home-topic">
+            <div class="message is-light">
+                <div class="message-header">
+                <span class="has-text-left"><span class="icon is-small"><i
+                        class="fa fa-first-order"></i></span> 首页主题</span>
+                    <span class="has-text-right">
+                    </span>
+                </div>
+                <div class="message-body has-text-centered">
+
+                </div>
+                <div class="message-header">
+                    <a   href="/topics?draw=1&length=10" class="button is-dark">更多主题...</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="column is-one-quarter">
+            <div class="message is-light">
+                <div class="message-header">Roo - 每日赠言</div>
+                <div class="message-body">
+                    <h6 class="subtitle is-6">
+                        <p>一切经济最后都归结为时间经济</p>
+                        <p class='tips-foot'>——马克思</p>
+                    </h6>
+                </div>
+            </div>
+            <div class="message is-light">
+                <div class="message-header">Roo - 小而美的极客社区</div>
+                <div class="message-body has-text-centered">
+                    <a class="button is-danger is-outlined" data-no-instant href="signup">马上注册</a>
+                    <a class="button is-info is-outlined" data-no-instant href="signin">登录Roo</a>
+                </div>
+            </div>
+
+            <div class="message is-light">
+                <div class="message-header">推荐编程资源</div>
+                <div class="message-body">
+                    <ul>
+                        <li>
+                            <a href="">开发者头条</a>
+                        </li>
+                        <li>
+                            <a href="">并发编程网</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="message is-light">
+                <div class="message-header">友情链接</div>
+                <div class="message-body has-text-centered">
+                    <a href="https://github.com/biezhi" title="轻量级JavaWeb框架 - Blade" target="_blank">
+                        <img width="180" src="/images/icon-blade.png"/>
+                    </a>
+                    <hr/>
+                    <a href="https://www.v2ex.com/" title="创意工作者们的社区" target="_blank">
+                        <img width="180" src="https://v2ex.assets.uxengine.net/site/logo@2x.png?m=1346064962"/>
+                    </a>
+                </div>
+            </div>
+
+            <div class="message is-light">
+                <div class="message-header">捐赠 Roo</div>
+                <div class="message-body has-text-centered">
+                    <img src="/images/alipay.jpg" width="320" height="400"/>
+                </div>
+            </div>
+
+            <div class="message is-light">
+                <div class="message-header">站点统计</div>
+                <div class="message-body">
+                    <span>社区会员: 1 人</span>
+                    <hr/>
+                    <span>主题数: 12 个</span>
+                    <hr/>
+                    <span>回帖数: 3 条</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--节点导航-->
+    <div class="message is-light">
+        <div class="message-header">
+            <span class="has-text-left"><span class="icon is-small"><i class="fa fa-cubes"></i></span> 节点导航</span>
+        </div>
+        <div class="message-body has-text-centered">
+            <div class="row node-list">
+                <div class="node media">
+                    <label class="media-left">分享探索</label>
+                    <span class="nodes media-body">
+                    <span class="name">
+                        <a title="分享发现" href="/go/share">分享发现</a>
+                    </span>
+                </span>
+                </div>
+                <div class="node media">
+                    <label class="media-left">城市</label>
+                    <span class="nodes media-body">
+                    <span class="name">
+                        <a title="北京" href="/go/beijing">北京</a>
+                    </span>
+                    <span class="name">
+                        <a title="上海" href="/go/shanghai">上海</a>
+                    </span>
+                    <span class="name">
+                        <a title="深圳" href="/go/shenzhen">深圳</a>
+                    </span>
+                    <span class="name">
+                        <a title="杭州" href="/go/hangzhou">杭州</a>
+                    </span>
+                    <span class="name">
+                        <a title="广州" href="/go/guangzhou">广州</a>
+                    </span>
+                    <span class="name">
+                        <a title="成都" href="/go/chengdu">成都</a>
+                    </span>
+                    <span class="name">
+                        <a title="武汉" href="/go/wuhan">武汉</a>
+                    </span>
+                    <span class="name">
+                        <a title="西安" href="/go/xian">西安</a>
+                    </span>
+                    <span class="name">
+                        <a title="南京" href="/go/nanjing">南京</a>
+                    </span>
+                    <span class="name">
+                        <a title="大连" href="/go/dalian">大连</a>
+                    </span>
+                    <span class="name">
+                        <a title="长沙" href="/go/changsha">长沙</a>
+                    </span>
+                    <span class="name">
+                        <a title="苏州" href="/go/suzhou">苏州</a>
+                    </span>
+                </span>
+                </div>
+                <div class="node media">
+                    <label class="media-left">生活</label>
+                    <span class="nodes media-body">
+                    <span class="name">
+                        <a title="招聘求职" href="/go/jobs">招聘求职</a>
+                    </span>
+                </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--热门城市-->
+    <div class="message is-light">
+        <div class="message-header">
+            <span class="has-text-left"><span class="icon is-small"><i class="fa fa-flag"></i></span> 热门城市</span>
+        </div>
+
+        <div class="message-body has-text-centered">
+            <a class="tag" title="北京" href="/go/beijing">北京</a>
+            <a class="tag" title="上海" href="/go/shanghai">上海</a>
+            <a class="tag" title="深圳" href="/go/shenzhen">深圳</a>
+            <a class="tag" title="杭州" href="/go/hangzhou">杭州</a>
+            <a class="tag" title="广州" href="/go/guangzhou">广州</a>
+            <a class="tag" title="成都" href="/go/chengdu">成都</a>
+            <a class="tag" title="武汉" href="/go/wuhan">武汉</a>
+            <a class="tag" title="西安" href="/go/xian">西安</a>
+            <a class="tag" title="南京" href="/go/nanjing">南京</a>
+            <a class="tag" title="大连" href="/go/dalian">大连</a>
+            <a class="tag" title="长沙" href="/go/changsha">长沙</a>
+            <a class="tag" title="苏州" href="/go/suzhou">苏州</a>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <p>
+                    <a href="/about">关于我们</a> |
+                    <a href="/contact">联系我们</a> |
+                    <a href="/faq">常见问题</a>
+                </p>
+                <p>
+                    <strong>Roo</strong> by <a href="https://github.com/biezhi">biezhi</a> | Copyright © 2017 | 当前版本
+                    <span class="tag is-info">0.0.1</span>
+                </p>
+                <p>
+                    <a class="icon" target="_blank" href="https://github.com/junicorn/roo">
+                        <i class="fa fa-github fa-2x"></i>
+                    </a>
+                    &nbsp;&nbsp;
+                    <a class="icon has-text-info" target="_blank" href="https://github.com/junicorn/roo">
+                        <i class="fa fa-twitter fa-2x"></i>
+                    </a>
+                    &nbsp;&nbsp;
+                    <a class="icon has-text-danger" target="_blank" href="https://github.com/junicorn/roo">
+                        <i class="fa fa-rss fa-2x"></i>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+</body>
+</html>

@@ -6,7 +6,9 @@
        <a href="https://chrome.google.com/webstore/detail/chromoji-emojis-for-googl/negakbijaemdgbhklopmghphgaeadmpo"/>Chromoji 
       
 
-
-**错误日志记录:**
  <a href ="https://github.com/q920447939/ct-forum/blob/master/ERROR_RECORD.md"/>**错误日志记录**
+
+
+<a href = "http://blog.didispace.com/spring-cloud-alibaba-4/">**nacos 持久化(mysql)**
+
 

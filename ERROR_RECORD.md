@@ -116,3 +116,71 @@ show VARIABLES like '%max_allowed_packet%';
 
 
 
+
+
+### 5.MySQL-this is incompatible with sql_mode=only_full_group_by错误解决方案
+
+   一、原理层面
+
+   这个错误发生在mysql 5.7 版本及以上版本会出现的问题：
+
+   mysql 5.7版本默认的sql配置是:sql_mode="ONLY_FULL_GROUP_BY"，这个配置严格执行了"SQL92标准"。
+
+   很多从5.6升级到5.7时，为了语法兼容，大部分都会选择调整sql_mode，使其保持跟5.6一致，为了尽量兼容程序。
+
+
+
+由于我的用的docker 安装的mysql ,所以用的docker 处理的方式,直装的请百度,原理差不多
+
+1.查看mysql 容器id
+
+```shell
+[root@VM_95_93_centos ~]#  docker ps
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                               NAMES
+9ff548e8bd4c        mysql:5.7           "docker-entrypoint.s…"   9 days ago          Up 2 days           0.0.0.0:3306->3306/tcp, 33060/tcp   MySQLDocker
+
+```
+
+
+
+2.进入mysql 容器
+
+```shell
+[root@VM_95_93_centos ~]# docker exec -it 9ff548e8bd4c bash
+
+```
+
+
+
+
+
+3.编辑mysqld.conf(`#`后面才是命令)
+
+```shell
+root@9ff548e8bd4c:/etc/mysql/mysql.conf.d# vi /etc/mysql/mysql.conf.d/mysqld.cnf 
+```
+
+
+
+4.在最后一行插入如下内容:
+
+```shell
+sql_mode=STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+```
+
+
+
+
+
+5.重启docker 内的mysql (需要先退出容器) 
+
+```shell
+root@9ff548e8bd4c:/etc/mysql/mysql.conf.d# exit
+exit
+[root@VM_95_93_centos ~]# docker ps 
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                               NAMES
+9ff548e8bd4c        mysql:5.7           "docker-entrypoint.s…"   9 days ago          Up 7 minutes        0.0.0.0:3306->3306/tcp, 33060/tcp   MySQLDocker
+[root@VM_95_93_centos ~]# docker restart 9ff548e8bd4c
+```
+
+再次执行sql就能够正常的执行了

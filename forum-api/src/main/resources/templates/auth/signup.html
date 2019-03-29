@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>新用户注册 - 草莓 社区</title>
+    <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/bulma.min.css" rel="stylesheet"/>
+    <link href="/plugins/noty/noty.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/css/roo.css?v=0.0.1"/>
+    <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/js/roo.js?v=0.0.1"></script>
+
+</head>
+<body>
+<div class="header">
+    <nav class="navbar container">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+                <img src="/images/logo.png" alt="Roo 简洁的"
+                     width="112" height="28">
+            </a>
+
+            <a class="navbar-item is-hidden-desktop" href="https://github.com/jgthms/bulma" target="_blank">
+              <span class="icon" style="color: #333;">
+                <i class="fa fa-github"></i>
+              </span>
+            </a>
+
+            <a class="navbar-item is-hidden-desktop" href="https://twitter.com/jgthms" target="_blank">
+              <span class="icon" style="color: #55acee;">
+                <i class="fa fa-twitter"></i>
+              </span>
+            </a>
+
+            <div class="navbar-burger burger" data-target="navMenuExample">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div id="navMenuExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item " href="/topics">
+                    <span class="emoji">🦌&nbsp;</span>
+                    社区
+                </a>
+                <a class="navbar-item " href="/news">
+                    <span class="emoji">🤛&nbsp;</span>
+                    头条
+                </a>
+                <a class="navbar-item " href="/go/jobs">
+                    <span class="emoji">💁&nbsp;</span>
+                    招聘
+                </a>
+                <a class="navbar-item " href="/wiki">
+                    <span class="emoji">🎨&nbsp;</span>
+                    Wiki
+                </a>
+                <a class="navbar-item " href="/sites">
+                    <span class="emoji">❤️&nbsp;</span>
+                    酷站
+                </a>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item search-bar">
+                    <form id="search-form">
+                        <div class="control has-icons-left">
+                            <input class="input" placeholder="搜索本站内容">
+                            <span class="icon is-small is-left">
+                                <i class="fa fa-search"></i>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+                <a class="navbar-item is-hidden-desktop-only" href="/signup">
+                    注册
+                </a>
+                <a class="navbar-item is-hidden-desktop-only" href="/signin">
+                    登录
+                </a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="container">
+    <div class="columns">
+        <div class="column is-3"></div>
+        <div class="column is-6">
+            <div class="message is-light">
+                <div class="message-header">注册新用户</div>
+                <div class="message-body">
+                    <form id="signup-form" method="post">
+                        <div class="field">
+                            <div class="control has-icons-left has-icons-right">
+                                <input id="username" name="username" class="input" type="text" placeholder="用户名"/>
+                                <span class="icon is-small is-left">
+                              <i class="fa fa-user"></i>
+                            </span>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <div class="control has-icons-left has-icons-right">
+                                <input id="email" name="email" class="input" type="text" placeholder="请输入邮箱"/>
+                                <span class="icon is-small is-left">
+                              <i class="fa fa-envelope"></i>
+                            </span>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <p class="control has-icons-left">
+                             <span class="icon is-small is-left">
+                          <i class="fa fa-lock"></i>
+                        </span>
+                            </p>
+                        </div>
+
+                        <div class="field">
+                            <p class="control has-icons-left">
+                                <input id="password" name="password" class="input" type="password" placeholder="请输入密码"/>
+                                <span class="icon is-small is-left">
+                          <i class="fa fa-lock"></i>
+                        </span>
+                            </p>
+                        </div>
+
+                        <div class="field">
+                            <p class="control has-icons-left">
+                                <input id="repassword" name="repassword" class="input" type="password" placeholder="确认密码"/>
+                                <span class="icon is-small is-left">
+                          <i class="fa fa-lock"></i>
+                        </span>
+                            </p>
+                        </div>
+
+                        <div class="field">
+                            <p class="control has-icons-left">
+                                <input id="vcode" name="vcode" class="input" type="text" placeholder="验证码"/>
+                            </p>
+                        </div>
+
+                        <div class="field">
+                            <p class="control">
+                                <button id="signup-btn" class="button is-success" type="submit">注册</button>
+                                <a class="button" href="/signin">登录</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="column is-3"></div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <p>
+                    <a href="/about">关于我们</a> |
+                    <a href="/contact">联系我们</a> |
+                    <a href="/faq">常见问题</a>
+                </p>
+                <p>
+                    <strong>Roo</strong> by <a href="https://github.com/biezhi">biezhi</a> | Copyright © 2017 | 当前版本 <span class="tag is-info">0.0.1</span>
+                </p>
+                <p>
+                    <a class="icon" target="_blank" href="https://github.com/junicorn/roo">
+                        <i class="fa fa-github fa-2x"></i>
+                    </a>
+                    &nbsp;&nbsp;
+                    <a class="icon has-text-info" target="_blank" href="https://github.com/junicorn/roo">
+                        <i class="fa fa-twitter fa-2x"></i>
+                    </a>
+                    &nbsp;&nbsp;
+                    <a class="icon has-text-danger" target="_blank" href="https://github.com/junicorn/roo">
+                        <i class="fa fa-rss fa-2x"></i>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</div>
+<script type="text/javascript" src="/plugins/noty/noty.min.js"></script>
+<script type="text/javascript" src="/plugins/jquery.validation/jquery.validate.min.js"></script>
+<script type="text/javascript" src="/plugins/jquery.validation/additional-methods.min.js"></script>
+<script type="text/javascript" src="/plugins/jquery.validation/localization/messages_zh.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $.validator.addMethod("checkUserName", function (value, element, params) {
+            var checkName = /^\w{4,20}$/g;
+            return this.optional(element) || (checkName.test(value));
+        }, "只允许4-20位英文字母、数字或者下画线！");
+
+        $("#signupForm").validate({
+            rules: {
+                username: {
+                    required: true,
+                    rangelength: [4, 20],
+                    checkUserName: true
+                },
+                password: {
+                    required: true,
+                    minlength: 1
+                },
+                repassword: {
+                    required: true,
+                    minlength: 1,
+                    equalTo: "#password"
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
+                vcode: {
+                    required: true
+                }
+            },
+            messages: {
+                username: {
+                    required: "请输入用户名",
+                    rangelength: "请输入4-20位用户名"
+                },
+                password: {
+                    required: "请输入密码",
+                    minlength: "密码长度不能小于6位"
+                },
+                repassword: {
+                    required: "请输入密码",
+                    minlength: "密码长度不能小于6位",
+                    equalTo: "两次密码输入不一致"
+                },
+                vcode: {
+                    required: "请输入验证码"
+                },
+                email: {
+                    required: "请输入邮箱",
+                    email: "请输入一个正确的邮箱"
+                }
+            },
+            submitHandler: function () {
+                $('#signup-form #signup-btn').addClass('is-loading');
+                Roo.post("/signup", $('#signup-form').serialize(),
+                    function (data, textStatus, jqXHR) {
+                        $('#signup-form #signup-btn').addClass('is-loading');
+                        if (data && data.success) {
+                            Roo.alertOk('注册成功');
+                        } else {
+                            Roo.alertError(data.msg || '注册失败');
+                        }
+                    });
+            }
+        });
+    });
+</script>
+</body>
+</html>
