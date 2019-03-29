@@ -2,7 +2,8 @@
  * @Project:
  * @Author: leegoo
  * @Date: 2019年03月20日
- */
+ *//*
+
 package cn.withmes.forum.api.controller.back;
 
 import cn.withme.forum.topic.api.vo.TopicVO;
@@ -27,13 +28,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+*/
 /**
  * ClassName: TopicController
  *
  * @author leegoo
  * @Description:
  * @date 2019年03月20日
- */
+ *//*
+
 @RestController
 @RequestMapping("/back/topic")
 public class TopicController extends BaseRestfulController {
@@ -76,4 +79,4 @@ public class TopicController extends BaseRestfulController {
         return ResponseData.builder(ResultCode.BASE_ERROR);
     }
 
-}
+}*/

@@ -8,13 +8,31 @@
         <version>0.0.1-SNAPSHOT</version>
         <relativePath/>
     </parent>
-    <groupId>cn.withmes</groupId>
     <artifactId>forum-api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>forum-api</name>
     <description>forum-api</description>
 
     <dependencies>
+
+        <dependency>
+            <groupId>cn.withmes.ct</groupId>
+            <artifactId>forum-topic-api</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+       <dependency>
+            <groupId>cn.withmes.ct</groupId>
+            <artifactId>forum-base</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.withmes.ct</groupId>
+            <artifactId>forum-utils</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
@@ -56,6 +74,24 @@
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger-ui</artifactId>
+        </dependency>
+
+        <!-- Dubbo Nacos registry dependency -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>dubbo-registry-nacos</artifactId>
+        </dependency>
+
+        <!-- Dubbo dependency -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>dubbo</artifactId>
+        </dependency>
+
+        <!-- Alibaba Spring Context extension -->
+        <dependency>
+            <groupId>com.alibaba.spring</groupId>
+            <artifactId>spring-context-support</artifactId>
         </dependency>
 
 

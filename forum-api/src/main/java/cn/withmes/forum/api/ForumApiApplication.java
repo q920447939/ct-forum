@@ -1,27 +1,22 @@
 package cn.withmes.forum.api;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import cn.withmes.ct.forum.topic.api.service.DemoService;
+import cn.withmes.ct.forum.topic.api.vo.User;
+import com.alibaba.dubbo.config.annotation.Reference;
+import com.alibaba.dubbo.config.spring.context.annotation.EnableDubbo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.client.loadbalancer.LoadBalanced;
-import org.springframework.context.annotation.Bean;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.client.RestTemplate;
 
 
+@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class, HibernateJpaAutoConfiguration.class})
 @EnableDiscoveryClient
-@SpringBootApplication
+@EnableDubbo()
 public class ForumApiApplication {
-
-    @LoadBalanced
-    @Bean
-    public RestTemplate restTemplate() {
-        return new RestTemplate();
-    }
 
 
     public static void main(String[] args) {
@@ -29,20 +24,18 @@ public class ForumApiApplication {
     }
 
 
+    @Reference(version = "${demo.service.version}")
+    private DemoService demoService;
+
+
     @RestController
-    public class TestController {
+    class Demo {
 
-        private final RestTemplate restTemplate;
 
-        @Autowired
-        public TestController(RestTemplate restTemplate) {this.restTemplate = restTemplate;}
-
-        @RequestMapping(value = "/echo/{str}", method = RequestMethod.GET)
-        public String echo(@PathVariable String str) {
-            return restTemplate.getForObject("http://forum-topic-core-provider/echo/" + str, String.class);
+        @GetMapping(value = "/hello")
+        public User heello(Integer id) {
+           return demoService.sayName(id);
         }
+
     }
-
-
-
 }

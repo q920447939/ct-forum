@@ -1,4 +1,4 @@
-package cn.withme.forum.topic.api.vo;
+package cn.withmes.ct.forum.topic.api.vo;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
