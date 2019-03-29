@@ -25,7 +25,5 @@
             <artifactId>forum-utils</artifactId>
             <version>${cn.withmes.ct.forum-utils.version}</version>
         </dependency>
-
-
     </dependencies>
 </project>

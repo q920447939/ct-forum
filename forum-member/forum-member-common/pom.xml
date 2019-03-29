@@ -12,4 +12,19 @@
     <artifactId>forum-member-common</artifactId>
 
 
+    <dependencies>
+        <dependency>
+            <groupId>cn.withmes.ct</groupId>
+            <artifactId>forum-base</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.withmes.ct</groupId>
+            <artifactId>forum-utils</artifactId>
+            <version>${cn.withmes.ct.forum-utils.version}</version>
+        </dependency>
+    </dependencies>
+
+
 </project>

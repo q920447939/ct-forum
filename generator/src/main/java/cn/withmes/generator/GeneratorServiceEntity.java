@@ -24,10 +24,10 @@ public class GeneratorServiceEntity {
     private  String packageName = "cn.withmes.ct";
 
     //需要生成的表
-    private String[] tableNames = {"comment"};
+    private String[] tableNames = {"member"};
 
     //数据库连接url
-    private String dbUrl = "jdbc:mysql://127.0.0.1:3306/roo?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8";
+    private String dbUrl = "jdbc:mysql://182.254.234.193:3306/ct_forum?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8";
 
     //数据库账号
     private String dbUserName = "root";

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.withmes.ct.mapper.MemberMapper">
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.withmes.ct.forum.member.common.entity.domain.Member">
+        <id column="id" property="id" />
+        <result column="nick_name" property="nickName" />
+        <result column="username" property="username" />
+        <result column="password" property="password" />
+        <result column="email" property="email" />
+        <result column="created" property="created" />
+        <result column="logined" property="logined" />
+        <result column="updated" property="updated" />
+        <result column="state" property="state" />
+        <result column="deleted" property="deleted" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+ 		id ,nick_name ,username ,password ,email ,created ,logined ,updated ,state ,deleted		
+    </sql>
+
+</mapper>
