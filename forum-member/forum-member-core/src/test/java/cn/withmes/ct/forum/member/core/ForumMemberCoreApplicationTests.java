@@ -1,4 +1,4 @@
-package cn.withmes.ct.forum.member.core;
+package cn.withmes.ct.forum.member.api.core;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
