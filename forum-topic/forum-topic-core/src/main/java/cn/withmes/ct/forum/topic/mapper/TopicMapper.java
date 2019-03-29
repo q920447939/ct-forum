@@ -3,7 +3,7 @@ package cn.withmes.ct.forum.topic.mapper;
 
 
 import cn.withmes.ct.forum.base.common.config.base.dal.BaseMapper;
-import cn.withmes.ct.forum.topic.entity.domain.Topic;
+import cn.withmes.ct.forum.common.entity.domain.Topic;
 import org.apache.ibatis.annotations.Param;
 
 

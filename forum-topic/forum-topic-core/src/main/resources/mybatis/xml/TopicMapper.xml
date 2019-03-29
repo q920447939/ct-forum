@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.withmes.ct.forum.topic.mapper.TopicMapper">
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="cn.withmes.ct.forum.topic.entity.domain.Topic">
+    <resultMap id="BaseResultMap" type="cn.withmes.ct.forum.common.entity.domain.Topic">
         <id column="tid" property="tid"/>
         <result column="node_slug" property="nodeSlug"/>
         <result column="node_title" property="nodeTitle"/>
@@ -27,7 +27,7 @@
     </sql>
 
 
-    <select id="selectById" resultType="cn.withmes.ct.forum.topic.entity.domain.Topic">
+    <select id="selectById" resultType="cn.withmes.ct.forum.common.entity.domain.Topic">
         select  *
         from topic
         where tid = #{id}

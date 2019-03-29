@@ -1,23 +1,20 @@
-package ${package.Entity};
+package
 
-#if(${activeRecord})
-import java.io.Serializable;
-
-#end
-#*#foreach($pkg in ${table.importPackages})
-import ${pkg};
-#end*#
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-
-#if(${entityLombokModel})
-
-
 import lombok.Data;
 import lombok.experimental.Accessors;
-#end
-import java.time.LocalDateTime;
+
+    ${package.Entity}
+        ;
+    #if(${activeRecord})
+    #end
+#*#foreach($pkg in ${table.importPackages})
+import ${pkg};
+        #end*#
+    #if(${entityLombokModel})
+    #end
 
 /**
  * @Description: $!{table.comment}

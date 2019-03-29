@@ -2,7 +2,7 @@ package cn.withmes.ct.forum.topic.mapper;
 
 
 import cn.withmes.ct.forum.base.common.config.base.dal.BaseMapper;
-import cn.withmes.ct.forum.topic.entity.domain.Comment;
+import cn.withmes.ct.forum.common.entity.domain.Comment;
 
 /**
  * @Description: 评论表 Mapper 接口

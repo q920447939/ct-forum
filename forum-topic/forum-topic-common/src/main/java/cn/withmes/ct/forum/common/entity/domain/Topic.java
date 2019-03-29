@@ -1,4 +1,4 @@
-package cn.withmes.ct.forum.topic.entity.domain;
+package cn.withmes.ct.forum.common.entity.domain;
 
 
 import com.baomidou.mybatisplus.annotation.TableField;

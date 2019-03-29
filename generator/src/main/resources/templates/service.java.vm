@@ -1,11 +1,15 @@
-package ${package.Service};
+package
 
-import ${package.Entity}.${entity};
-import ${package.Entity}.vo.${entity}ListVO;
-import ${package.Entity}.dto.${entity}DTO;
-import ${superServiceClassPackage};
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+
+${package.Service}
+        ;
+    ${package.Entity}.${entity};
+    ${package.Entity}.vo.${entity}ListVO;
+    ${package.Entity}.dto.${entity}DTO;
+    ${superServiceClassPackage}
+        ;
 
 
  /**

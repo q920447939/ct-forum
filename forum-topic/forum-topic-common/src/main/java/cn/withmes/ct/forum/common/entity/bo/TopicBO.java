@@ -1,8 +1,8 @@
-package cn.withmes.ct.forum.topic.entity.bo;
+package cn.withmes.ct.forum.common.entity.bo;
 
 
-import cn.withmes.ct.forum.topic.entity.domain.Comment;
-import cn.withmes.ct.forum.topic.entity.domain.Topic;
+import cn.withmes.ct.forum.common.entity.domain.Comment;
+import cn.withmes.ct.forum.common.entity.domain.Topic;
 import lombok.Data;
 
 import java.util.List;

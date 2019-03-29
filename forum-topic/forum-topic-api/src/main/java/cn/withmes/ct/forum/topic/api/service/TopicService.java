@@ -1,9 +1,9 @@
 
-package cn.withmes.ct.forum.topic.service;
+package cn.withmes.ct.forum.topic.api.service;
 
 import cn.withmes.ct.forum.base.common.config.base.service.BaseService;
-import cn.withmes.ct.forum.topic.entity.bo.TopicBO;
-import cn.withmes.ct.forum.topic.entity.domain.Topic;
+import cn.withmes.ct.forum.common.entity.bo.TopicBO;
+import cn.withmes.ct.forum.common.entity.domain.Topic;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.apache.ibatis.annotations.Param;

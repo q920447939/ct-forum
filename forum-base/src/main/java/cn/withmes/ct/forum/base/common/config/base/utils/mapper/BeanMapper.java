@@ -1,8 +1,7 @@
 package cn.withmes.ct.forum.base.common.config.base.utils.mapper;
 
-import org.dozer.DozerBeanMapper;
 import com.google.common.collect.Lists;
-
+import org.dozer.DozerBeanMapper;
 
 import java.util.Collection;
 import java.util.List;

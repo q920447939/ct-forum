@@ -5,15 +5,6 @@
  */
 package cn.withmes.ct.forum.topic;
 
-import com.alibaba.druid.sql.visitor.functions.If;
-
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Date;
-import java.util.List;
-
 /**
  * ClassName: Demo
  * @Description:

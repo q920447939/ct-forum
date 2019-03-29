@@ -2,25 +2,25 @@
  * @Project:
  * @Author: leegoo
  * @Date: 2019年03月20日
- *//*
+ */
 
 package cn.withmes.forum.api.controller.back;
 
-import cn.withme.forum.topic.api.vo.TopicVO;
 import cn.withmes.ct.forum.base.common.config.base.enums.ResultCode;
 import cn.withmes.ct.forum.base.common.config.base.mode.ResponseData;
 import cn.withmes.ct.forum.base.common.config.base.utils.common.CopyAttributesUtils;
 import cn.withmes.ct.forum.base.common.config.base.web.BaseRestfulController;
-import cn.withmes.ct.forum.topic.entity.bo.TopicBO;
-import cn.withmes.ct.forum.topic.entity.domain.Topic;
-import cn.withmes.ct.forum.topic.service.TopicService;
+import cn.withmes.ct.forum.common.entity.bo.TopicBO;
+import cn.withmes.ct.forum.common.entity.domain.Topic;
+import cn.withmes.ct.forum.topic.api.service.TopicService;
+import cn.withmes.ct.forum.topic.api.vo.TopicVO;
 import cn.withmes.ct.utils.utils.DateUtils;
+import com.alibaba.dubbo.config.annotation.Reference;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -28,20 +28,20 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-*/
+
 /**
  * ClassName: TopicController
  *
  * @author leegoo
  * @Description:
  * @date 2019年03月20日
- *//*
+ */
 
 @RestController
 @RequestMapping("/back/topic")
 public class TopicController extends BaseRestfulController {
 
-    @Autowired
+    @Reference(version = "${topic.service.version}")
     private TopicService topicService;
 
 
@@ -79,4 +79,4 @@ public class TopicController extends BaseRestfulController {
         return ResponseData.builder(ResultCode.BASE_ERROR);
     }
 
-}*/
+}

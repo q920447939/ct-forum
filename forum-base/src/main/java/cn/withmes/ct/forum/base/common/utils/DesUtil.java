@@ -10,7 +10,6 @@ import javax.crypto.spec.DESKeySpec;
 import javax.crypto.spec.IvParameterSpec;
 import java.io.IOException;
 import java.security.SecureRandom;
-import java.util.UUID;
 
 public class DesUtil {
 

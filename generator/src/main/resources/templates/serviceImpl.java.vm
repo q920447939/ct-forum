@@ -1,17 +1,21 @@
-package ${package.ServiceImpl};
+package
 
-import ${package.Entity}.${entity};
-import ${package.Entity}.vo.${entity}ListVO;
-import ${package.Mapper}.${table.mapperName};
-import ${package.Service}.${table.serviceName};
-import ${superServiceImplClassPackage};
-import ${superMapperClassPackage};
-import org.springframework.stereotype.Service;
-import org.springframework.beans.factory.annotation.Autowired;
+import cn.withmes.common.utils.StringUtils;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import cn.withmes.common.utils.StringUtils;
+import org.springframework.stereotype.Service;
+
+${package.ServiceImpl}
+        ;
+    ${package.Entity}.${entity};
+    ${package.Entity}.vo.${entity}ListVO;
+    ${package.Mapper}.${table.mapperName};
+    ${package.Service}.${table.serviceName};
+    ${superServiceImplClassPackage}
+        ;
+    ${superMapperClassPackage}
+        ;
 
 
 

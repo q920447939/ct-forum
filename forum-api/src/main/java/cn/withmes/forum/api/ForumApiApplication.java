@@ -24,7 +24,7 @@ public class ForumApiApplication {
     }
 
 
-    @Reference(version = "${demo.service.version}")
+    @Reference(version = "${topic.service.version}")
     private DemoService demoService;
 
 

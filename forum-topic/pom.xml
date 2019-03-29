@@ -6,6 +6,7 @@
     <modules>
         <module>forum-topic-api</module>
         <module>forum-topic-core</module>
+        <module>forum-topic-common</module>
     </modules>
     <parent>
         <groupId>cn.withmes.ct</groupId>
@@ -24,5 +25,7 @@
             <artifactId>forum-utils</artifactId>
             <version>${cn.withmes.ct.forum-utils.version}</version>
         </dependency>
+
+
     </dependencies>
 </project>

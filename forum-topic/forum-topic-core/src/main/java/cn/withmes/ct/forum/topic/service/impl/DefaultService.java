@@ -18,7 +18,7 @@ import org.springframework.cloud.context.config.annotation.RefreshScope;
  * @author leegoo
  * @date 2019年03月28日
  */
-@Service(version = "${demo.service.version}")
+@Service(version = "${topic.service.version}")
 @RefreshScope
 public class DefaultService implements DemoService {
 
