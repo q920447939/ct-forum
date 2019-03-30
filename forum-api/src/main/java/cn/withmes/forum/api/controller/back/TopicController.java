@@ -41,7 +41,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/back/topic")
 public class TopicController extends BaseRestfulController {
 
-    @Reference(version = "${topic.service.version}")
+    @Reference(version = "${topic.service.version}",check=false)
     private TopicService topicService;
 
 

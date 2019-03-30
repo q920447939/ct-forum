@@ -17,25 +17,8 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableDiscoveryClient
 @EnableDubbo()
 public class ForumApiApplication {
-
-
     public static void main(String[] args) {
         SpringApplication.run(ForumApiApplication.class, args);
     }
 
-
-    @Reference(version = "${topic.service.version}")
-    private DemoService demoService;
-
-
-    @RestController
-    class Demo {
-
-
-        @GetMapping(value = "/hello")
-        public User heello(Integer id) {
-           return demoService.sayName(id);
-        }
-
-    }
 }

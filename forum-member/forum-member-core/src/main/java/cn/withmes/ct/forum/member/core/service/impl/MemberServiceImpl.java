@@ -1,4 +1,4 @@
-package cn.withmes.ct.forum.member.core.impl;
+package cn.withmes.ct.forum.member.core.service.impl;
 
 import cn.withmes.ct.forum.base.common.config.base.dal.BaseMapper;
 import cn.withmes.ct.forum.base.common.config.base.service.BaseServiceImpl;
@@ -11,10 +11,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
-
-
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 
 
 /**
@@ -22,7 +19,8 @@ import org.springframework.stereotype.Service;
  * @author leegoo
  * @date 2019-03-29
  */
-@Service
+@com.alibaba.dubbo.config.annotation.Service(version = "${member.service.version}")
+@RefreshScope
 public class MemberServiceImpl extends BaseServiceImpl<Member> implements MemberService {
 
 	@Autowired

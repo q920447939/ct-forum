@@ -12,6 +12,7 @@ import cn.withmes.ct.forum.member.common.entity.bo.MemberBO;
 import cn.withmes.ct.forum.member.common.entity.domain.Member;
 import cn.withmes.ct.forum.topic.api.vo.TopicVO;
 import cn.withmes.ct.utils.utils.DateUtils;
+import com.alibaba.dubbo.config.annotation.Reference;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -55,11 +56,11 @@ import org.springframework.web.bind.annotation.RestController;
  *   @since 2019-03-29
  */
 @RestController
-@RequestMapping("/member")
+@RequestMapping("/back/member")
 public class MemberController extends BaseRestfulController {
 
-    @Autowired
-    public MemberService memberService;
+    @Reference(version = "${member.service.version}")
+    private MemberService memberService;
 
     /**
      * @description : 获取分页列表

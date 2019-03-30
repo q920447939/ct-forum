@@ -30,14 +30,14 @@ public class Swagger2 {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("cn.withmes.ct.forum.topic"))
+                .apis(RequestHandlerSelectors.basePackage("cn.withmes.ct.forum.member"))
                 .paths(PathSelectors.any())
                 .build();
     }
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("forum-topic API")
+                .title("forum-member API")
                 .description("此页面会标记出所有的后台API接口以及参数")
                 .termsOfServiceUrl("")
                 .contact("leegoo")
