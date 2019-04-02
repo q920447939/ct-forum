@@ -59,7 +59,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/back/member")
 public class MemberController extends BaseRestfulController {
 
-    @Reference(version = "${member.service.version}")
+    @Reference(version = "${member.service.version}",check = false)
     private MemberService memberService;
 
     /**
@@ -68,7 +68,7 @@ public class MemberController extends BaseRestfulController {
      * @author : leegoo
      * @since : Create in 2019-03-29
      */
-    @PostMapping(value = "/page")
+    @GetMapping(value = "/page")
     public ResponseData<IPage<MemberVO>> getMemberList(@RequestBody(required = false) MemberVO param,
                                                            @RequestParam(value = "draw", defaultValue = "0") Integer draw,
                                                            @RequestParam(value = "length", defaultValue = "10") Integer length) {
