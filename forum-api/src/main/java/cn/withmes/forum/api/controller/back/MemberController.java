@@ -4,9 +4,13 @@ import cn.withmes.ct.forum.base.common.config.base.enums.ResultCode;
 import cn.withmes.ct.forum.base.common.config.base.mode.ResponseData;
 import cn.withmes.ct.forum.base.common.config.base.utils.common.CopyAttributesUtils;
 import cn.withmes.ct.forum.base.common.config.base.web.BaseRestfulController;
+import cn.withmes.ct.forum.base.common.valid.AddVlid;
+import cn.withmes.ct.forum.base.common.valid.UpdateValid;
 import cn.withmes.ct.forum.common.entity.bo.TopicBO;
 import cn.withmes.ct.forum.common.entity.domain.Topic;
 import cn.withmes.ct.forum.member.api.service.MemberService;
+import cn.withmes.ct.forum.member.api.vo.MemberAddVO;
+import cn.withmes.ct.forum.member.api.vo.MemberUpdateVO;
 import cn.withmes.ct.forum.member.api.vo.MemberVO;
 import cn.withmes.ct.forum.member.common.entity.bo.MemberBO;
 import cn.withmes.ct.forum.member.common.entity.domain.Member;
@@ -26,8 +30,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-
-
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.validation.Valid;
+import java.util.Arrays;
+import java.util.Map;
 
 
 /**
@@ -130,4 +137,29 @@ public class MemberController extends BaseRestfulController {
          Member e = CopyAttributesUtils.copyAtoB(param, Member.class);
         return successData(memberService.add(e));
     }*/
+
+
+    @Autowired
+    private  CaptchaController controller;
+
+
+    @PostMapping(value = "/signup")
+    public ResponseData<Boolean> insert(@RequestBody  @Valid MemberAddVO param, HttpServletRequest req, HttpServletResponse resp) {
+        log.info("insert.param:{}",param);
+        //判断验证码是否正确
+        ResponseData<Boolean> captcha = controller.findCaptcha(req, resp);
+        if (!captcha.isSuccess()) {
+            return ResponseData.builder(ResultCode.CAPTCHA_IS_ERROR);
+        }
+        MemberBO e = CopyAttributesUtils.copyAtoB(param, MemberBO.class);
+        ResponseData<Boolean> data = memberService.insert(e);
+        if (data.isSuccess()) {
+            //发送邮件
+            return ResponseData.builder(null, ResultCode.SUCCESS, "邮件已经发送到:"+param.getEmail()+",请及时验证");
+        }
+        return ResponseData.builder(data.getData(), ResultCode.SUCCESS, data.getMessage());
+
+    }
+
+
 }

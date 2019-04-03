@@ -7,7 +7,6 @@
         <artifactId>forum-member</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <groupId>cn.withmes</groupId>
     <artifactId>forum-member-core</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>forum-member-core</name>

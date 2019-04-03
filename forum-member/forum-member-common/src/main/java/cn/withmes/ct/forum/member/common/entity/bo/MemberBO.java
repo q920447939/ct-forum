@@ -1,6 +1,7 @@
 package cn.withmes.ct.forum.member.common.entity.bo;
 
 
+import cn.withmes.ct.forum.base.common.valid.AddVlid;
 import cn.withmes.ct.forum.member.common.entity.domain.Member;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
@@ -9,7 +10,9 @@ import com.baomidou.mybatisplus.annotation.TableLogic;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 import lombok.experimental.Accessors;
+import org.hibernate.validator.constraints.Length;
 
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
@@ -24,5 +27,11 @@ import java.time.LocalDateTime;
 @Data
 @Accessors(chain = true)
 public class MemberBO extends Member {
+
+
+    /**
+     * 用户重复密码
+     */
+    private String rePassword;
 
 }

@@ -1,20 +1,13 @@
 package cn.withmes.forum.api.compoment;
 
 import cn.withmes.forum.api.captcha.utils.CaptchaUtil;
-import cn.withmes.forum.api.entity.redis.Token;
-import com.alibaba.fastjson.JSON;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
 
-import javax.imageio.ImageIO;
-import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.awt.*;
-import java.awt.image.BufferedImage;
 import java.io.IOException;
-import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 
@@ -48,7 +41,7 @@ public class CaptchaComponent {
             '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
 
     // 过期时间为60秒
-    private static final long EXPIRE_MINUTES = 60;
+    private static final long EXPIRE_SECONDS = 60;
 
     @Autowired
     private RedisTemplate redisTemplate;
@@ -67,7 +60,7 @@ public class CaptchaComponent {
         try {
             String code = CaptchaUtil.out(req, resp);
             redisTemplate.opsForValue().set(token.toLowerCase(), code);
-            redisTemplate.expire(token.toLowerCase(), EXPIRE_MINUTES, TimeUnit.MINUTES);
+            redisTemplate.expire(token.toLowerCase(), EXPIRE_SECONDS, TimeUnit.SECONDS);
         } catch (IOException e) {
             e.printStackTrace();
         }

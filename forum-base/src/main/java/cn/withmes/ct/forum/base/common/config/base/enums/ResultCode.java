@@ -133,6 +133,12 @@ public enum ResultCode  implements ResultEnum<Integer>{
 	DATA_NOT_EXIST(1023, "请求无数据"),
 
 
+	/**
+     * -1024:验证码错误
+     */
+	CAPTCHA_IS_ERROR(-1024, "验证码错误"),
+
+
 	BASE_ERROR(4000, "查无数据");
 
    

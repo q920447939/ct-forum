@@ -36,7 +36,7 @@ public class CaptchaService {
      * @return
      */
     public void genCaptcha(String token, HttpServletRequest req, HttpServletResponse resp){
-        this.captchaComponent.createCaptcha(token, req, resp);
+         this.captchaComponent.createCaptcha(token, req, resp);
     }
 
     /**

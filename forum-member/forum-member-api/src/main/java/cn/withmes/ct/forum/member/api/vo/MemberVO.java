@@ -30,8 +30,7 @@ public class MemberVO implements Serializable {
     /**
      * 用户id
      */
-	@TableId(value="id", type= IdType.AUTO)
-	private Integer id;
+	private String id;
 
     /**
      * 昵称

@@ -28,8 +28,8 @@ public class Member implements Serializable {
     /**
      * 用户id
      */
-	@TableId(value="id", type= IdType.AUTO)
-	private Integer id;
+	@TableId(value="id")
+	private String id;
 
     /**
      * 昵称

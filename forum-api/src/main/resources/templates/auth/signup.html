@@ -98,6 +98,14 @@
                     <form id="signup-form" method="post">
                         <div class="field">
                             <div class="control has-icons-left has-icons-right">
+                                <input id="nickName" name="nickName" class="input" type="text" placeholder="昵称"/>
+                                <span class="icon is-small is-left">
+                              <i class="fa fa-user"></i>
+                            </span>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control has-icons-left has-icons-right">
                                 <input id="username" name="username" class="input" type="text" placeholder="用户名"/>
                                 <span class="icon is-small is-left">
                               <i class="fa fa-user"></i>
@@ -133,7 +141,8 @@
 
                         <div class="field">
                             <p class="control has-icons-left">
-                                <input id="repassword" name="repassword" class="input" type="password" placeholder="确认密码"/>
+                                <input id="repassword" name="repassword" class="input" type="password"
+                                       placeholder="确认密码"/>
                                 <span class="icon is-small is-left">
                           <i class="fa fa-lock"></i>
                         </span>
@@ -142,14 +151,18 @@
 
                         <div class="field">
                             <p class="control has-icons-left">
-                                <input id="vcode" name="vcode" class="input" type="text" placeholder="验证码"/>
+                                <input id="vcode" name="vcode" class="input" type="text" placeholder="验证码"
+                                       style="width:77%"/>
+                                <image id="image_captcha" style="height:35px;CURSOR: hand"
+                                       onclick="getCaptcha()"></image>
                             </p>
                         </div>
 
                         <div class="field">
                             <p class="control">
-                                <button id="signup-btn" class="button is-success" type="submit">注册</button>
-                                <a class="button" href="/signin">登录</a>
+                                <button id="signup-btn" class="button is-success" type="button"
+                                        style="display:block;margin:0 auto" onclick="commit()">注册
+                                </button>
                             </p>
                         </div>
                     </form>
@@ -167,7 +180,8 @@
                     <a href="/faq">常见问题</a>
                 </p>
                 <p>
-                    <strong>Roo</strong> by <a href="https://github.com/biezhi">biezhi</a> | Copyright © 2017 | 当前版本 <span class="tag is-info">0.0.1</span>
+                    <strong>Roo</strong> by <a href="https://github.com/biezhi">biezhi</a> | Copyright © 2017 | 当前版本
+                    <span class="tag is-info">0.0.1</span>
                 </p>
                 <p>
                     <a class="icon" target="_blank" href="https://github.com/junicorn/roo">
@@ -190,73 +204,68 @@
 <script type="text/javascript" src="/plugins/jquery.validation/jquery.validate.min.js"></script>
 <script type="text/javascript" src="/plugins/jquery.validation/additional-methods.min.js"></script>
 <script type="text/javascript" src="/plugins/jquery.validation/localization/messages_zh.min.js"></script>
+<script type="text/javascript" src="/js/StringUtils.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
-        $.validator.addMethod("checkUserName", function (value, element, params) {
-            var checkName = /^\w{4,20}$/g;
-            return this.optional(element) || (checkName.test(value));
-        }, "只允许4-20位英文字母、数字或者下画线！");
+        getCaptcha();
+        $("#signup-btn").click(function () {
+            commit();
+        })
 
-        $("#signupForm").validate({
-            rules: {
-                username: {
-                    required: true,
-                    rangelength: [4, 20],
-                    checkUserName: true
-                },
-                password: {
-                    required: true,
-                    minlength: 1
-                },
-                repassword: {
-                    required: true,
-                    minlength: 1,
-                    equalTo: "#password"
-                },
-                email: {
-                    required: true,
-                    email: true
-                },
-                vcode: {
-                    required: true
+    });
+
+    function commit() {
+
+        var captcha = $("#vcode").val().trim();
+        if (StringUtils.isEmpty(captcha)) {
+            $("#vcode").css("input error")
+            $("#vcode").parent().after('<label id="vcode-error" class="error" for="vcode">请输入验证码</label>')
+        }
+        var jsonStr = JSON.stringify($("#signup-form").serializeObject());  //json字符串
+        var split = $("#image_captcha").prop("src").split("token=");
+        $.ajax({
+            type: "POST",
+            url: "/back/member/signup?time=" + new Date().getTime()+"&token="+split[1]+"&captchaCode="+$("#vcode").val(),
+            contentType: "application/json; charset=utf-8",
+            data: jsonStr,
+            dataType: "json",
+            success: function (res) {
+                if (res.code <=  0) {
+                    alert(res.message);
                 }
             },
-            messages: {
-                username: {
-                    required: "请输入用户名",
-                    rangelength: "请输入4-20位用户名"
-                },
-                password: {
-                    required: "请输入密码",
-                    minlength: "密码长度不能小于6位"
-                },
-                repassword: {
-                    required: "请输入密码",
-                    minlength: "密码长度不能小于6位",
-                    equalTo: "两次密码输入不一致"
-                },
-                vcode: {
-                    required: "请输入验证码"
-                },
-                email: {
-                    required: "请输入邮箱",
-                    email: "请输入一个正确的邮箱"
-                }
-            },
-            submitHandler: function () {
-                $('#signup-form #signup-btn').addClass('is-loading');
-                Roo.post("/signup", $('#signup-form').serialize(),
-                    function (data, textStatus, jqXHR) {
-                        $('#signup-form #signup-btn').addClass('is-loading');
-                        if (data && data.success) {
-                            Roo.alertOk('注册成功');
-                        } else {
-                            Roo.alertError(data.msg || '注册失败');
-                        }
-                    });
+            error: function (res) {
+                alert(res.message);
             }
         });
-    });
+
+    }
+
+    function getCaptcha() {
+
+        $.get("/v0.1/communal/uid?time=" + new Date().getTime(), function (res) {
+            if (res.code === 0) {
+                $("#image_captcha").attr("src", "/v0.1/captcha?token=" + res.data);
+            }
+        });
+    }
+
+    $.fn.serializeObject = function () {
+        var o = {};
+        var a = this.serializeArray();
+        $.each(a, function () {
+            if (o[this.name]) {
+                if (!o[this.name].push) {
+                    o[this.name] = [o[this.name]];
+                }
+                o[this.name].push(this.value || '');
+            } else {
+                o[this.name] = this.value || '';
+            }
+        });
+        return o;
+    };
+
 </script>
 </body>
 </html>
