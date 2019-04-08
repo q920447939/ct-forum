@@ -195,4 +195,17 @@ public class MemberController extends BaseRestfulController {
     }
 
 
+    /**
+     * @Description:注销
+     * @param: [memberId]
+     * @return: cn.withmes.ct.forum.base.common.config.base.mode.ResponseData<java.lang.Object>
+     * @auther: liming
+     * @date: 2019/4/8 11:45
+     */
+    @GetMapping("/logout/{memberId}")
+    public ResponseData<Object> logout(@PathVariable(name = "memberId") String memberId) {
+        //TODO
+        return successData();
+    }
+
 }

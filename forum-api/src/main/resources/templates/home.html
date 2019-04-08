@@ -16,16 +16,13 @@
     <script type="text/javascript" src="/js/CookieUtils.js"></script>
 
     <script type="text/javascript">
-
+        var memberId = CookieUtilS.get("cook_member_get");
         $(function () {
             //查找主题
             page();
-
             //设置用户名
             setUserItem();
-
         });
-
 
         function page() {
             $.get("/back/topic/page", function (res) {
@@ -71,7 +68,7 @@
 
         function setUserItem() {
 
-            var memberId = CookieUtilS.get("cook_member_get");
+
             var _html = "";
             if (null != memberId) {
                 $.get("/back/member/get/" + memberId + "?time=" + new Date().getTime(), function (res) {
@@ -97,7 +94,7 @@
                         _html += '                           我的收藏 ';
                         _html += '                       </a> ';
                         _html += '                       <hr class="navbar-divider"> ';
-                        _html += '                       <a data-no-instant="" class="navbar-item is-hidden-desktop-only" href="/logout"> ';
+                        _html += '                       <a data-no-instant="" class="navbar-item is-hidden-desktop-only" onclick="logout();" > ';
                         _html += '                           注销 ';
                         _html += '                       </a> ';
                         _html += '                   </div> ';
@@ -127,6 +124,17 @@
                 return;
             }
 
+        }
+
+        /**
+         * 注销
+         */
+        function logout() {
+            CookieUtilS.del("cook_member_get");
+            $.get("/back/member/logout/"+memberId+"?time="+new Date().getTime(),function (res) {
+
+            })
+            location.reload()
         }
     </script>
 </head>
