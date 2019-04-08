@@ -14,6 +14,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>forum-member-common</module>
+        <module>forum-member-api</module>
         <module>forum-member-core</module>
     </modules>
 

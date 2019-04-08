@@ -136,7 +136,12 @@ public enum ResultCode  implements ResultEnum<Integer>{
 	/**
      * -1024:验证码错误
      */
-	CAPTCHA_IS_ERROR(-1024, "验证码错误"),
+	CAPTCHA_IS_EXPIRE_OR_ERROR(-1024, "验证码过期或错误"),
+
+	/**
+     * -1025:保存失败
+     */
+	ADD_DATA_IS_ERROR(-1025, "保存失败"),
 
 
 	BASE_ERROR(4000, "查无数据");

@@ -29,9 +29,15 @@ import java.time.LocalDateTime;
 public class MemberBO extends Member {
 
 
+
     /**
      * 用户重复密码
      */
     private String rePassword;
 
+    private Boolean insFlg;
+
+
+
 }
+

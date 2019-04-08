@@ -141,7 +141,7 @@
 
                         <div class="field">
                             <p class="control has-icons-left">
-                                <input id="repassword" name="repassword" class="input" type="password"
+                                <input id="rePassword" name="rePassword" class="input" type="password"
                                        placeholder="确认密码"/>
                                 <span class="icon is-small is-left">
                           <i class="fa fa-lock"></i>
@@ -208,10 +208,6 @@
 <script type="text/javascript">
     $(document).ready(function () {
         getCaptcha();
-        $("#signup-btn").click(function () {
-            commit();
-        })
-
     });
 
     function commit() {
@@ -230,12 +226,16 @@
             data: jsonStr,
             dataType: "json",
             success: function (res) {
-                if (res.code <=  0) {
-                    alert(res.message);
+                alert(res.message);
+                if (res.code == "-1024") {
+                    getCaptcha();
+                }else{
+                    window.location.href =res.data.href;
                 }
+
             },
             error: function (res) {
-                alert(res.message);
+                getCaptcha();
             }
         });
 

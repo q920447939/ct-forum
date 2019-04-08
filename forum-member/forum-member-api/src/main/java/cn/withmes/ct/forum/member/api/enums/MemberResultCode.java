@@ -33,6 +33,11 @@ public enum MemberResultCode implements ResultEnum<Integer>{
 	 * 400003:两次输入密码不相等
 	 */
 	PASS_WORD_TWIN_NOT_EQUAL(400002, "两次输入密码不相等"),
+
+	/**
+	 * 400004:用户名已存在
+	 */
+	MEMBER_USER_NAME_EXISTS(400004, "用户名已存在"),
 	/**
 	 * 0:执行成功
 	 */

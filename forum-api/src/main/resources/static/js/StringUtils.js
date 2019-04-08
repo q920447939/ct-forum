@@ -1,3 +1,4 @@
+
 StringUtils = {
     isEmpty: function(input) {
         return input == null || input == '';

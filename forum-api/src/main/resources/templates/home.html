@@ -11,48 +11,123 @@
     <link href="/plugins/noty/noty.css" rel="stylesheet"/>
     <link rel="stylesheet" href="/css/roo.css?v=0.0.1"/>
     <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"/>
-    <script type="text/javascript" src="/js/roo.js?v=0.0.1"></script>
     <script type="text/javascript" src="/plugins/noty/noty.min.js"></script>
+    <script type="text/javascript" src="/js/StringUtils.js"></script>
+    <script type="text/javascript" src="/js/CookieUtils.js"></script>
 
     <script type="text/javascript">
-        $.get("/back/topic/page", function (res) {
-            if (null != res && res.code == 0) {
-                var _html = "";
-                $.each(res.data.records, function (idx) {
-                    var item =  res.data.records[idx];
-                    _html += ' <article class="media"> ';
-                    _html += '                         <figure class="media-left"> ';
-                    _html += '                             <p class="image is-48x48"> ';
-                    _html += '                                 <a href="/@biezhi" title="biezhi"> ';
-                    _html += '                                     <img class="avatar-48" src=""> ';
-                    _html += '                                 </a> ';
-                    _html += '                             </p> ';
-                    _html += '                         </figure> ';
-                    _html += '                         <div class="media-content"> ';
-                    _html += '                             <div class="content"> ';
-                    _html += '                                 <p class="topic-title"> ';
-                    _html += '                                     <a href="/web/topic/detail?tid='+item.tid+'" title="'+item.title+'">';
-                    _html += '                                         '+item.title+'</a> ';
-                    _html += '                                 </p> ';
-                    _html += '                                 <p class="topic-meta"> ';
-                    _html += '                                     <a class="topic-meta" href="/node/share/'+item.tid+'" title="分享发现">分享发现</a> ';
-                    _html += '                                     <span> • </span> ';
-                    _html += '                                     <a class="topic-meta" href="/user/item/'+item.username+'" title="'+item.username+'">'+item.username+'</a> ';
-                    _html += '                                     <span> • </span> ';
-                    _html += '                                     <small>'+item.replyTime+'</small> ';
-                    _html += '                                 </p> ';
-                    _html += '                             </div> ';
-                    _html += '                         </div> ';
-                    _html += '                         <div class="media-right" style="line-height: 55px;"> ';
-                    _html += '                             <a href="/topic/reply/'+item.tid+'" title="查看评论"> ';
-                    _html += '                                 <span class="tag is-rounded" style="background-color: #aab0c6">'+item.comments+'</span> ';
-                    _html += '                             </a> ';
-                    _html += '                         </div> ';
-                    _html += '                     </article> ';
-                });
-                $(".has-text-centered").eq(4).html(_html);
-            }
+
+        $(function () {
+            //查找主题
+            page();
+
+            //设置用户名
+            setUserItem();
+
         });
+
+
+        function page() {
+            $.get("/back/topic/page", function (res) {
+                if (null != res && res.code == 0) {
+                    var _html = "";
+                    $.each(res.data.records, function (idx) {
+                        var item = res.data.records[idx];
+                        _html += ' <article class="media"> ';
+                        _html += '                         <figure class="media-left"> ';
+                        _html += '                             <p class="image is-48x48"> ';
+                        _html += '                                 <a href="/" title="....."> ';
+                        _html += '                                     <img class="avatar-48" src=""> ';
+                        _html += '                                 </a> ';
+                        _html += '                             </p> ';
+                        _html += '                         </figure> ';
+                        _html += '                         <div class="media-content"> ';
+                        _html += '                             <div class="content"> ';
+                        _html += '                                 <p class="topic-title"> ';
+                        _html += '                                     <a href="/web/topic/detail?tid=' + item.tid + '" title="' + item.title + '">';
+                        _html += '                                         ' + item.title + '</a> ';
+                        _html += '                                 </p> ';
+                        _html += '                                 <p class="topic-meta"> ';
+                        _html += '                                     <a class="topic-meta" href="/node/share/' + item.tid + '" title="分享发现">分享发现</a> ';
+                        _html += '                                     <span> • </span> ';
+                        _html += '                                     <a class="topic-meta" href="/user/item/' + item.username + '" title="' + item.username + '">' + item.username + '</a> ';
+                        _html += '                                     <span> • </span> ';
+                        _html += '                                     <small>' + item.replyTime + '</small> ';
+                        _html += '                                 </p> ';
+                        _html += '                             </div> ';
+                        _html += '                         </div> ';
+                        _html += '                         <div class="media-right" style="line-height: 55px;"> ';
+                        _html += '                             <a href="/topic/reply/' + item.tid + '" title="查看评论"> ';
+                        _html += '                                 <span class="tag is-rounded" style="background-color: #aab0c6">' + item.comments + '</span> ';
+                        _html += '                             </a> ';
+                        _html += '                         </div> ';
+                        _html += '                     </article> ';
+                    });
+                    $(".has-text-centered").eq(4).html(_html);
+                }
+            });
+        }
+
+
+        function setUserItem() {
+
+            var memberId = CookieUtilS.get("cook_member_get");
+            var _html = "";
+            if (null != memberId) {
+                $.get("/back/member/get/" + memberId + "?time=" + new Date().getTime(), function (res) {
+                    if (res.code == 0) {
+                        var member = res.data;
+                        _html += '               <a class="navbar-item is-hidden-desktop-only" href="/notice"> ';
+                        _html += '                   <i class="fa fa-bell"></i> ';
+                        _html += '               </a> ';
+
+                        _html += '               <div class="navbar-item has-dropdown is-hoverable"> ';
+                        _html += '                   <a class="navbar-link is-active" href="javascript:void(0);"> ';
+                        _html += '                       ' + member.nickName + ' ';
+                        _html += '                   </a> ';
+                        _html += '                   <div class="navbar-dropdown "> ';
+                        _html += '                       <a class="navbar-item " href=""> ';
+                        _html += '                           我的主页 ';
+                        _html += '                       </a> ';
+                        _html += '                       <hr class="navbar-divider"> ';
+                        _html += '                       <a class="navbar-item" href="/setting"> ';
+                        _html += '                           个人设置 ';
+                        _html += '                       </a> ';
+                        _html += '                       <a class="navbar-item " href="/favorites"> ';
+                        _html += '                           我的收藏 ';
+                        _html += '                       </a> ';
+                        _html += '                       <hr class="navbar-divider"> ';
+                        _html += '                       <a data-no-instant="" class="navbar-item is-hidden-desktop-only" href="/logout"> ';
+                        _html += '                           注销 ';
+                        _html += '                       </a> ';
+                        _html += '                   </div> ';
+                        _html += '               </div> ';
+                        $(".navbar-end").html(_html);
+                        return;
+                    }
+                })
+            } else {
+                _html += ' <div class="navbar-item search-bar"> ';
+                _html += '                     <form id="search-form"> ';
+                _html += '                         <div class="control has-icons-left"> ';
+                _html += '                             <input class="input" placeholder="搜索本站内容"> ';
+                _html += '                             <span class="icon is-small is-left"> ';
+                _html += '                                 <i class="fa fa-search"></i> ';
+                _html += '                             </span> ';
+                _html += '                         </div> ';
+                _html += '                     </form> ';
+                _html += '                 </div> ';
+                _html += '                 <a class="navbar-item is-hidden-desktop-only" href="/signup"> ';
+                _html += '                     注册 ';
+                _html += '                 </a> ';
+                _html += '                 <a class="navbar-item is-hidden-desktop-only" href="/signin"> ';
+                _html += '                     登录 ';
+                _html += '                 </a> ';
+                $(".navbar-end").html(_html);
+                return;
+            }
+
+        }
     </script>
 </head>
 <body>
@@ -109,22 +184,7 @@
             </div>
 
             <div class="navbar-end">
-                <div class="navbar-item search-bar">
-                    <form id="search-form">
-                        <div class="control has-icons-left">
-                            <input class="input" placeholder="搜索本站内容">
-                            <span class="icon is-small is-left">
-                                <i class="fa fa-search"></i>
-                            </span>
-                        </div>
-                    </form>
-                </div>
-                <a class="navbar-item is-hidden-desktop-only" href="/signup">
-                    注册
-                </a>
-                <a class="navbar-item is-hidden-desktop-only" href="/signin">
-                    登录
-                </a>
+
             </div>
         </div>
     </nav>
@@ -206,7 +266,7 @@
 
                 </div>
                 <div class="message-header">
-                    <a   href="/topics?draw=1&length=10" class="button is-dark">更多主题...</a>
+                    <a href="/topics?draw=1&length=10" class="button is-dark">更多主题...</a>
                 </div>
             </div>
         </div>

@@ -16,5 +16,5 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 public interface MemberService extends BaseService<Member> {
         IPage<Member> page(Page<MemberBO> page ,MemberBO bo);
 
-        ResponseData<Boolean> insert(MemberBO bo);
+        ResponseData<MemberBO> insert(MemberBO bo);
 }

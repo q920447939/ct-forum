@@ -23,6 +23,7 @@ import java.time.LocalDateTime;
 @TableName("member")
 public class Member implements Serializable {
 
+
     private static final long serialVersionUID = 1L;
 
     /**
@@ -109,3 +110,4 @@ public class Member implements Serializable {
 	public static final String DELETED = "deleted";
 
 }
+

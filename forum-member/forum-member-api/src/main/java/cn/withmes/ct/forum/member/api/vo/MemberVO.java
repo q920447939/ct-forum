@@ -44,11 +44,7 @@ public class MemberVO implements Serializable {
 	@TableField("username")
 	private String username;
 
-    /**
-     * 用户密码
-     */
-	@TableField("password")
-	private String password;
+
 
     /**
      * 用户邮箱
@@ -80,12 +76,6 @@ public class MemberVO implements Serializable {
 	@TableField("state")
 	private Integer state;
 
-    /**
-     * 删除标记
-     */
-	@TableField("deleted")
-    @TableLogic
-	private Integer deleted;
 
 
 
@@ -94,8 +84,6 @@ public class MemberVO implements Serializable {
 	public static final String NICK_NAME = "nick_name";
 
 	public static final String USERNAME = "username";
-
-	public static final String PASSWORD = "password";
 
 	public static final String EMAIL = "email";
 
@@ -107,6 +95,5 @@ public class MemberVO implements Serializable {
 
 	public static final String STATE = "state";
 
-	public static final String DELETED = "deleted";
 
 }
