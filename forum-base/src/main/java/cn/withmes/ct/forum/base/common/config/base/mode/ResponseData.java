@@ -52,6 +52,15 @@ public class ResponseData<T> implements Serializable {
 		return new ResponseData<E>(result.getCode(),message, data);
 	}
 
+	public static <E> ResponseData<E> builder(E data, Integer code,String message) {
+		return new ResponseData<E>(code,message, data);
+	}
+
+	public static <E> ResponseData<E> builder(E data, Integer code) {
+		return new ResponseData<E>(code, data);
+	}
+
+
 	/**
 	 * <p>Title: 构造方法1</p> 
 	 * <p>Description:无参 </p>
@@ -90,6 +99,19 @@ public class ResponseData<T> implements Serializable {
 		this.message = message;
 		this.data = data;
 	}
+
+
+	/**
+	 * 构造方法5
+	 * @param result
+	 * @param data
+	 */
+	private ResponseData(Integer code, T data) {
+		this.code = code;
+		this.data = data;
+	}
+
+
 
 	/**
 	 * @Description: ResponseData中Data对象转换

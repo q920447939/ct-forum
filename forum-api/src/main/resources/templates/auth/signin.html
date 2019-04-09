@@ -16,24 +16,51 @@
     <script type="text/javascript" src="/plugins/jquery.validation/localization/messages_zh.min.js"></script>
     <script type="text/javascript">
        $(function () {
-             $("#signin-btn").submit(function(e){
-                 var username =  $("#username").val();
-                 var password =  $("#password").val();
-                 var remeberMe =  $("#remeberMe").val();
-                 if (null == username || "" == username || null == password || "" == password ) {
-                     alert("账号或密码不能为空!");
-                     return
-                 }
-                 $.post("/user/sign",{
-                     username:username,
-                     password:password,
-                     remeberMe:remeberMe
-                 },function (res) {
-                    console.log(res)
-                 });
-             });
+
+
+           $("#signin-btn").click(function () {
+               var jsonStr = JSON.stringify($("#signin-form").serializeObject());  //json字符串
+               $.ajax({
+                   type: "POST",
+                   url: "/back/member/login?time=" + new Date().getTime(),
+                   contentType: "application/json; charset=utf-8",
+                   data: jsonStr,
+                   dataType: "json",
+                   success: function (res) {
+                       alert(res.message);
+                       if (res.code == "-1024") {
+                           getCaptcha();
+                       }else{
+                           window.location.href =res.data.href;
+                       }
+
+                   },
+                   error: function (res) {
+
+                   }
+               });
+           });
+
 
        })
+
+       $.fn.serializeObject = function () {
+           var o = {};
+           var a = this.serializeArray();
+           $.each(a, function () {
+               if (o[this.name]) {
+                   if (!o[this.name].push) {
+                       o[this.name] = [o[this.name]];
+                   }
+                   o[this.name].push(this.value || '');
+               } else {
+                   o[this.name] = this.value || '';
+               }
+           });
+           return o;
+       };
+
+
     </script>
 </head>
 <body>
@@ -152,7 +179,7 @@
                                 </div>
                             </div>
                             <div class="has-text-centered">
-                                <button id="signin-btn" type="submit" class="button is-success">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;登&nbsp;录&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                                <button id="signin-btn" type="button" class="button is-success">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;登&nbsp;录&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
                             </div>
                             </p>
                         </div>

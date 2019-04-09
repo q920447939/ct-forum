@@ -39,6 +39,14 @@ public enum MemberResultCode implements ResultEnum<Integer>{
 	 */
 	MEMBER_USER_NAME_EXISTS(400004, "用户名已存在"),
 	/**
+	 * 400005:查无用户
+	 */
+	MEMBER_USER_NO_EXISTS(400005, "查无用户"),
+	/**
+	 * 400006:账号或密码错误
+	 */
+	MEMBER_USER_OR_PASSWORD_ERROR(400006, "账号或密码错误"),
+	/**
 	 * 0:执行成功
 	 */
 	END(40100, "用户名不能为空");

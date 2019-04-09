@@ -15,6 +15,7 @@ import cn.withmes.ct.forum.member.api.service.MemberService;
 import cn.withmes.ct.forum.member.common.entity.bo.MemberBO;
 import cn.withmes.ct.forum.member.common.entity.domain.Member;
 import cn.withmes.ct.forum.member.core.mapper.MemberMapper;
+import cn.withmes.ct.utils.utils.EncryptUtil;
 import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
@@ -83,13 +84,25 @@ public class MemberServiceImpl extends BaseServiceImpl<Member> implements Member
         member.setState(MemberContant.MEMBER_STAT.UN_ACTIVITY);
         member.setLogined(now);
         member.setUpdated(now);
+        //MD5
+        member.setPassword(EncryptUtil.getInstance().MD5(member.getPassword()));
         try {
             mapper.insert(member);
             bo.setId(member.getId());
             return ResponseData.builder(bo,ResultCode.SUCCESS);
         } catch (Exception e) {
-            System.out.println("--------------"+e);
             return ResponseData.builder(ResultCode.ADD_DATA_IS_ERROR);
         }
+    }
+
+    @Override
+    public ResponseData<MemberBO> findByParams(MemberBO bo) {
+        QueryWrapper<Member> wrapper = new QueryWrapper<>();
+        wrapper.eq(MemberBO.USERNAME, bo.getUsername());
+        List<Member> members = mapper.selectList(wrapper);
+        if (CollectionUtils.isEmpty(members)) return ResponseData.builder(MemberResultCode.MEMBER_USER_NO_EXISTS);
+        if (!members.get(0).getPassword().equalsIgnoreCase(EncryptUtil.getInstance().MD5(bo.getPassword())))
+            return ResponseData.builder(MemberResultCode.MEMBER_USER_OR_PASSWORD_ERROR);
+        return ResponseData.builder(CopyAttributesUtils.copyAtoB(members.get(0), MemberBO.class),ResultCode.SUCCESS);
     }
 }

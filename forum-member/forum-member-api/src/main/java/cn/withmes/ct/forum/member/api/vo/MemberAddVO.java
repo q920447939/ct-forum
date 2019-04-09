@@ -35,7 +35,7 @@ public class MemberAddVO implements Serializable {
     /**
      * 用户名
      */
-    @NotNull(message = "昵称不能为空",groups = {AddVlid.class})
+    @NotNull(message = "用户名不能为空",groups = {AddVlid.class})
     @Length(max = 20,min = 1,message = "用户名应该在1-20个字符之间")
     private String username;
 
