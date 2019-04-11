@@ -6,7 +6,7 @@
         <groupId>cn.withmes.ct</groupId>
         <artifactId>forum-topic</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <!--<relativePath/> --><!-- lookup parent from repository -->
     </parent>
     <artifactId>forum-topic-core</artifactId>
     <version>0.0.1-SNAPSHOT</version>
