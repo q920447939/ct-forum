@@ -40,15 +40,7 @@ public interface BaseService<T> {
 	 * @throws Exception
 	 */
 	int update(T entity);
-	
-	/**
-	 * @Description: 更新全部字段
-	 * @param entity
-	 * @return   
-	 * @author liming
-	 * @date 2018年5月11日
-	 */
-	int updateAllColumn(T entity);
+
 
 	/**
 	 * DESC: 根据ID删除单个实体

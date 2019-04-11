@@ -17,11 +17,17 @@
 
     <script type="text/javascript">
         var memberId = CookieUtilS.get("cook_member_get");
+
+
+
         $(function () {
             //查找主题
             page();
             //设置用户名
             setUserItem();
+
+            //历史上的今天
+            historyNowADay()
         });
 
         function page() {
@@ -135,6 +141,23 @@
 
             })
             location.reload()
+        }
+
+
+        function historyNowADay() {
+            $.get("/back/topic/history/now",function (res) {
+                if (res.code == 0) {
+                    var _html = "";
+                    _html += '                 <div class="message-header">历史上的今天,今天是'+res.data.createTime+'</div> ';
+                    _html += '                 <div class="message-body"> ';
+                    _html += '                     <h4 class="subtitle is-6" style="color:#21ded7"> ';
+                    _html += '                         <a href="'+res.data.href+'">'+res.data.imageTitle+'</a> ';
+                   // _html += '                         <p class="tips-foot">——马克思</p> ';
+                    _html += '                     </h4> ';
+                    _html += '                 </div> ';
+                    $(".is-light").eq(1).html(_html)
+                }
+            })
         }
     </script>
 </head>
@@ -281,13 +304,13 @@
 
         <div class="column is-one-quarter">
             <div class="message is-light">
-                <div class="message-header">Roo - 每日赠言</div>
+                <!--<div class="message-header">历史上的今天</div>
                 <div class="message-body">
                     <h6 class="subtitle is-6">
                         <p>一切经济最后都归结为时间经济</p>
                         <p class='tips-foot'>——马克思</p>
                     </h6>
-                </div>
+                </div>-->
             </div>
             <div class="message is-light">
                 <div class="message-header">Roo - 小而美的极客社区</div>

@@ -41,10 +41,6 @@ public class MemberServiceImpl extends BaseServiceImpl<Member> implements Member
     @Autowired
     private MemberMapper mapper;
 
-    @Override
-    public int updateAllColumn(Member entity) {
-        return 0;
-    }
 
     @Override
     public BaseMapper<Member> getBaseMapper() {

@@ -8,7 +8,7 @@ import cn.withmes.ct.forum.base.common.config.base.enums.ResultEnum;
  * 	  <p>-1: 执行失败 ,
  * 	  <p>1000到1159之内为系统错误
  * 	  <p>1200以上为业务错误
- * 	  <member> 400000-40100</>
+ * 	  <member> 400000-401000</>
  * @param:
  * @return:
  * @auther: liming

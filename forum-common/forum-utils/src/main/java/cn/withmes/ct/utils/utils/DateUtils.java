@@ -37,6 +37,11 @@ public class DateUtils {
      */
     public final static String DATE_TIME_PATTERN = "yyyy-MM-dd HH:mm:ss";
 
+    public static String formatNow() {
+        return format(new Date(), DATE_PATTERN);
+    }
+
+
     public static String format(Date date) {
         return format(date, DATE_PATTERN);
     }

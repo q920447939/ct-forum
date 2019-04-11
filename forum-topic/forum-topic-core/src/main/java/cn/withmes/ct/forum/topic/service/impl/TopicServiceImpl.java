@@ -42,10 +42,7 @@ public class TopicServiceImpl extends BaseServiceImpl<Topic> implements TopicSer
         return mapper;
     }
 
-    @Override
-    public int updateAllColumn(Topic entity) {
-        return 0;
-    }
+
 
 
     @Override
